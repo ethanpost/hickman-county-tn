@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hickman County, TN</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 15px;
+        }
+
+        .subtitle {
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #7f8c8d;
+        }
+
+        .outline-list {
+            list-style: none;
+        }
+
+        .outline-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .outline-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .outline-link {
+            text-decoration: none;
+            color: #2c3e50;
+            display: block;
+        }
+
+        .outline-link:hover {
+            color: #3498db;
+        }
+
+        .outline-title {
+            font-weight: 600;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .outline-meta {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            display: flex;
+            gap: 15px;
+        }
+
+        .outline-date {
+            font-weight: 500;
+        }
+
+        .error {
+            color: #e74c3c;
+            padding: 20px;
+            background-color: #fee;
+            border-left: 4px solid #e74c3c;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hickman County, TN</h1>
+        <p class="subtitle">Meeting Outlines and Documents</p>
+        
+        <div id="content">
+            <div class="loading">Loading outlines...</div>
+        </div>
+    </div>
+
+    <script>
+        async function loadOutlines() {
+            const contentDiv = document.getElementById('content');
+            
+            try {
+                const response = await fetch('pages/outlines.json');
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const outlines = await response.json();
+                
+                if (outlines.length === 0) {
+                    contentDiv.innerHTML = '<p>No outlines available.</p>';
+                    return;
+                }
+
+                // Sort by date (newest first)
+                outlines.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+                const list = document.createElement('ul');
+                list.className = 'outline-list';
+
+                outlines.forEach(outline => {
+                    const listItem = document.createElement('li');
+                    listItem.className = 'outline-item';
+                    
+                    const link = document.createElement('a');
+                    link.href = outline.path;
+                    link.className = 'outline-link';
+                    
+                    const title = document.createElement('div');
+                    title.className = 'outline-title';
+                    title.textContent = outline.folder.replace(/_/g, ' ');
+                    
+                    const meta = document.createElement('div');
+                    meta.className = 'outline-meta';
+                    
+                    const date = document.createElement('span');
+                    date.className = 'outline-date';
+                    date.textContent = `Date: ${outline.date}`;
+                    
+                    const filename = document.createElement('span');
+                    filename.textContent = outline.filename;
+                    
+                    meta.appendChild(date);
+                    meta.appendChild(filename);
+                    
+                    link.appendChild(title);
+                    link.appendChild(meta);
+                    
+                    listItem.appendChild(link);
+                    list.appendChild(listItem);
+                });
+
+                contentDiv.innerHTML = '';
+                contentDiv.appendChild(list);
+                
+            } catch (error) {
+                contentDiv.innerHTML = `
+                    <div class="error">
+                        <strong>Error loading outlines:</strong> ${error.message}
+                    </div>
+                `;
+                console.error('Error loading outlines:', error);
+            }
+        }
+
+        // Load outlines when page loads
+        document.addEventListener('DOMContentLoaded', loadOutlines);
+    </script>
+</body>
+</html>
