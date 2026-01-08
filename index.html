@@ -141,7 +141,7 @@
                     listItem.className = 'outline-item';
                     
                     const link = document.createElement('a');
-                    link.href = outline.path;
+                    link.href = `viewer.html?file=${encodeURIComponent(outline.path)}`;
                     link.className = 'outline-link';
                     
                     const title = document.createElement('div');

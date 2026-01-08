@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hickman County, TN - Document Viewer</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 15px;
+            color: #3498db;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover {
+            color: #2980b9;
+        }
+
+        .back-link::before {
+            content: "← ";
+            margin-right: 5px;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #7f8c8d;
+        }
+
+        .error {
+            color: #e74c3c;
+            padding: 20px;
+            background-color: #fee;
+            border-left: 4px solid #e74c3c;
+            border-radius: 4px;
+        }
+
+        #content {
+            line-height: 1.8;
+        }
+
+        /* Markdown styling */
+        #content h1 {
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        #content h2 {
+            color: #34495e;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 8px;
+        }
+
+        #content h3 {
+            color: #34495e;
+            margin-top: 20px;
+            margin-bottom: 12px;
+            font-size: 1.2em;
+        }
+
+        #content h4, #content h5, #content h6 {
+            color: #34495e;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        #content p {
+            margin-bottom: 15px;
+        }
+
+        #content ul, #content ol {
+            margin-bottom: 15px;
+            padding-left: 30px;
+        }
+
+        #content li {
+            margin-bottom: 8px;
+        }
+
+        #content blockquote {
+            border-left: 4px solid #3498db;
+            padding-left: 20px;
+            margin: 20px 0;
+            color: #555;
+            font-style: italic;
+        }
+
+        #content blockquote p {
+            margin-bottom: 10px;
+        }
+
+        #content a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        #content a:hover {
+            text-decoration: underline;
+        }
+
+        #content code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        #content pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin-bottom: 15px;
+        }
+
+        #content pre code {
+            background-color: transparent;
+            padding: 0;
+        }
+
+        #content strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        #content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        #content table th,
+        #content table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        #content table th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html" class="back-link">Back to Index</a>
+            <h1>Hickman County, TN</h1>
+        </div>
+        
+        <div id="content">
+            <div class="loading">Loading document...</div>
+        </div>
+    </div>
+
+    <script>
+        async function loadMarkdown() {
+            const contentDiv = document.getElementById('content');
+            
+            // Get file path from URL parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const file = urlParams.get('file');
+            
+            if (!file) {
+                contentDiv.innerHTML = `
+                    <div class="error">
+                        <strong>Error:</strong> No file specified. Please provide a file parameter in the URL.
+                    </div>
+                `;
+                return;
+            }
+            
+            try {
+                const response = await fetch(file);
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                
+                const markdown = await response.text();
+                
+                // Render markdown to HTML using marked.js
+                const html = marked.parse(markdown);
+                contentDiv.innerHTML = html;
+                
+                // Update page title if we can extract it from the markdown
+                const firstLine = markdown.split('\n')[0];
+                if (firstLine.startsWith('# ')) {
+                    document.title = firstLine.substring(2) + ' - Hickman County, TN';
+                }
+                
+            } catch (error) {
+                contentDiv.innerHTML = `
+                    <div class="error">
+                        <strong>Error loading document:</strong> ${error.message}
+                    </div>
+                `;
+                console.error('Error loading markdown:', error);
+            }
+        }
+
+        // Load markdown when page loads
+        document.addEventListener('DOMContentLoaded', loadMarkdown);
+    </script>
+</body>
+</html>
