@@ -12,98 +12,169 @@
             box-sizing: border-box;
         }
 
+        :root {
+            color-scheme: light dark;
+            --bg: #f5f7fb;
+            --panel: #ffffff;
+            --panel-border: #d9e1ef;
+            --text: #1f2a3a;
+            --muted: #5f6c7b;
+            --accent: #2f6fed;
+            --accent-strong: #1f4fbf;
+            --row-hover: #eef3ff;
+            --shadow: 0 14px 40px rgba(20, 28, 40, 0.08);
+            --chip: #eef2ff;
+            --code: #f4f6fb;
+        }
+
+        body[data-theme="dark"] {
+            --bg: #10141c;
+            --panel: #171d28;
+            --panel-border: #263044;
+            --text: #e6edf6;
+            --muted: #9aa4b2;
+            --accent: #7aa5ff;
+            --accent-strong: #9cb9ff;
+            --row-hover: #212a3b;
+            --shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+            --chip: #1f2840;
+            --code: #1c2332;
+        }
+
         body {
-            font-family: Verdana, Geneva, sans-serif;
-            font-size: 13px;
-            line-height: 1.4;
-            color: #000;
-            background-color: #f6f6ef;
-            padding: 12px;
+            font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--text);
+            background: radial-gradient(circle at top, rgba(47, 111, 237, 0.08), transparent 45%), var(--bg);
+            padding: 28px 18px 40px;
         }
 
         .container {
             max-width: 1100px;
             margin: 0 auto;
-            background-color: #f6f6ef;
-            border: 1px solid #e6e6df;
+            background-color: var(--panel);
+            border: 1px solid var(--panel-border);
+            border-radius: 18px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
         }
 
         .header {
-            background-color: #ff6600;
-            padding: 8px 10px;
+            background: linear-gradient(120deg, rgba(47, 111, 237, 0.12), rgba(47, 111, 237, 0.02));
+            padding: 16px 22px;
             display: flex;
             align-items: center;
-            gap: 12px;
+            justify-content: space-between;
+            gap: 16px;
+            border-bottom: 1px solid var(--panel-border);
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 14px;
         }
 
         .back-link {
-            color: #000;
+            color: var(--text);
             text-decoration: none;
             font-size: 12px;
-            font-weight: bold;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 10px;
+            border-radius: 999px;
+            border: 1px solid var(--panel-border);
+            background-color: var(--panel);
         }
 
         .back-link:hover {
-            text-decoration: underline;
+            border-color: var(--accent);
+            color: var(--accent-strong);
+            background-color: var(--chip);
         }
 
         .back-link::before {
-            content: "← ";
+            content: "←";
         }
 
         h1 {
-            color: #000;
-            font-size: 16px;
-            font-weight: bold;
+            color: var(--text);
+            font-size: 18px;
+            font-weight: 700;
+            letter-spacing: -0.01em;
+        }
+
+        .theme-toggle {
+            border: 1px solid var(--panel-border);
+            background-color: var(--panel);
+            color: var(--text);
+            font-size: 12px;
+            font-weight: 600;
+            padding: 8px 12px;
+            border-radius: 999px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+        }
+
+        .theme-toggle:hover {
+            border-color: var(--accent);
+            color: var(--accent-strong);
+            background-color: var(--chip);
         }
 
         .loading {
             text-align: center;
             padding: 40px;
-            color: #828282;
+            color: var(--muted);
         }
 
         .error {
-            color: #e74c3c;
+            color: #b42318;
             padding: 20px;
-            background-color: #fee;
-            border-left: 4px solid #e74c3c;
-            border-radius: 4px;
+            background-color: rgba(180, 35, 24, 0.08);
+            border-left: 4px solid #b42318;
+            border-radius: 8px;
         }
 
         #content {
-            line-height: 1.6;
-            padding: 18px 12px 28px;
+            line-height: 1.7;
+            padding: 24px 24px 32px;
         }
 
         /* Markdown styling */
         #content h1 {
-            color: #000;
-            margin-top: 24px;
-            margin-bottom: 16px;
-            font-size: 18px;
-            border-bottom: 1px solid #e6e6df;
-            padding-bottom: 6px;
+            color: var(--text);
+            margin-top: 28px;
+            margin-bottom: 18px;
+            font-size: 22px;
+            border-bottom: 1px solid var(--panel-border);
+            padding-bottom: 8px;
         }
 
         #content h2 {
-            color: #000;
+            color: var(--text);
+            margin-top: 24px;
+            margin-bottom: 14px;
+            font-size: 19px;
+        }
+
+        #content h3 {
+            color: var(--text);
             margin-top: 20px;
             margin-bottom: 12px;
             font-size: 16px;
         }
 
-        #content h3 {
-            color: #000;
+        #content h4, #content h5, #content h6 {
+            color: var(--text);
             margin-top: 18px;
             margin-bottom: 10px;
-            font-size: 14px;
-        }
-
-        #content h4, #content h5, #content h6 {
-            color: #000;
-            margin-top: 14px;
-            margin-bottom: 8px;
         }
 
         #content p {
@@ -120,10 +191,13 @@
         }
 
         #content blockquote {
-            border-left: 3px solid #ff6600;
+            border-left: 3px solid var(--accent);
             padding-left: 16px;
             margin: 18px 0;
-            color: #555;
+            color: var(--muted);
+            background-color: var(--chip);
+            border-radius: 10px;
+            padding: 12px 16px;
         }
 
         #content blockquote p {
@@ -131,7 +205,7 @@
         }
 
         #content a {
-            color: #000;
+            color: var(--accent-strong);
             text-decoration: none;
         }
 
@@ -140,17 +214,20 @@
         }
 
         #content code {
-            background-color: #f0f0e9;
-            padding: 2px 4px;
-            font-family: "Courier New", monospace;
+            background-color: var(--code);
+            padding: 2px 6px;
+            border-radius: 6px;
+            font-family: "JetBrains Mono", "Courier New", monospace;
             font-size: 12px;
         }
 
         #content pre {
-            background-color: #f0f0e9;
-            padding: 12px;
+            background-color: var(--code);
+            padding: 14px;
+            border-radius: 12px;
             overflow-x: auto;
             margin-bottom: 15px;
+            border: 1px solid var(--panel-border);
         }
 
         #content pre code {
@@ -159,8 +236,8 @@
         }
 
         #content strong {
-            color: #000;
-            font-weight: bold;
+            color: var(--text);
+            font-weight: 600;
         }
 
         #content table {
@@ -168,26 +245,55 @@
             border-collapse: collapse;
             margin-bottom: 20px;
             font-size: 12px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--panel-border);
         }
 
         #content table th,
         #content table td {
-            border: 1px solid #ddd;
-            padding: 8px;
+            border: 1px solid var(--panel-border);
+            padding: 10px;
             text-align: left;
         }
 
         #content table th {
-            background-color: #f0f0e9;
-            font-weight: bold;
+            background-color: var(--chip);
+            font-weight: 600;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 20px 12px 30px;
+            }
+
+            #content {
+                padding: 20px 18px 26px;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .header-left {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <a href="index.html" class="back-link">Back to Index</a>
-            <h1>Hickman County, TN</h1>
+            <div class="header-left">
+                <a href="index.html" class="back-link">Back to index</a>
+                <h1>Hickman County, TN</h1>
+            </div>
+            <button class="theme-toggle" type="button" id="theme-toggle" aria-pressed="false">
+                <span aria-hidden="true">🌓</span>
+                <span>Toggle theme</span>
+            </button>
         </div>
         
         <div id="content">
@@ -196,6 +302,35 @@
     </div>
 
     <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+        function applyTheme(theme) {
+            document.body.dataset.theme = theme;
+            themeToggle.setAttribute('aria-pressed', theme === 'dark');
+        }
+
+        function initTheme() {
+            const stored = localStorage.getItem('theme');
+            if (stored) {
+                applyTheme(stored);
+                return;
+            }
+            applyTheme(prefersDark.matches ? 'dark' : 'light');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const nextTheme = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
+            localStorage.setItem('theme', nextTheme);
+            applyTheme(nextTheme);
+        });
+
+        prefersDark.addEventListener('change', (event) => {
+            if (!localStorage.getItem('theme')) {
+                applyTheme(event.matches ? 'dark' : 'light');
+            }
+        });
+
         async function loadMarkdown() {
             const contentDiv = document.getElementById('content');
             
@@ -242,7 +377,10 @@
         }
 
         // Load markdown when page loads
-        document.addEventListener('DOMContentLoaded', loadMarkdown);
+        document.addEventListener('DOMContentLoaded', () => {
+            initTheme();
+            loadMarkdown();
+        });
     </script>
 </body>
 </html>

@@ -11,49 +11,109 @@
             box-sizing: border-box;
         }
 
+        :root {
+            color-scheme: light dark;
+            --bg: #f5f7fb;
+            --panel: #ffffff;
+            --panel-border: #d9e1ef;
+            --text: #1f2a3a;
+            --muted: #5f6c7b;
+            --accent: #2f6fed;
+            --accent-strong: #1f4fbf;
+            --row-hover: #eef3ff;
+            --shadow: 0 14px 40px rgba(20, 28, 40, 0.08);
+            --chip: #eef2ff;
+        }
+
+        body[data-theme="dark"] {
+            --bg: #10141c;
+            --panel: #171d28;
+            --panel-border: #263044;
+            --text: #e6edf6;
+            --muted: #9aa4b2;
+            --accent: #7aa5ff;
+            --accent-strong: #9cb9ff;
+            --row-hover: #212a3b;
+            --shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+            --chip: #1f2840;
+        }
+
         body {
-            font-family: Verdana, Geneva, sans-serif;
-            font-size: 13px;
-            line-height: 1.4;
-            color: #000;
-            background-color: #f6f6ef;
-            padding: 12px;
+            font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            color: var(--text);
+            background: radial-gradient(circle at top, rgba(47, 111, 237, 0.08), transparent 45%), var(--bg);
+            padding: 28px 18px 40px;
         }
 
         .container {
             max-width: 1100px;
             margin: 0 auto;
-            background-color: #f6f6ef;
-            border: 1px solid #e6e6df;
+            background-color: var(--panel);
+            border: 1px solid var(--panel-border);
+            border-radius: 18px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
         }
 
         .site-header {
-            background-color: #ff6600;
-            padding: 8px 10px;
+            background: linear-gradient(120deg, rgba(47, 111, 237, 0.12), rgba(47, 111, 237, 0.02));
+            padding: 18px 22px;
             display: flex;
             align-items: center;
-            gap: 12px;
+            justify-content: space-between;
+            gap: 16px;
+            border-bottom: 1px solid var(--panel-border);
+        }
+
+        .site-header-text {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
         }
 
         .site-title {
-            font-size: 16px;
-            font-weight: bold;
-            color: #000;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text);
+            letter-spacing: -0.01em;
         }
 
         .subtitle {
-            color: #222;
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        .theme-toggle {
+            border: 1px solid var(--panel-border);
+            background-color: var(--panel);
+            color: var(--text);
             font-size: 12px;
+            font-weight: 600;
+            padding: 8px 12px;
+            border-radius: 999px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+        }
+
+        .theme-toggle:hover {
+            border-color: var(--accent);
+            color: var(--accent-strong);
+            background-color: var(--chip);
         }
 
         .content {
-            padding: 16px 12px 24px;
+            padding: 22px 24px 30px;
         }
 
         .loading {
             text-align: center;
-            padding: 20px;
-            color: #828282;
+            padding: 28px;
+            color: var(--muted);
         }
 
         .outline-list {
@@ -61,50 +121,82 @@
         }
 
         .outline-item {
-            padding: 6px 0;
-            border-bottom: 1px dotted #e6e6df;
+            padding: 14px 0;
+            border-bottom: 1px solid var(--panel-border);
         }
 
         .outline-link {
             text-decoration: none;
-            color: #000;
-            display: block;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            padding: 8px 12px;
+            border-radius: 12px;
+            transition: background-color 0.2s ease;
         }
 
         .outline-link:hover {
-            text-decoration: underline;
+            background-color: var(--row-hover);
         }
 
         .outline-title {
-            font-weight: normal;
-            font-size: 14px;
+            font-weight: 600;
+            font-size: 15px;
             margin-bottom: 2px;
         }
 
         .outline-meta {
-            font-size: 11px;
-            color: #828282;
+            font-size: 12px;
+            color: var(--muted);
             display: flex;
-            gap: 15px;
+            flex-wrap: wrap;
+            gap: 12px;
         }
 
         .outline-date {
-            font-weight: normal;
+            font-weight: 500;
+            color: var(--accent-strong);
+            background-color: var(--chip);
+            padding: 3px 8px;
+            border-radius: 999px;
         }
 
         .error {
-            color: #e74c3c;
+            color: #b42318;
             padding: 20px;
-            background-color: #fee;
-            border-left: 4px solid #e74c3c;
+            background-color: rgba(180, 35, 24, 0.08);
+            border-left: 4px solid #b42318;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 20px 12px 30px;
+            }
+
+            .content {
+                padding: 18px 16px 24px;
+            }
+
+            .site-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header class="site-header">
-            <div class="site-title">Hickman County, TN</div>
-            <div class="subtitle">Meeting Outlines and Documents</div>
+            <div class="site-header-text">
+                <div class="site-title">Hickman County, TN</div>
+                <div class="subtitle">Meeting outlines and documents</div>
+            </div>
+            <button class="theme-toggle" type="button" id="theme-toggle" aria-pressed="false">
+                <span aria-hidden="true">🌓</span>
+                <span>Toggle theme</span>
+            </button>
         </header>
 
         <main class="content">
@@ -115,6 +207,35 @@
     </div>
 
     <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+        function applyTheme(theme) {
+            document.body.dataset.theme = theme;
+            themeToggle.setAttribute('aria-pressed', theme === 'dark');
+        }
+
+        function initTheme() {
+            const stored = localStorage.getItem('theme');
+            if (stored) {
+                applyTheme(stored);
+                return;
+            }
+            applyTheme(prefersDark.matches ? 'dark' : 'light');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const nextTheme = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
+            localStorage.setItem('theme', nextTheme);
+            applyTheme(nextTheme);
+        });
+
+        prefersDark.addEventListener('change', (event) => {
+            if (!localStorage.getItem('theme')) {
+                applyTheme(event.matches ? 'dark' : 'light');
+            }
+        });
+
         async function loadOutlines() {
             const contentDiv = document.getElementById('content');
             
@@ -184,7 +305,10 @@
         }
 
         // Load outlines when page loads
-        document.addEventListener('DOMContentLoaded', loadOutlines);
+        document.addEventListener('DOMContentLoaded', () => {
+            initTheme();
+            loadOutlines();
+        });
     </script>
 </body>
 </html>
