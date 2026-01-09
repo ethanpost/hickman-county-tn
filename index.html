@@ -148,7 +148,7 @@
                     
                     const title = document.createElement('div');
                     title.className = 'outline-title';
-                    title.textContent = outline.folder.replace(/_/g, ' ');
+                    title.textContent = outline.title || outline.folder.replace(/_/g, ' ');
                     
                     const meta = document.createElement('div');
                     meta.className = 'outline-meta';
