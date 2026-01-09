@@ -13,16 +13,16 @@
 
         :root {
             color-scheme: light dark;
-            --bg: #f5f7fb;
+            --bg: #fafafa;
             --panel: #ffffff;
-            --panel-border: #d9e1ef;
+            --panel-border: #e0e0e0;
             --text: #1f2a3a;
             --muted: #5f6c7b;
-            --accent: #2f6fed;
-            --accent-strong: #1f4fbf;
-            --row-hover: #eef3ff;
+            --accent: #059669;
+            --accent-strong: #047857;
+            --row-hover: #f5f5f5;
             --shadow: 0 14px 40px rgba(20, 28, 40, 0.08);
-            --chip: #eef2ff;
+            --chip: #f0f0f0;
         }
 
         body[data-theme="dark"] {
@@ -43,7 +43,7 @@
             font-size: 14px;
             line-height: 1.6;
             color: var(--text);
-            background: radial-gradient(circle at top, rgba(47, 111, 237, 0.08), transparent 45%), var(--bg);
+            background: var(--bg);
             padding: 28px 18px 40px;
         }
 
@@ -58,7 +58,7 @@
         }
 
         .site-header {
-            background: linear-gradient(120deg, rgba(47, 111, 237, 0.12), rgba(47, 111, 237, 0.02));
+            background: linear-gradient(120deg, rgba(5, 150, 105, 0.08), rgba(5, 150, 105, 0.02));
             padding: 18px 22px;
             display: flex;
             align-items: center;
@@ -95,7 +95,6 @@
             border-radius: 999px;
             display: inline-flex;
             align-items: center;
-            gap: 8px;
             cursor: pointer;
             transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
         }
@@ -194,8 +193,7 @@
                 <div class="subtitle">Meeting outlines and documents</div>
             </div>
             <button class="theme-toggle" type="button" id="theme-toggle" aria-pressed="false">
-                <span aria-hidden="true">🌓</span>
-                <span>Light/Dark Mode</span>
+                <span id="theme-toggle-text">Dark</span>
             </button>
         </header>
 
@@ -213,6 +211,8 @@
         function applyTheme(theme) {
             document.body.dataset.theme = theme;
             themeToggle.setAttribute('aria-pressed', theme === 'dark');
+            const toggleText = document.getElementById('theme-toggle-text');
+            toggleText.textContent = theme === 'dark' ? 'Light' : 'Dark';
         }
 
         function initTheme() {
