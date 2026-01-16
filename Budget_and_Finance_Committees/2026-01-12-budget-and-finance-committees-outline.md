@@ -4,6 +4,8 @@
 > **Disclaimer:**  
 > This outline was created using AI based on an automatically generated transcript. The transcript and this outline is likely to contain errors, inaccuracies, or omissions. Always refer to the original audio recording if you need to verify any details or for official purposes.
 
+[Full Audio Link](https://www.youtube.com/watch?v=mc3HjglqCIg)
+
 ## Beer Board Meeting
 
 - **Beer License Application** - Postponed to next month
