@@ -1,0 +1,2883 @@
+DRAFT 1
+SUBDIVISION REGULATIONS
+HICKMAN COUNTY, TENNESSEE
+P.C. RESOLUTION NO. 2005-1
+PREPARED FOR THE
+HICKMAN COUNTY REGIONAL PLANNING COMMISSION
+PREPARED BY THE
+HICKMAN COUNTY REGIONAL PLANNING COMMISSION
+and the
+TENNESSEE DEPARTMENT OF ECONOMIC AND COMMUNITY DEVELOPMENT
+LOCAL PLANNING OFFICE
+SUITE 128
+446 METROPLEX DRIVE
+NASHVILLE, TENNESSEE 37211-3139
+TABLE OF CONTENTS
+ARTICLE I GENERAL PROVISION PAGE
+1-101 Title ART. I-1
+1-102 Authority ART. I-1
+1-103 Jurisdiction ART. I-1
+1-104 Policy and Purpose ART. I-1
+1-105 Interpretation, Conflict and Severability ART. I-3
+1-106 Saving Provisions ART. I-3
+1-107 Amendments ART. I-4
+1-108 Resubdivision of Land ART. I-5
+1-109 Conditions ART. I-5
+1-110 Vacation of Plats ART. I-5
+1-111 Variances ART. I-6
+1-112 Enforcement, Violation, and Penalties ART. I-7
+1-113 Repeal of Previous Regulations ART. I-10
+ARTICLE II PROCEDURES FOR PLAT APPROVAL ART. II-1
+2-101 General Procedure ART. II-1
+2-102 Sketch Plat (Major Subdivisions Only) ART. II-5
+2-103 Preliminary Plat (Major Subdivisions Only) ART. II-6
+2-104 Final Subdivision Plat (Minor and Major Subdivision) ART. II-9
+2-105 Signing and Recording of Subdivision Plat ART. II-11
+ARTICLE III ASSURANCE FOR COMPLETION AND
+MAINTENANCE OF IMPROVEMENTS ART. III-1
+3-101 Improvements and Performance Bond ART. III-1
+3-102 Inspection of Improvements ART. III-2
+3-103 Maintenance of Improvements ART. III-3
+3-104 Deferral or Waiver of Required Improvements ART. III-3
+3-105 Escrow Deposits for Lot Improvements ART. III-4
+3-106 Issuance of Building Permits and Certificates
+ of Occupancy ART. III-4
+ARTICLE IV REQUIREMENTS FOR IMPROVEMENTS,
+AND RESERVATIONS, AND DESIGN ART. IV-1
+4-101 General Requirements ART. IV-1
+4-102 Lots Requirements ART. IV-4
+4-103 Public Ways ART. IV-10
+4-104 Road Construction Specifications ART. IV-18
+4-105 Drainage and Storm Sewers ART. IV-18
+4-106 Water Facilities ART. IV-21
+4-107 Sewage Facilities ART. IV-22
+4-108 Pedestrian Ways ART. IV-23
+4-109 Utilities Easements ART. IV-24
+4-110 Public Uses ART. IV-24
+4-111 Preservation of Natural Features and Amenities ART. IV-25
+4-112 Residential Subdivisions ART. IV-25
+(Table of Contents Continued)
+ARTICLE V SPECIFICATIONS FOR DOCUMENTS TO BE
+ SUBMITTED ART. V-1
+5-101 Sketch Plat ART. V-1
+5-102 Preliminary Plat ART. V-2
+5-103 Construction Plans ART. V-4
+5-104 Final Plat ART. V-6
+5-105 Form of Dedication Offer ART. V-13
+ARTICLE VI DEFINITIONS ART. VI-1
+6-101 Usage ART. VI-1
+6-102 Words and Terms Defined ART. VI-1
+ARTICLE VII ADOPTION OF REGULATIONS AND
+ AMENDMENTS ART. VII-1
+7-101 Original Enactment ART. VII-1
+APPENDIX A FORMS APPX. A-1
+Form Number 1 Preliminary Plat Checklist APPX. A-2
+Form Number 2 Final Plat Checklist APPX. A-4
+Form Number 3 Performance Bond APPX. A-6
+Form Number 3 Irrevocable Documentary Letter of Credit APPX. A-9
+AMENDMENTS
+DATE RESOLUTION AMENDMENTS
+
+ARTICLE I
+GENERAL PROVISIONS
+1-101 Title
+These regulations shall hereinafter be known and cited as the Subdivision Regulations
+of Hickman County, Tennessee.
+1-102 Authority
+These subdivision regulations are adopted by the Hickman County Regional Planning
+Commission (hereinafter referred to as "planning commission"), in pursuance of the
+authority and powers granted by Sections 13-3-401 through 13-3-411, Tennessee
+Code. Having adopted a major street or road plan for the jurisdictional area, and filed a
+certified copy of the plan with the County Register of Deeds (hereinafter referred to as
+"county register"), as required by Sections 13-3-402, Tennessee Code, and having held
+a public hearing as indicated in Section 7-101, of these regulations and as required by
+Sections 13-3-403, Tennessee Code, the planning commission has fulfilled the
+requirements set forth in state law as prerequisites to the adoption of these regulations.
+1-103 Jurisdiction
+These subdivision regulations shall apply to all subdivisions, as herein defined, located
+within Hickman County, Tennessee, except those areas located within the Centerville
+regional planning jurisdiction. No land shall be subdivided within the jurisdictional area
+until the subdivider submits a plat as required by these regulations, obtains planning
+commission approval of the plat, and files the approved plat with the county register.
+1-104 Policy and Purpose
+It is hereby declared to be the policy of the planning commission to consider the
+subdivision of land and development of a subdivision plat as subject to the control of the
+adopted land use or community development plan (hereinafter referred to as "land
+development plan") of the jurisdictional area for orderly, planned, and efficient physical
+and economical development.
+Land to be subdivided shall be of such character that it can be used for building
+purposes without danger of health, fire, flood, or other menace.
+Land shall not be subdivided until proper provisions have been made for drainage,
+water, sewerage, other public utilities, and for other required public services. The
+existing and proposed public improvements shall generally conform to and be properly
+related to the proposals shown in the land development plan.
+ART. I-1
+The regulations herein shall supplement and facilitate the enforcement of the provisions
+and standards contained in the Zoning Resolution of Hickman County, Tennessee
+(hereinafter referred to as "zoning resolution").
+These regulations are adopted for the following purposes:
+A. To promote the public health, safety, and general welfare of the jurisdictional
+area.
+B. To guide the development of the jurisdictional area in accordance with the land
+development plan, considering the suitability of nonresidential and public areas
+and having regard for the most beneficial land use in such areas.
+C. To provide for adequate light, air, and privacy; to secure safety from fire, flood,
+and other dangers; and to prevent overcrowding of the land and undue
+congestion of population.
+D. To enhance the character and economic stability and encourage the orderly,
+beneficial development of the jurisdictional area.
+E. To conserve the value of land, buildings, and improvements throughout the
+jurisdictional area and to minimize detrimental conflicts among the uses of land
+and structures.
+F. To guide public policy private and action providing for transportation, water,
+sewerage, schools, recreational areas, and other public requirements and
+facilities.
+G. To provide for the most beneficial relationship between the uses of land and
+buildings and the efficient traffic movement throughout the jurisdictional area.
+H. To establish reasonable standards of design and procedures for subdivisions and
+resubdivisions; to further the orderly layout and use of land; and to insure proper
+legal descriptions and proper monumenting of land.
+I. To insure that public facilities are available and will have a sufficient capacity to
+serve the proposed subdivision.
+J. To prevent the pollution of air, streams, and ponds; to assure the adequacy of
+drainage facilities; to safeguard the water table; and to preserve the integrity,
+stability, beauty, and value of the jurisdictional area.
+K. To preserve the natural beauty and topography of the jurisdictional area, and to
+insure appropriate development with regard to these natural features.
+L. To provide for open spaces through efficient design and layout of the land,
+including the use of average density in providing for minimum width and area of
+lots, while preserving the density of land as established in any zoning ordinance.
+M. To encourage subdivision design which would maximize the conservation of all
+forms of energy.
+ART. I-2
+1-105 Interpretation, Conflict, and Severability
+1-105.1 Interpretation
+These regulations shall be held to be the minimum requirements for the
+promotion of health, safety, and general welfare.
+1-105.2 Conflict with Public and Private Provisions
+1-105.201 Public Provisions
+ These regulations are not intended to interfere with, abrogate, or annul
+any other ordinance, rule, or regulation, statute, or other provision of law.
+Where any provision of these regulations imposes restrictions different
+from those imposed by any other ordinance, rule, regulation, or other
+provision of law, whichever provisions are more restrictive or impose
+higher standards shall control.
+1-105.202 Private Provisions
+These regulations are not intended to abrogate any easement, covenant,
+or any other private agreement or restriction; provided, that where these
+regulations are more restrictive or impose higher standards than such
+easement, covenant, or other private agreement or restriction, the
+requirements of these regulations shall govern.
+Where any private provision exceeds the standards set forth herein, such
+shall be considered a private contract between the parties of interest, and
+as such is beyond the jurisdiction of the planning commission.
+1-105.3 Severability
+If any part or provision of these regulations or application thereof to any person
+or circumstances is adjudged invalid by any court of competent jurisdiction, such
+judgment shall be confined in its operation to the part, provision, or application
+directly involved in the controversy in which such judgment shall have been
+rendered and shall not affect or impair the validity of the remainder of these
+regulations or the application thereof to other persons or circumstances. The
+planning commission hereby declares that it would have enacted the remainder
+of these regulations without any such part, provision, or application.
+1-106 Saving Provision
+These regulations shall not be construed as abating any action now pending under, or
+by virtue of prior subdivision regulations; or as discontinuing, abating, modifying, or
+altering any penalty accruing or about to accrue; or as affecting the liability of any
+person; or as waiving any right of the planning commission under any section or
+provision existing at the time of adoption of these regulations; or as vacating or
+annulling any rights obtained by any person by lawful action of the planning
+commission, except as expressly provided otherwise in these regulations.
+ART. I-3
+1-106.1 Previously Approved Subdivisions
+1-106.101 Unexpired Preliminary Approval
+The approval granted on any plat prior to the effective date of these
+regulations shall remain in force and effect for the time period stipulated
+by the regulations under which the approval was first granted.
+1-106.102 Expired Preliminary Approval
+In any instance in which the period of preliminary approval shall have
+passed with some portion of the subdivision not having received final
+approval, and the applicant wishes an extension of the preliminary
+approval, the planning commission may:
+(1) permit the remaining portion of the subdivision to be constructed
+and to receive approval under provisions set forth in the regulations
+whereby preliminary approval was originally granted, or
+(2) stipulate that the plat is null and void and that a new plat be
+presented subject to the provisions of these regulations.
+In making this determination, the planning commission shall consider all
+pertinent facts available to it. The current state and active pursuit of
+construction and development activities within the subdivision shall be
+given due consideration in the course of the planning commission's
+deliberation on this question.
+1-107 Amendments
+1-107.1 Enactment
+For the purpose of providing for the public health, safety, and general welfare the
+planning commission may from time to time amend these regulations. Before the
+adoption of any amendment to these regulations, a public hearing thereon shall
+be held by the planning commission, as required by Chapter 3, Title 13,
+Tennessee Code, at least thirty (30) days notice of the time and place of which
+shall be given in a newspaper of general circulation.
+1-107.2 Codification and Distribution
+Subsequent to the adoption of any amendment to these regulations, such
+amendment shall be incorporated into the text of these regulations in the
+following manner.
+1. Replacement pages shall be prepared incorporating the new or changed
+language. Each such new or replacement page shall have the
+amendment number and shall be dated so as to indicate the date of the
+last revision of the page.
+ART. I-4
+2. In Article VII, of these regulations, each adopted amendment shall be
+numbered consecutively and printed on pages separate from any other
+amendment and in a manner which fully states any language deleted from
+these regulations and any language added and the place in the text of
+each such change.
+1-108 Resubdivision of Land
+1-108.1 Procedures for Resubdivision
+If any change in an approved or recorded subdivision plat would affect the layout
+of any public street, alley, or road (hereinafter referred to as public way) shown
+on such plat, or area reserved thereon for public use, or any lot line, or if it would
+affect any map, plan, or plat legally recorded before the adoption of any
+subdivision regulations, such amendment shall be approved by the planning
+commission by the same procedure, rules, and regulations as for a subdivision.
+1-108.2 Procedures for Subdivision Where Future Resubdivision Is Foreseen
+Whenever a parcel of land is subdivided and the subdivision plat shows one or
+more lots containing more than one acre of land or double the minimum required
+area for any zoning district in which the lot is located, and the planning
+commission has reason to believe that any such lot(s) will be resubdivided into
+smaller building sites, the planning commission may require that the subdivision
+and development of such parcel of land allow for the future opening of public
+ways and the ultimate extension of adjacent public ways. The planning
+commission may also require that dedications providing for the future opening
+and extension of such public ways be indicated on the plat.
+1-109 Conditions
+Regulation of the subdivision of land and the attachment of reasonable conditions to
+land subdivision are exercises of valid police power delegated by the state to the
+planning commission. The developer has the duty of compliance with reasonable
+conditions imposed by the planning commission for design, dedication, improvement,
+and restrictive use of the land so as to provide for the physical and economical
+development of the jurisdictional area and for the safety and general welfare of future
+plot owners in the subdivision and of the community at large.
+1-110 Vacation of Plats
+Any plat or any part of any plat may be vacated by the owner of the premises, at any
+time before the sale of any lot described therein, by a written instrument, to which a
+copy of such plat shall be attached, declaring the plat or part of the plat to be vacated.
+The planning commission shall follow the same procedure for approval of plats. The
+planning commission may reject any such instrument which abridges or destroys any
+public rights in any of its public uses, improvements, or public ways. Such an
+instrument shall be executed, acknowledged, or approved, and duly recorded or filed;
+the instrument shall operate to void the recorded plat and divest all public rights in the
+public ways and public grounds and all dedications laid out or described in such plat.
+When any lot or lots have been sold the plat may be vacated in the manner herein
+provided only if all of the owners of lots in such platted area join in the execution of such
+writing.
+ART. I-5
+1-111 Variances
+1-111.1 General
+If the planning commission finds that extraordinary hardships or practical
+difficulties may result from strict compliance with these regulations, a variance
+from these regulations may be granted; provided, such variance shall not have
+the effect of nullifying the general intent and purpose of these regulations and
+provided, further, that the planning commission shall not recommend variations
+unless it shall make findings based upon written evidence presented to it in each
+specific case that:
+1. the granting of the variance will not be detrimental to the public safety,
+health, or welfare, or be injurious to other property or improvements in the
+neighborhood in which the property is located;
+2. the conditions upon which the request for a variance is based are unique
+to the property for which the variance is sought and are not applicable
+generally to other property;
+3. because of the particular physical surroundings, shape, or topographical
+condition of the specific property involved, a particular hardship (not selfimposed) to the owner would result, as distinguished from a mere
+inconvenience, if the strict letter of these regulations were carried out; and
+4. the variance will not in any manner alter the provisions of the land
+development plan, the major street or road plan, or any zoning ordinance.
+Where the planning commission concludes that the purpose of these regulations
+may be specifically served to an equal or greater extent by an alternative
+proposal, condition, or circumstance, if may approve other variations to these
+regulations.
+1-111.2 Procedures
+Each and every variance or modification of these subdivision regulations sought
+by a subdivider shall be specifically applied for in the numerical order of the
+subdivision regulations, in writing by the subdivider in letter form. Any condition
+shown on the plat which would require a variance or modification shall constitute
+a grounds for disapproval of the plat unless such special application for
+modification variance is made. In approving any variation from these regulations
+the planning commission shall state fully in the minutes the grounds for the
+variation and all of the facts upon which the decision is made.
+1-111.3 Conditions
+In approving variations, the planning commission may impose such conditions as
+in its judgment will secure substantially the objectives, standards, and
+requirements of the regulations.
+ART. I-6
+1-112 Enforcement, Violation, and Penalties
+1-112.1 General
+1-112.101 Authority
+The enforcement of these regulations and the penalties for violations are
+provided pursuant to Title 13, Tennessee Code.
+1-112.102 Enforcing Officer
+It shall be the duty of the Building Commissioner (hereinafter referred to
+as "the enforcing officer)" to enforce these regulations and to bring to the
+attention of legal council any violations or lack of compliance herewith.
+1-112.103 Recording of Plats
+Pursuant to Sections 13-3-402, Tennessee Code, no plat of a subdivision
+of land within the jurisdictional area shall be received or recorded by the
+county register until the plat has received final approval of the planning
+commission in accordance with these regulations, and such approval has
+been endorsed in writing on the plat by the planning commission secretary
+in the manner prescribed by Section 2-105, of these regulations.
+The description by metes and bounds in the instrument of transfer or other
+document used in the process of selling or transfer shall not exempt any
+owner or agent violating the provisions of the preceding paragraph from
+the penalties or remedies provided in Subsections 1-112.2 and 1-112.3, of
+these regulations.
+1-112.104 Use of Unapproved Plats
+Pursuant to Sections 13-3-410, Tennessee Code, no owner or agent of
+the owner of any land shall convey such land contrary to the provisions
+stated herein.
+The description by metes and bounds in the instrument of transfer or other
+document used in the process of selling or transfer shall not exempt any
+owner or agent violating the provisions of the preceding paragraph from
+the penalties or remedies provided in Subsections 1-122.2 and 1-112.3, of
+these regulations.
+1-112.105 Metes and Bounds Subdivisions
+The subdivision of any lot or parcel of land by use of metes or bounds
+description without complying with the plat provisions of these regulations
+shall not be permitted. All such described subdivisions shall be subject to
+all of the requirements of these regulations.
+ART. I-7
+1-112.106 False Statements About Roads
+Pursuant to Sections 13-3-410, Tennessee Code, no owner or agent of
+the owner of any land shall falsely represent to a prospective purchaser of
+real estate that roads or streets will be built or constructed by any city,
+county, or any other political subdivision.
+1-112.107 Public Ways and Utilities
+ Pursuant to Sections 13-3-410, Tennessee Code, the planning
+commission shall not nor shall any public authority accept, lay out, open,
+improve, grade, pave, or light any public way, lay or authorize the laying of
+water mains or sewers, or construct or authorize the construction of other
+facilities or utilities in any public way located within the jurisdictional area
+unless such way shall have been accepted, opened, or otherwise received
+the legal status of a public way prior to the attachment of the planning
+commission's jurisdiction, or unless such way corresponds in its location
+and lines to a way shown on a subdivision plat approved by the planning
+commission or on a public way plat made by the planning commission.
+However, the governing body may override the planning commission as
+provided in Title 13, Tennessee Code.
+In case of any state highway constructed or to be constructed within the
+jurisdictional area with state funds as a part of the state highway system,
+the submission to the planning commission shall be by the Tennessee
+Commissioner of Transportation, who shall have the power to overrule the
+disapproval of the planning commission.
+1-112.108 Building Permits
+No building permit shall be issued for the construction of any building or
+structure located on a lot or plat subdivided or sold in violation of any
+provision of these regulations.
+1-112.109 Access to Lots by Public Way or Private Easement Only
+ Pursuant to Sections 13-3-411, Tennessee Code, no building permit shall
+be issued and no building or structure shall be erected on any lot within
+the jurisdictional area, unless the public way giving access to the lot upon
+which the building or structure is proposed to be placed shall have been
+accepted or opened or shall have otherwise received the legal status of a
+public way as provided by law, or unless such lot fronts upon a permanent
+easement which conforms to the provisions set forth in these regulations.
+Provided, further, that when a permanent easement to a public way is
+used as access to a lot or tract of land having been or being separated by
+deed or plat from other property, such easement shall be at least fifty (50)
+feet in width from and after the time of adoption of these regulations and
+shall not be used to provide access to more than five (5) lots or tracts of
+land.
+ART. I-8
+All lots must be a minimum of five (5) acres each to be created on such
+easement. (See Hickman County Zoning, Article II). “The Private
+Driveway Certification” as shown in Section 5-104.3 is required.
+The above section shall not be construed to prohibit the development of
+buildings on lots or tracts with permanent access provided by private ways
+when such development is in the form of condominium ownership of such
+private improvements which have been approved by the planning
+commission and will be in private ownership and control in perpetuity.
+1-112.2 Penalties for Violations
+1-112.201 Recording of Unapproved Plats
+No county register shall receive, file, or record a plat of a subdivision
+within the planning region without the approval of the planning commission
+as required in Sections 13-3-402, Tennessee Code, and any county
+register so doing shall be deemed guilty of a misdemeanor, punishable as
+other misdemeanors as provided by law. Any county register, receiving,
+filing or recording a plat of a subdivision in violation of Subsection 1-
+112.103, of these regulations, shall be deemed guilty of a violation of the
+above cited provision of the Tennessee Code.
+1-112.202 Use of Unapproved Plats
+Section 13-3-410, Tennessee Code, provides that whoever being the
+owner or agent of the owner of any land transfers, or sells or agrees to sell
+or negotiates to sell such land by reference to or exhibition of or by other
+use of a plat of subdivision of such land without having submitted a plat of
+such subdivision to the planning commission and obtained its approval as
+required before such plat be recorded in the office of the appropriate
+county register, shall be deemed guilty of a misdemeanor punishable as
+other misdemeanors as provided by law; and the description by metes and
+bounds in the instrument of transfer or other document used in the
+process of selling or transferring shall not exempt the transaction from
+such penalties. The city through its city attorney may enjoin such transfer
+or sale or agreement by action of injunction.
+1-112.203 Illegal Buildings
+Any building or structure erected or to be erected in violation of the
+subdivision regulations shall be deemed an unlawful building or structure;
+and the building inspector or the city manager or other official designated
+by the chief legislative body may bring action or enjoin such erection or
+cause it to be vacated or removed as provided in Section 13-3-411,
+Tennessee Code.
+1-112.3 Civil Enforcement
+1-112.301 General
+ Appropriate actions and proceedings may be taken in equity to prevent
+any violation of these regulations, to prevent unlawful construction, to
+recover damages; to restrain, correct, or abate a violation, or to prevent
+ART. I-9
+ART. I-10
+illegal occupancy of a building, structure, or premise; these remedies shall
+be in addition to the penalties described in Subsection 1-112.2, of these
+regulations.
+ 1-112.302 Specific Statutory Remedies
+ a. Use of Unapproved Plats -- The county, through its attorney or
+other official designated by the county commission, may enjoin by
+action for injunction any transfer of, sale of, or agreement to sell
+any land in violation of Subsection 1-112.104, of these regulations.
+ b. Erection of Unlawful Buildings - Where any building or structure is
+erected or being erected on any lot in violation of the road or
+easement frontage requirements of Subsection 1-112.109, of these
+regulations, the enforcing officer or the county attorney or other
+official designated by the county commission may bring action to
+enjoin such erection or cause the building or structure to be
+vacated or removed.
+1-113 Repeal of Previous Regulations
+Upon the adoption and effective date of these regulations any existing subdivision
+regulations within the Hickman County planning region, as amended, are hereby
+repealed. 
+
+ARTICLE II
+PROCEDURES FOR PLAT APPROVAL
+2-101 General Procedure
+2-101.1 Plat Approval Requirements
+Before any contract is executed for the sale of any parcel of land which is
+proposed to be subdivided and before any permit for the erection of any structure
+in a proposed subdivision shall be granted, the subdividing owner or his
+authorized agent shall apply for and secure the planning commission's approval
+of the proposed subdivision in accordance with the procedures of this article.
+2-101.2 Classification of Subdivisions
+The planning commission shall classify each subdivision proposal as either major
+or minor as defined herein.
+2-101.201 Review Procedure
+The subdivider shall follow the procedure described below in order to
+secure plat approval.
+a. Minor Subdivision
+ (i) Preapplication conference with the enforcing officer including
+submittal of a scale drawing or survey of the proposed
+subdivision for preliminary discussion and review.
+ (ii) Securing of approvals from other public agencies and any
+affected utility districts or companies.
+(iii) Submittal of a final plat, prepared, in accordance with the
+specifications in Section 5-104, herein, for approval by the
+planning commission.
+b. Major Subdivision
+ (i) Preapplication conference on the subdivision with the
+planning commission and/or staff assistant to the planning
+commission, generally including a sketch plat, and
+discussion of the proposed area to be subdivided.
+ (ii) Submittal of a preliminary plat, prepared in accordance with
+Section 5-102, herein for planning commission approval.
+ART. II-1
+ (iii) Securing of approval from other public agencies.
+ (iv) Submittal of the final subdivision plat, prepared in
+accordance with Section 5-104, herein for planning
+commission approval.
+2-101.3 Official Submission Date
+For the purpose of these regulations, for both major and minor subdivisions, the
+date of the regular meeting of the planning commission at which the public
+hearing on the final subdivision plat, including any adjourned date thereof, is
+closed, shall constitute the official submittal date of the plat at which the statutory
+period required in Section 13-3-404, Tennessee Code, for formal approval or
+disapproval of the plat shall commence.
+2-101.4 Policy on Flood Prone Areas
+In determining the appropriateness of land subdivision at any site containing a
+flood prone area, the planning commission, in reviewing any plat, shall consider
+the policy and purpose set forth in Section 1-104, of these regulations, and,
+additionally:
+1. the danger to life and property due to the increased flood heights or
+velocities, either potential or actual, caused by subdivision fill, roads, and
+intended uses;
+2. the danger that intended uses or improvements may be swept onto other
+lands or downstream to the injury of others;
+3. the adequacy of proposed water supply, sanitation, and drainage systems,
+and the ability of these systems to function under flood conditions;
+4. the susceptibility of the proposed facility and its contents to flood damage
+and the effect of such damage upon the individual owner;
+5. the importance of the services provided by the proposed facility to the
+community at large;
+6. the requirements of the subdivision for a waterfront location;
+7. the availability of alternative locations not subject to flooding for the
+proposed subdivision and land uses;
+8. the compatibility of the proposed uses with existing development or
+development anticipated in the foreseeable future;
+9. the relationship of the proposed subdivision to the land development plan
+and the floodplain management program for the area;
+10. the safety of access to the property for emergency vehicles in times of
+flood;
+ART. II-2
+11. the expected heights, duration, velocity, rate of rise, and sediment
+transport of the floodwaters expected at the site;
+12. the costs of providing governmental services during and after flood
+conditions, including maintenance and repair of public utilities and facilities
+such as sewer, gas, electrical, and water systems, public ways, and
+bridges; and
+13. the effect of the proposed subdivision upon the planning commission's
+participation in the National Flood Insurance Program, if such planning
+commission is, or elects to be, in the program.
+No subdivision or part thereof shall be approved by the planning commission if
+proposed levees, fills, structures, or other features within the subdivision will
+individually or collectively, increase flood flows, heights, duration, or damages.
+The regulatory limits (the one hundred-year flood level) shall be determined from
+the latest approved flood study for the jurisdictional area, and any subsequent
+revisions thereto. Specific engineering studies are to be formulated by the
+developer in those areas in which flood data are not currently available, if
+deemed necessary by the planning commission.
+In any instance in which the planning commission determines that a proposed
+subdivision may affect the flood height, velocity, or duration in any flood prone
+area outside its jurisdiction, the commission shall take all actions necessary and
+proper to ensure the coordinated review of the development with the appropriate
+governmental agencies of the affected area.
+In approving plans for subdivision of land containing flood prone areas, the
+planning commission shall ensure that development will proceed in such a way
+that property lying within any floodway, as defined by these regulations, will be
+maintained in a manner as prescribed by any zoning ordinance. The planning
+commission shall also ensure that development within any floodway fringe area
+(within the one hundred-year flood level) will be protected adequately against
+potential flood hazards by the methods prescribed in Article IV, of these
+regulations.
+The planning commission shall disapprove the subdivision of any land containing
+a flood prone area when the commission determines that subdivision plans are
+not consistent with the policy stated in this section.
+2-101.5 Special Provisions Governing Unit Ownership (Condominium)
+Subdivisions
+2-101.501 General Provisions
+a. Intent -- This section is intended to augment the general legislation
+of Sections 66-27-101 through 66-27-123, Tennessee Code,
+entitled "Horizontal Property Act," by providing supplemental rules
+and regulations for the implementation of the act, as specifically
+authorized in Section 66-27-121, Tennessee Code.
+ART. II-3
+b. Applicability -- Whenever a developer, the sole owner, or the coowners of a building or buildings expressly declare through the
+submission of a master deed, lease, or plat their desire to submit
+their property to a regime, as established and provided by Sections
+66-27-101 through 66-27-123, Tennessee Code, wherein there is
+established a horizontal property regime, each such condominium
+or horizontal property regime created under the authority of these
+provisions for the purpose of sale or transfer of real property is
+subject to the provisions of these regulations.
+2-101.502 Submission of Plat Required
+Prior to the sale or transfer of any property incorporated in the property
+regime, the developer, sole owner, or co-owners of such property shall
+submit to the planning commission a subdivision plat of such property in
+the manner prescribed by this article; such plat, if approved, shall be filed
+with the county register in the manner prescribed by this article.
+2-101.503 Determination of Subdivision Type
+ Condominium subdivisions shall be classified by the planning commission
+during the plat review process as either horizontal condominiums or
+vertical condominiums as defined in Article VI, of these regulations.
+2-101.504 Procedure
+An applicant seeking approval of a condominium subdivision shall proceed
+through the normal procedure for subdivision approval, as set forth in this
+article.
+2-101.505 Contents of Plans and Documents
+The plats, plans, and documents submitted by an applicant seeking
+approval of condominium subdivision shall conform with the specifications
+set forth in Article V, of these regulations.
+2-101.506 One or Two Lot Subdivision
+a. Under the authority granted by Section 13-3-402, Tennessee Code
+Annotated, a final plat submitted for a one or two lot subdivision
+may be endorsed in writing on the plat by the secretary of the
+planning commission without the approval of the planning
+commission, upon certification by the technical staff of the planning
+commission that the subdivision complies with the requirements as
+set forth in the Subdivision Regulations for Hickman County.
+b. The planning commission technical staff shall review one or two lot
+subdivisions where all public improvements are already installed.
+(Any construction, installation, or improvement of public
+improvements shall require the submission of a preliminary plat.).
+For one or two lot subdivisions, the Certificate of Approval of
+Streets shall not be required except for the need of right-of-way
+dedications; however, all other required and applicable certifications
+shall be included on the submitted plat.
+ART. II-4
+c. A concrete monument shall only be required on one of the front
+corners with iron pins required on the remaining corners.
+d. A fire hydrant shall not be required for one-lot subdivisions.
+e. In the case where a property owner is adding a piece of land for
+agricultural or other uses, excluding any residential, commercial or
+industrial uses, and no buildings, except agricultural accessory
+buildings, will be constructed, the one-lot subdivision plat is
+required to show the following data:
+(1) A line between the existing lot and the added property as a
+dashed line;
+(2) Iron pins on each of the four corners of the added piece of
+property;
+ (3) Date, graphic scale and north point;
+ (4) The name and addresses of the owners and the tax map
+and parcel numbers of the existing lot and the added piece
+of property;
+ (5) The name and address of the surveyor preparing the plat;
+ (6) The acreage of the added piece of property and total
+acreage of the new tract of land;
+(7) The names of all adjoining property owners or names of
+adjoining subdivisions, including tax map and parcel
+numbers;
+ (8) The location of existing water courses, and flood problems
+checked using an official TVA or Corps of Engineers Flood
+Study map, and flooded areas outlined, if applicable;
+ (9) A location sketch map;
+ (10) The plat certificates for Ownership and Dedication; Survey
+Accuracy; and Approval for Recording;
+2-102 Sketch Plat (Major Subdivisions Only)
+2-102.1 Purpose of Sketch Plat
+The applicant shall submit a sketch plat to the planning commission for approval.
+The sketch plat is to be a concept plan for design purposes and should be used
+to discover all factors which may have an impact on the proposed development
+and to advise the subdivider of various possibilities before substantial amounts of
+time and money have been invested in a detailed proposal which may contain
+elements contrary to these regulations.
+ART. II-5
+2-102.2 Sketch Plat Requirements
+The sketch plat shall include the information set forth in Section 5-101.
+2-102.3 Approval of Sketch Plat
+When a sketch plat is submitted for planning commission approval, the number
+of copies required and timing of the submission shall be as for a preliminary plat.
+Approval of the plat shall constitute authorization to prepare detailed plans and
+specifications.
+2-102.4 Expiration of Approval
+The approval of the sketch plat shall expire within one (1) year if no further
+progress is made toward the development. An extension may be granted upon
+proper application.
+2-103 Preliminary Plat (Major Subdivisions Only)
+2-103.1 Application Procedure and Requirements
+The applicant shall file with the planning commission a preliminary plat. The
+failure of the applicant to satisfy the requirements of this section with full and
+correct information shall be cause for disapproval of a preliminary plat. The
+preliminary plat shall be prepared in accordance with Section 5-102, and:
+1. be presented at the office of the enforcing officer at least 15 days prior to a
+regular (officially opened) meeting of the planning commission;
+2. include all land which the applicant proposes to subdivide and all land
+immediately adjacent, extending two hundred (200) feet therefrom, or of
+that directly opposite thereto, extending two hundred (200) feet from the
+public way frontage of such opposite land. The lot pattern of surrounding
+development shall be shown within that area located within two hundred
+(200) feet of the proposed development;
+3. be accompanied by a minimum of 5 copies of the preliminary plat as
+described herein; and
+4. be accompanied by a minimum of 4 copies of construction plans as
+described in Section 5-103, of these regulations.
+2-103.2 Administrative Review
+An administrative review meeting shall be conducted on the preliminary plat,
+construction plans, and any exhibits submitted in conformance with these
+regulations. This review shall include the staff assistant to the planning
+commission and any other appropriate governmental representative. The review
+shall be held prior to the regularly scheduled planning commission meeting at
+which the plat is to be reviewed. The findings of the review committee shall be
+presented to the planning commission.
+ART. II-6
+With expert assistance, as necessary, the subdivider shall prepare a report, on
+any proposed subdivision containing or abutting a floodprone area. Such report
+shall estimate the discharge of the regulatory flood; determine the specific
+flooding threat at the site of the proposed subdivision; and indicate whether the
+subdivision is located in a floodway or floodway fringe area by:
+1. calculation of water surface elevations and regulatory flood protection
+elevations based upon a hydraulic analysis of the capacity of the stream
+channel and overbank areas to convey the regulatory flood;
+2. computation of the floodway required to convey the regulatory flood
+without increasing natural flood heights of the regulatory flood more than
+one (1) foot at any point; and
+3. unless otherwise established, computation of increase in flood heights
+caused by any encroachment shall be based upon the reasonable
+assumption that there will be an equal degree of encroachment on both
+sides of the stream within that reach. No increase in flood storage
+attributable to encroachments on the floodplain of any river or stream shall
+be permitted in any one reach or for the cumulative effect of several
+reaches.
+2-103.3 Notice of Hearing
+The planning commission shall hold a hearing as required by Chapters 3 and 4,
+of Title 13, Tennessee Code, on each plat brought before it.
+2-103.4 Preliminary Approval
+After the planning commission has reviewed the preliminary plat, construction
+plans, exhibits, and the results of administrative review, the applicant shall be
+advised of any required changes. The planning commission shall approve,
+conditionally approve, or disapprove the preliminary plat within thirty (30) days
+after date of the regular meeting of the planning commission at which the hearing
+on preliminary approval, including adjourned date thereof, is closed.
+A certificate of preliminary approval shall be issued by the secretary of the
+planning commission, upon demand, and the applicant may proceed to apply for
+final subdivision plat approval in the manner prescribed by Section 2-104, of
+these regulations.
+After the planning commission approves, conditionally approves, or disapproves
+the preliminary plat, one copy of the proposed preliminary plat shall be returned
+to the developer with the date of approval, conditional approval, or disapproval
+thereon. If a preliminary plat is disapproved the planning commission shall state
+specific reasons for disapproval which shall be entered into the minutes of the
+meeting.
+Before the planning commission approves a preliminary plat showing land for any
+public use, the planning commission shall obtain approval for the land reservation
+from the appropriate governmental agency.
+ART. II-7
+2-103.5 Public Improvements
+The planning commission may require that all public improvements be installed
+and dedicated prior to the signing of the final subdivision plat by the secretary of
+the planning commission. If the planning commission does not require that all
+public improvements be installed and dedicated prior to signing of the final
+subdivision plat, an adequate performance bond shall be approved. The amount
+of such bond shall be established by the planning commission based upon the
+recommendation of the appropriate governmental representative or by receipt of
+cost bids from two (2) or more independent contracting firms equal to the cost of
+all necessary improvements plus an additional 10 percent to cover inflation shall
+be added. It is the subdivider's responsibility to furnish these estimates to the
+planning commission.
+Such bond shall be submitted by the applicant at the time of application for final
+subdivision plat approval. The planning commission shall require the applicant to
+indicate on the plat all public ways and improvements to be dedicated; all districts
+for water, fire, and utility improvements which shall be required to be established
+or extended; and any other special requirements deemed necessary by the
+planning commission in order for the subdivision plat to conform to the major
+street or road plan and the land development plan for the jurisdictional area.
+2-103.6 Effective Period of Preliminary Approval
+The approval of a preliminary plat shall be effective for a period of 12 months, at
+the end of which time final approval of the subdivision plat must have been
+obtained from the planning commission, although the plat need not have been
+signed and filed with the county register. Any plat not receiving final approval
+within the period of time set forth herein shall be null and void, and the developer
+shall be required to submit a new plat for approval subject to any zoning
+provisions and the subdivision regulations currently in effect. Prior to the
+expiration of the preliminary approval and upon proper request by the developer,
+the approval may be extended for one (1) additional year if the commission
+deems such to be advisable based upon progress made in developing the
+subdivision.
+2-103.7 Zoning Regulations
+Every plat shall conform to any existing zoning regulations and subdivision
+regulations applicable at the time of proposed final approval, except that any plat
+which has received preliminary approval shall be exempt from any subsequent
+amendments to such zoning ordinance or these regulations rendering the plat
+nonconforming as to bulk, use, or development standards, provided, that final
+approval is obtained within the effective period of preliminary approval set forth in
+Subsection 2-103.6, herein.
+ART. II-8
+2-104 Final Subdivision Plat (Minor and Major Subdivision)
+2-104.1 Application Procedure and Requirements
+A subdivider shall file with the planning commission a final plat. The plat shall be
+prepared in accordance with Section 5-104, and:
+1. include the entire subdivision, or section thereof, for which final approval is
+sought;
+2. be accompanied by a minimum of 5 copies of the final subdivision plat as
+described herein.
+3. comply substantially with the preliminary plat, where such plat is required;
+4. be presented at the office of the enforcing officer at least 15 days prior to
+the regular meeting of the commission at which it is to be considered;
+5. be accompanied by formal irrevocable offers of dedication to the public of
+all public ways and uses, utilities, parks, and easements, in a form
+approved by legal counsel, as applicable. (The subdivision plat shall be
+marked with a notation indicating the formal offers of dedication as shown
+in Article V, of these regulations.);
+6. be accompanied by a performance bond, if required, in a form satisfactory
+to legal counsel and in an amount adequate to complete the required
+improvements. It shall include provisions that the principal of the bond
+shall comply with all the terms of the resolution of final subdivision plat
+approval, as determined by the planning commission, including, but
+without limitations, the performance of all required subdivision and offsite
+improvements, and that all improvements and land included in the
+irrevocable offers of dedication shall be dedicated to the planning
+commission free and clear of all liens and encumbrances on the
+premise(s);
+7. be accompanied by written assurance from any public utility companies
+serving the area of the subdivision that necessary utilities will be installed
+and by proof that the applicant has submitted petitions in writing for the
+creation or extension of any utility districts as required by the planning
+commission upon preliminary plat approval; and
+8. be accompanied, if the final plat contains open space, or recreational
+facilities, of if any portion of the site is in common ownership, by the
+following documentation for approval by the planning commission:
+(a) plans for improvement and maintenance of the open space or
+facilities located thereon;
+ART. II-9
+(b) articles of incorporation and bylaws of the co-owners association or
+other legal entity (where open space or facilities are to be deeded
+to a co-owners association by similar organization acting on behalf
+of the joint owners of said property) charged with improving or
+maintaining the open space or facilities, and declaration of
+covenants and restrictions pertaining to each and every property
+within the subdivision; and
+(c) declaration of covenants and restrictions pertaining to open space
+and facilities which assure the continued use of said facilities for the
+purpose intended, where open space or facilities are to be retained
+by the developer.
+2-104.2 Endorsement of Notations
+The notations and certifications required by Subsection 5-104.3, of these
+regulations, to appear upon the final plat shall be endorsed by appropriate
+officials and other persons prior to application for final subdivision plat approval,
+except that the certificate of planning commission approval shall be signed at the
+time specified in Section 2-105, of these regulations.
+2-104.3 Hearing and Decision on Final Plat
+The planning commission shall hold a hearing as required by Section 13-3-404
+and 13-4-304, Tennessee Code, on each final plat brought before it. The
+planning commission shall, within 60 days after submission of the plat, approve,
+modify, or disapprove the final subdivision plat by resolution, which shall set forth
+in detail any conditions to which the approval is subject, or reasons for
+disapproval. In no event shall the period of time stipulated by the planning
+commission for completion of required improvements exceed one (1) year from
+the date of final resolution.
+Failure of the planning commission to act upon a plat within the prescribed time
+shall be deemed approval of the plat, and in such event, a certificate of approval,
+entitling the subdivider to proceed as specified in Subsection 2-104.4 and Section
+2-105, of these regulations, shall be issued, upon demand, by the secretary of
+the planning commission. The applicant, however, may agree to an extension of
+the time for planning commission review.
+One (1) copy of the final subdivision plat shall be returned to the subdivider with
+the date of approval, conditional approval, or disapproval noted thereon.
+2-104.4 Vested Rights
+No vested rights shall accrue to any plat by reason of preliminary or final
+approval until the actual signing of the plat by the secretary of the planning
+commission. All requirements, conditions, or regulations adopted by the planning
+commission, applicable to the particular subdivision or to all subdivisions
+generally, shall be deemed a condition of approval for any subdivision prior to the
+time of the signing of the final plat by the secretary of the planning commission.
+Where the planning commission has required the installation of improvements
+prior to the signing of the final plat, the planning commission shall not modify
+unreasonably the conditions set forth in the resolution of final approval.
+ART. II-10
+ART. II-11
+2-105 Signing and Recording of Subdivision Plat
+ 2-105.1 Signing of Plat
+ 1. When a bond is required, the secretary of the planning commission shall
+endorse approval on the plat after the bond has been approved by the
+planning commission and after all the conditions of the resolution
+pertaining to the plat have been satisfied.
+ 2. When installation of improvements is required, the secretary of the
+planning commission shall endorse approval on the plat after all conditions
+of the resolution have been satisfied and all improvements satisfactorily
+completed. There shall be written evidence that the required public
+facilities have been installed in a manner satisfactory to the planning
+commission as shown on certifications by the appropriate governmental
+representative(s) that necessary land dedications and improvements have
+been accomplished.
+ 3. When the conditions of this section are satisfied, the secretary shall sign
+the permanent reproducible original of the subdivision plat.
+ 2-105.2 Recording of Plat
+ It shall be the responsibility of the enforcing officer to file plat with the county
+register's office within 7 days of the date of signature. Simultaneously, with the
+filing of the plat, the enforcing officer shall record the agreement of dedication
+together with such legal documents as shall be required to be recorded by legal
+counsel.
+ 2-105.3 Sectionalizing Major Subdivision Plats
+ Prior to granting final approval of a major subdivision plat, the planning
+commission may permit the plat to be divided into two (2) or more sections and
+may impose such conditions upon the filing of each section as it may deem
+necessary to assure the orderly development of the subdivision.
+ The planning commission may require that a performance bond be in such
+amount as is commensurate with the section or sections of the plat to be filed
+and may defer the remaining required performance bond principal amount until
+the remaining sections of the plat are offered for filing. The developer also may
+file irrevocable offers to dedicate public ways and improvements in the section
+offered to be filed and defer filing offers of dedication for the remaining sections
+until such sections, subject to any conditions imposed by the planning
+commission, shall be granted concurrently with final approval of the plat. Such
+authorized sections must contain at least ten (10) percent of the total number of
+lots contained in the proposed plat unless a specific waiver of this requirement is
+granted by the planning commission. 
+
+ARTICLE III
+ASSURANCE FOR COMPLETION AND MAINTENANCE OF IMPROVEMENTS
+3-101 Improvements and Performance Bond
+3-101.1 Completion of Improvements
+Before the final subdivision plat is signed by the planning commission officer
+specified in Subsection 2-105.1, of these regulations, all applicants shall
+complete, in accordance with the planning commission's decision and to the
+satisfaction of the appropriate governmental representative, all public way,
+sanitary, and other improvements, including lot improvements on the individual
+lots of the subdivision, as required in these regulations and approved by the
+planning commission, and shall dedicate such improvements to the appropriate
+governing body free and clear of all liens and encumbrances on the property and
+public improvements thus dedicated.
+3-101.2 Surety Instrument
+The planning commission at its discretion may waive the requirement that the
+applicant complete and dedicate all public improvements prior to the signing of
+the final subdivision plat by providing that, as an alternative, the applicant post a
+bond at the time of submission for final subdivision approval in an amount
+estimated by the planning commission as sufficient to guarantee to the governing
+body the satisfactory construction, installation, and dedication of the incompleted
+portion of required improvements. (See Subsection 2-103.5).
+Such performance bond shall comply with all statutory requirements and shall be
+satisfactory to legal counsel as to form, sufficiency, and manner of execution, as
+set forth in these regulations. The period within which required improvements
+must be completed shall be specified by the planning commission in the
+resolution approving the final subdivision plat and shall be incorporated in the
+bond and shall not exceed two (2) years from date of final approval.
+Such bond shall be approved by the planning commission as to amount and
+conditions. The planning commission may, upon proof of difficulty, extend the
+completion date set forth in such bond for a maximum period of one (1) additional
+year. The planning commission may accept at any time during the period of such
+bond a substitution of principal.
+3-101.3 Temporary Improvements
+The applicant shall build and pay for all costs of temporary improvements
+required by the planning commission, and shall maintain them to a reasonable
+satisfaction for the period specified by the planning commission. Prior to
+construction of any temporary facility or improvement, the applicant shall file with
+the planning commission a separate suitable bond for temporary facilities, which
+shall ensure that the temporary facilities will be properly constructed, maintained,
+and removed.
+ART. III-1
+3-101.4 Costs of Improvements
+All required improvements shall be made by the applicant at his expense. Any
+provisions for reimbursement by the governing body or any utility agency shall be
+stipulated clearly in the provisions of any bonds.
+3-101.5 Governmental Units
+Governmental units to which these bonds and contract provisions apply may file,
+in lieu of said contract or bond, a certified resolution or ordinance from officers or
+agencies authorized to act in their behalf agreeing to comply with the provisions
+of this article.
+3-101.6 Failure to Complete Improvements
+In subdivisions for which no performance bond has been posted, if the
+improvements are not completed within the period specified by the planning
+commission in the resolution approving the plat, the approval shall be deemed to
+have expired. In those cases in which a performance bond has been posted and
+required improvements have not been installed within the terms of such
+performance bond, the planning commission thereupon may declare the bond to
+be in default and require that all the improvements be installed regardless of the
+extent of the building development at the time the bond is declared to be in
+default.
+3-101.7 Acceptance of Dedication Offers
+Acceptance of formal offers of dedication of public ways, easements, and
+parks shall be by formal action of the governing body. Such action shall be
+in the form of a resolution recommended by the planning commission to
+the governing body. The approval by the planning commission of a subdivision
+plat shall not be deemed to constitute or imply an acceptance by the local
+government of any public way, easement, or other ground shown on the plat.
+The planning commission may require the plat to be endorsed with appropriate
+notes to this effect.
+3-102 Inspection of Improvements
+3-102.1 General Procedure
+The planning commission may provide for inspection of required improvements
+during construction and ensure their satisfactory completion. If the appropriate
+governmental representative finds upon inspection that any of the required
+improvements have not been constructed in accordance with the governing
+body's construction standards and specifications, the applicant shall be
+responsible for completing the improvements to the required standards.
+Whenever the cost of improvements is covered by a performance bond, the
+applicant and the bonding company shall be liable severally and jointly for
+completing said improvements according to specifications.
+ART. III-2
+3-102.2 Release or Reduction of Performance Bond
+3-102.201 Certificate of Satisfactory Completion
+The planning commission shall not recommend dedication of required
+public improvements nor shall the planning commission release nor
+reduce a performance bond until the appropriate governmental
+representative submits a certificate stating that all required improvements
+have been satisfactorily completed, and until the applicant's engineer or
+surveyor has certified to the planning commission and the appropriate
+governmental representative (through submission of a detailed "as built"
+survey of the subdivision indicating location, dimensions, construction
+materials, and any other information required by the planning commission)
+that the layout and the line and grade of all public improvements are in
+accordance with the approved construction plans for the subdivision.
+Upon such approval and recommendation, the governing body, thereafter,
+may accept the dedicated improvements in accordance with the
+procedures set forth in Subsections 1-112.107 and 3-101.7, of these
+regulations.
+3-102.202 Reduction of Performance Bond
+A performance bond may be reduced upon actual dedication and
+acceptance of public improvements and then only to the ratio that the
+public improvement dedicated bears to the total public improvements for
+the plat. In no event shall a performance bond be reduced below twentyfive (25) percent of the principal amount prior to final acceptance of all
+items covered under the bond.
+3-103 Maintenance of Improvements
+The applicant shall be required to maintain all improvements including all lot
+improvements, until acceptance of the public improvements by the governmental body.
+The applicant may be required to file a maintenance bond with the planning commission
+prior to dedication, in an amount considered adequate by the appropriate governmental
+representative and in a form satisfactory to legal counsel in order to assure the
+satisfactory condition of the required improvements, including all lot improvements, for a
+period of one (1) year after the date of acceptance of the public improvements by the
+planning commission.
+3-104 Deferral or Waiver of Required Improvements
+The planning commission may defer or waive at the time of final approval, subject to
+appropriate conditions, the provision of any or all such improvements as, in its
+judgment, are not requisite in the interest of the public health, safety, and general
+welfare, or which are inappropriate because of inadequacy or lack of connecting
+facilities.
+Whenever it is deemed necessary by the planning commission to defer the construction
+of any improvement required herein because of incompatible grades, future planning,
+inadequate or lack of connecting facilities, or other reasons, the developer shall either
+ART. III-3
+pay his share of the costs of the future improvements to the planning commission prior
+to signing of the final subdivision plat by the appropriate governmental representative(s)
+or post a bond or other surety instrument ensuring completion of said improvements
+upon demand of the planning commission.
+3-105 Escrow Deposits for Lot Improvements
+3-105.1 Acceptance of Escrow Funds
+Whenever, by reason of the season of the year, any lot improvements required
+by these regulations cannot be performed, the enforcing officer nevertheless may
+issue a certificate of occupancy upon accepting a cash escrow deposit in an
+amount to be determined by the appropriate governmental representative for the
+cost of such improvements; provided, there otherwise is no danger to the health,
+safety, or general welfare. The performance bond covering such lot
+improvements shall remain in full force and effect.
+3-105.2 Procedures on Escrow Fund
+All required improvements for which escrow moneys have been accepted by the
+enforcing officer at the time of issuance of a certificate of occupancy shall be
+installed by the developer within a period of nine (9) months from the date of
+deposit and issuance of the certificate of occupancy. In the event that the
+improvements have not been installed properly at the end of the time period, the
+enforcing officer shall provide written notice of two (2) weeks to the developer
+requiring him to install the improvements, and in the event they are not installed
+properly, in the judgment of the enforcing officer, he may request the planning
+commission to proceed to install or to contract for the installation of the
+necessary improvements in a sum not to exceed the amount of the escrow
+deposit.
+At the time of the issuance of the certificate of occupancy for which escrow
+moneys are being deposited, the applicant shall obtain and file with the enforcing
+officer, prior to obtaining the certificate of occupancy, a notarized statement from
+the purchaser(s) of the premise authorizing the enforcing officer to install the
+improvements at the end of the nine (9) month period in the event the
+improvements have not been installed properly by the developer.
+3-106 Issuance of Building Permits and Certificates of Occupancy
+A. Where a performance bond has been required for a subdivision, or any section of
+a subdivision, no certificate of occupancy for any building in the subdivision or
+section thereof shall be issued prior to the completion and dedication of the
+improvements to the appropriate governmental unit, as required in the planning
+commission's resolution of final approval of the subdivision plat.
+B. The extent of public way improvements shall be adequate for vehicular access by
+the prospective occupant and by police and fire equipment prior to the issuance
+of an occupancy certificate. The developer shall at the time of the dedication
+submit monies in escrow to the planning commission in a sum to be determined
+by the appropriate governmental representative.
+ART. III-4
+ART. III-5
+C. No building permit shall be issued for the final ten (10) percent of lots in a
+subdivision, or if ten (10) percent be less than two (2) lots, for the final two (2)
+lots of a subdivision, until all public improvements required by the planning
+commission's resolution of final plat approval have been fully completed,
+dedicated, and accepted by the governmental body. 
+
+ARTICLE IV
+REQUIREMENTS FOR IMPROVEMENTS, RESERVATIONS, AND DESIGN
+4-101 General Requirements
+4-101.1 Conformance to Applicable Rules and Regulations
+In addition to the requirements established herein, all subdivision plats shall
+comply with all applicable laws, ordinances, resolutions, rules, or regulations,
+including, but not limited to:
+1. all applicable provisions of Tennessee Law, regulations, or policy;
+2. any zoning ordinance, any building and housing codes, and all other
+applicable laws or policies of the planning commission;
+3. the adopted general plan and major road or street (public way) plan;
+4. the rules of the county health department and the Tennessee Department
+of Environment and Conservation;
+5. the rules, as applicable, of the Federal Highway Administration or
+Tennessee Department of Transportation, if the subdivision or any lot
+contained therein abuts a nonlocal highway; and
+6. the standards and regulations adopted by all other boards, commissions,
+and agencies of the planning commission, where applicable.
+Plat approval may be withheld if a subdivision is not in conformity with the above
+rules or with the provisions set forth in Section 1-104, of these regulations.
+4-101.2 Self-Imposed Restrictions
+If the owner places restrictions on any of the land contained in the subdivision
+greater than those required by any zoning ordinance or these regulations, such
+restrictions or reference thereto shall be recorded with the county register on a
+separate form, along with the final subdivision plat in the office of the county
+register.
+4-101.3 Monuments
+The subdivider shall place permanent reference monuments on the subdivision
+as required herein and as approved by a licensed surveyor. Monuments shall be
+located and set as follows.
+1. Monuments shall be located on public way right-of-way lines, at public way
+intersections, and sections, and at the beginning and ending point of
+curves. All monuments shall be spaced so as to be within sight of each
+other.
+ART. IV-1
+2. The external boundaries of a subdivision shall be monumented in the field
+by monuments of stone or concrete not less than two feet-six inches
+(2'-6") in length; nor less than four (4) inches square or five (5) inches in
+diameter; and marked on top with a cross, brass plug, iron rod, or other
+durable material securely embedded. These monuments shall be placed
+not more than fourteen hundred (1,400) feet apart in any straight line and
+at all corners or breaks at each end of all curves, at the point where a
+curve changes its radius, at all angle points in any line, and at all angle
+points along a meander line, said points to be not less than twenty (20)
+feet back from the bank of any river or stream, except that when such
+corners or points fall within a public way or proposed future public way, the
+monuments shall be placed on the side line of the public way.
+3. All internal boundaries and those corners and points not referred to in the
+preceding paragraph shall be monumented in the field by like monuments
+as described above. Such monuments shall be placed at each end of all
+curves, at a point where a river changed its radius, and at all angle points
+in any line. All lot corners not falling on any of the above described points
+shall be marked by iron rods, pipe, or pins at least eighteen (18) inches
+long and five-eights (5/8) inch in diameter.
+4. The lines of lots that extend to rivers or streams shall be monumented in
+the field by iron pins at least eighteen (18) inches long and five-eights
+(5/8) inch in diameter or by round or square iron bars at least eighteen
+(18) inches long. Such pins shall be placed at the point of intersection of
+the river or stream and lot line, with a meander line established not less
+than twenty (20) feet back from the bank of the river or stream.
+5. All monuments and pins shall be properly set in the ground and approved
+by a licensed surveyor prior to the time the planning commission
+recommends approval of the final plat or release of the bond where bond
+is made in lieu of improvements.
+4-101.4 Character of the Land
+Land which the planning commission finds to be unsuitable for subdivision or
+development due to flooding, improper drainage, steep slopes, rock formations,
+adverse earth formations or topography, utility easements, or other features
+which would be harmful to the safety, health, and general welfare of inhabitants
+of the land and surrounding areas shall not be subdivided or developed unless
+adequate methods are formulated by the developer and approved by the
+planning commission, upon recommendation of any staff assistant serving the
+planning commission and/or other governmental representative, if any, to solve
+the problems created by the unsuitable land conditions. Such land shall be set
+aside for such uses as will not involve such a danger.
+Where protection against flood damage is necessary, in the opinion of the
+planning commission, flood-damage protection techniques may include, as
+deemed appropriate by the planning commission:
+ART. IV-2
+1. the imposition of any surety and deed restrictions enforceable by the
+planning commission to regulate the future type and design of uses within
+the flood prone areas; and
+2. flood protection measures designed so as not to increase, either
+individually or collectively, flood flows, height, duration, or damages, and
+so as not to infringe upon the regulatory floodway.
+3. installation of flood warning systems.
+4. the use of fill, dikes, levees, and other protective measures.
+5. the use of floodproofing measures, which may include:
+(a) anchorage to resist flotation and lateral movement.
+ (b) installation of watertight doors, bulkheads, shutters, or other similar
+methods of closure.
+(c) reinforcement of walls to resist water pressures.
+ (d) use of paints, membranes, or mortars to reduce seepage through
+walls.
+(e) addition of mass or weight to structures to resist flotation.
+(f) installation of pumps to lower water levels in structures.
+(g) construction of water supply and waste treatment systems so as to
+prevent the entrance of or contamination of flood waters.
+(h) installation of pumps or comparable facilities for subsurface
+drainage systems to relieve external foundation wall and basement
+flood pressures.
+(i) building design and construction to resist rupture or collapse
+caused by water pressure of floating debris.
+(j) installation of valves or controls on sanitary and storm drains which
+permit the drains to be closed to prevent backup of sewage and
+storm water into buildings or structures.
+ (k) location and installation of all electrical equipment, circuits, and
+appliances so that they are protected from inundation by the
+regulatory flood.
+(l) location of storage facilities for chemicals, explosives, buoyant
+material, flammable liquids, or other toxic materials which would be
+hazardous to the public health, safety, and welfare at or above the
+regulatory flood protection elevation, or design of such facilities to
+prevent flotation of storage containers or damage to storage
+containers which could result in the escape of toxic materials.
+ART. IV-3
+The acceptability of any flood protection methods formulated by the
+subdivider or his agent shall be determined by the planning commission,
+which shall be guided by the policies set forth in Section 1-104 and
+Subsection 2-101.4, of these regulations.
+All such flood protection measures shall be designed so as not to
+increase, either individually or collectively, flood flows, heights, duration, or
+damages so as not to infringe upon the regulatory floodway.
+4-101.5 Subdivision Name
+The proposed name of the subdivision shall not duplicate or too closely
+approximate phonetically the name of any other subdivision in the area covered
+by these regulations. The planning commission shall have authority to designate
+the name of the subdivision which shall be determined at sketch or preliminary
+plat approval.
+4-101.6 Street Names
+Proposed streets which are obviously in alignment with others already existing
+and named, shall bear the names of existing streets. In no case shall the name
+for proposed streets duplicate existing street names, irrespective of the use of
+the suffix street, avenue, boulevard, drive, place or court. The planning
+commission can assist the subdivider in avoiding duplication.
+4-101.7 Signage
+The developer shall furnish and install all roadway signs. These shall include
+signs for warning, the direction of traffic and the proper labeling of streets.
+Consultation with the County Road Supervision is required.
+4-102 Lot Requirements
+4-102.1 Lot Arrangement
+4-102.101 General
+The lot arrangement shall be such that there will be no foreseeable
+difficulties, for reasons of topography, flood hazards, or other conditions in
+securing building permits to build on all lots in compliance with any zoning
+ordinance and state and county public health department regulations and
+in providing driveway access to buildings on such lots from an approved
+public way.
+4-102.102 Solar Access
+Where reasonably feasible lot arrangement shall be such that building
+sites will afford maximum utilization of energy conservation measures,
+such as providing for solar access.
+ART. IV-4
+4-102.103 Lots Subject to Flood
+Where a lot in any flood prone area must be improved to provide a
+building site free from flooding, such improvements shall be made outside
+the floodway by elevation or fill to at least the regulatory flood protection
+elevation (one hundred-year flood) for a distance extending at least
+twenty-five (25) feet beyond the limits of intended structures and,
+additionally, extending a sufficient distance to include areas for subsurface
+sewage disposal if the lot is not to be connected to a public sanitary sewer
+system. Any fill shall be protected against erosion by rip-rap, vegetative
+cover, or other methods deemed acceptable by the planning commission.
+In nonresidential building sites outside a floodway but subject to flooding,
+the use of structural floodproofing methods specified in Subsection 4-
+101.4, of these regulations, as an alternative to landfill, may be approved
+by the planning commission, as provided in Subsection 2-101.4, of these
+regulations.
+4-102.104 Lots Located on Steep Slopes
+Due to the potential threat to health and safety posed by development
+located on lands with slopes in excess of twenty (20) percent, the
+following regulations shall apply.
+a. Site Development Plan Required -- No building permit shall be
+issued for a building or any lot with slopes twenty (20) percent or
+over until a site plan meeting the following requirements has been
+approved by the planning commission. Said site plan submitted to
+and approved by the building commissioner shall show:
+(i) The exact size, shape, and location of the lot,
+ (ii) The proposed location of all buildings, driveways,
+drainageways, and utilities,
+ (iii) Proposed contours at vertical intervals of no more than five
+(5) feet,
+ (iv) The extent of natural tree cover and vegetation,
+(v) The location of any onsite soil absorption sewage disposal
+systems,
+(vi) The type and location of erosion control methodology.
+ (vii) The surveyor's or engineer's stamp that prepared the plan,
+ (viii) Certification as to the stability of the structures and slope
+and compliance with sound construction methods for areas
+with steep slopes and landslide problems by a registered
+civil or geotechnical engineer.
+b. Site Development Standards -- The following standards shall be
+used as a guide in determining the suitability of the construction
+ART. IV-5
+proposed for the particular site in question. The engineer's
+certification required in Subsection 4-102.104, a, (viii), above, shall
+address these standards.
+ (i) Natural vegetation shall be preserved to the maximum extent
+possible,
+(ii) Natural drainageways and systems shall be maintained,
+except that surface water may be diverted around a house or
+slope area to a natural drain using acceptable construction
+techniques,
+ (iii) Development densities shall be limited to one (1) dwelling
+unit per two (2) acres of land,
+ (iv) Operations that increase loads, reduce slope support, and
+cause instability of the slope shall be prohibited to the
+maximum extent possible which will permit reasonable
+development of the site. These include filling, irrigation
+systems, accessory buildings, and onsite soil absorption
+sewage disposal systems,
+ (v) Where sanitary sewers are not available any onsite sewage
+disposal system shall be shown on the site plan and located
+to avoid slide-prone areas. Said system shall be approved
+by the county health department prior to the planning
+commission's review taking into account these requirements,
+ (vi) Erosion control measures shall be employed to prevent all
+soil material from leaving the site. Additionally, soil from
+excavation on the site shall not be disposed as fill on a
+potential slide area,
+ (vii) No construction which would cut the top of the slope shall be
+permitted. This shall apply as well to subdivision roads
+constructed in compliance with these regulations.
+4-102.2 Lot Dimensions
+Lot dimensions shall comply with the minimum standards of any zoning
+ordinance, where applicable. Where lots are more than double the minimum
+area required by any zoning ordinance, the planning commission may require
+that such lots be arranged so as to allow further subdivision and the opening of
+future public ways where they would be necessary to serve such potential lots, all
+in compliance with any zoning ordinance and these regulations. Generally side
+lot lines shall be at right angles to street lines or radial to curving street lines.
+The minimum lot frontage on a public way shall be twenty-five (25) feet.
+Dimensions of the corner lots shall be large enough to allow for erection of
+buildings, observing the minimum front yard setback requirements from both
+public way rights-of-way.
+ART. IV-6
+Depth and width of properties reserved or laid out for business, commercial, or
+industrial purposes shall be adequate to provide for the off-street parking and
+loading facilities required for the type of use and development contemplated, and
+as established in any zoning ordinance.
+4-102.3 Building Setback Lines
+In the case of electric transmission lines where easement widths are not
+definitely established, a minimum building setback line from the center of the
+transmission line shall be established as follows:
+Voltage of Line Building Setback
+ 7.2 KV 15 feet 13 KV 25 feet 46 KV 37 1/2 feet 69 KV 50 feet
+ 161 KV 75 feet
+4-102.4 Double Frontage Lots and Access to Lots
+4-102.401 Double Frontage Lots
+Double frontage lots shall be avoided except where necessary to provide
+separation of residential development from traffic arterials, or to overcome
+specific disadvantages of topography and orientation.
+4-102.402 Access from Arterial or Collector Public Ways
+The planning commission may require that lots shall not derive access
+exclusively from arterial or collector public ways. Where driveway access
+from such public ways may be necessary for several adjoining lots, the
+planning commission may require that the lots be served by a combined
+access drive in order to limit possible traffic hazards. Driveways shall be
+designed and arranged so as to avoid requiring vehicles to back onto
+arterial or collector public ways.
+4-102.5 Soil Preservation, Grading, Erosion Control, and Seeding
+4-102.501 Soil Preservation and Final Grading
+No certificate of occupancy shall be issued until final grading has been
+completed in accordance with the approved construction plan and the lot
+precovered with soil having an average depth of at least six (6) inches and
+containing no particles over two (2) inches in diameter over the entire area
+of the lot, except that portion covered by buildings or included in streets or
+where the grade has not been changed or natural vegetation seriously
+damaged.
+Topsoil shall not be removed from residential lots or used as spoil, but
+shall be redistributed so as to provide at least six (6) inches of cover on
+the lots and at least four (4) inches of cover between any sidewalks and
+curbs, and be stabilized by seeding or planting.
+ART. IV-7
+4-102.502 Lot Drainage
+Lots shall be laid out so as to provide positive drainage away from all
+buildings, and individual lot drainage shall be coordinated with the general
+storm drainage pattern for the area which includes subsurface drainage.
+Drainage shall be designed so as to avoid concentration of storm drainage
+water from each lot to adjacent lots.
+The planning commission reserves the right to set minimum elevations on
+all floors, patios, and building equipment. This prerogative to establish
+elevation exists in addition to any ordinances that refer to floodplain
+elevation requirements. The content of the preceding paragraph is to give
+summary review powers over any calculated or historical evidence of
+storm water presence in overland or channel conditions.
+The subdivision developer will insure that all artesian ground waters of a
+permanent or temporary nature will be intercepted and carried away to
+primary drainage conduits along swaled ditches or in underground pipes
+on property line easements. Regardless of the location of property lines,
+intercept will be allowed by the planning commission at the point of
+artesian surfacing. The intent of this paragraph is to prevent flooding by
+overland flow. The developer is obligated to perform this work upon
+evidence of artesian water for a period of one (1) year following
+acceptance of all roads and utilities.
+Any sinkhole or natural channel which serve at any time as a means of
+moving ground water into the subterrean serves will be protected by
+structure as approved by the planning commission. The allowed
+alternative to this is the construction of an alternative means of storm
+water relief as approved by the planning commission. In any event,
+location and elevation of future construction will be designated to allow for
+the worst possible conditions.
+4-102.503 Erosion and Sediment Control
+There shall be a minimization of changes in the rate of natural erosion and
+sedimentation which result from the development process. An erosion
+and sediment control plan shall be presented with the construction plans
+submitted in conformance with Section 5-103, of these regulations. Such
+plans shall incorporate the following principals:
+a. clearing and grading shall be integrated with layout design;
+b. clearing shall be minimized and existing vegetation shall be
+preserved to the maximum feasible degree;
+ c. grading shall be strictly limited to those areas involved in current
+construction activities;
+d. disturbed areas shall be protected and stabilized as soon as
+possible;
+e. structural and vegetative measures to control the velocity and
+volume of runoff shall be required;
+ART. IV-8
+f. sediment basins and traps shall be required as necessary;
+ g. adequate maintenance of all planting and structures measures shall
+be assured.
+4-102.6 Debris and Waste
+No cut trees, timber, debris, junk, rubbish, or other waste materials of any kind
+shall be buried in any land or left or deposited on any lot or public way at the time
+of the issuance of a certificate of occupancy for the lot, and removal of such
+waste shall be required prior to issuance of any certificate of occupancy. Neither
+shall any such waste be left nor deposited in any area of the subdivision at the
+time of expiration of the performance bond or dedication of public improvements,
+whichever is sooner.
+4-102.7 Fencing
+Each subdivider or developer shall be required to furnish and install all fences
+wherever the planning commission determines that a hazardous condition exists.
+Such fences shall be constructed according to standards established by the
+planning commission, as appropriate, and shall be noted on the final plat as to
+height and required materials. No certificate of occupancy shall be issued for
+any affected lot until such fence improvements have been installed.
+4-102.8 Water Bodies and Watercourses
+If a tract being subdivided contains a water body, or portion thereof, lot lines shall
+be so drawn as to distribute the entire ownership of the water body among the
+fees of adjacent lots. The planning commission may approve an alternative plan
+whereby the ownership of and responsibility for safe maintenance of the water
+body is so placed that it will not become a governmental responsibility.
+No more than ten (10) percent of the minimum area of a lot required under any
+zoning ordinance may be satisfied by land which is under water. Where a
+watercourse separates a buildable area of a lot from the public way by which it
+has access, provisions shall be made for installation of a culvert or other
+structure approved by the planning commission and no certificate of occupancy
+shall be issued for a structure on such a lot until the installation is completed and
+approved by the planning commission and/or the appropriate governmental
+representative.
+ART. IV-9
+4-103 Public Ways
+4-103.1 General Requirements
+4-103.101 Frontage on Improved Public Ways
+No subdivision shall be approved unless the area to be subdivided shall
+meet the requirements for access set forth in Subsection 1-112.109, of
+these regulations. If any new street construction or improvements are
+involved, such shall be approved and, where public, dedicated as provided
+in Articles I and III, of these regulations. Any such public way must be
+suitably improved to the standards required by this article or be bonded by
+a performance bond required under these regulations, with the roadway
+and right-of-way widths required by this article or the major street or road
+plan.
+4-103.102 Grading and Improvement Plan
+Public ways shall be graded and improved to conform to the standards
+required by this section and shall be approved as to design and
+specification by the appropriate governmental representative in
+accordance with the specifications required herein. No surface shall be
+applied to the base of any proposed public way prior to the approval of the
+final plat of the subdivision or of the final approval of any section of the
+subdivision in question without having been properly inspected.
+4-103.103 Improvements in Floodable Areas
+The finished elevation of proposed public ways subject to flood shall be no
+more than one (1) foot below the regulatory flood protection elevation.
+The planning commission may require profiles and elevations of public
+ways to determine compliance with this requirement. All drainage
+structures shall be sufficient to discharge flood flows without increasing
+flood height. Where fill is used to bring the finished elevation of any public
+way to the required elevation, such fill shall not encroach upon a floodway,
+and the fill shall be protected against erosion by rip-rap, vegetative cover,
+or other methods deemed acceptable by the planning commission.
+4-103.104 Private Streets
+There shall be no private streets platted in any subdivision. See Section
+1-112.109.
+4-103.105 Topography and Arrangement
+a. All public ways shall be arranged so as to obtain as many of the
+building sites as possible at or above the grades of the public ways.
+Grades of public ways shall conform as closely as possible to the
+original topography. A combination of steep grades and curves
+shall not be permitted. Specific design standards are contained in
+Subsection 4-103.2, of these regulations.
+ART. IV-10
+b. The use of public ways running in a east-west direction and lots on
+a north-south axis is encouraged for energy conservation of
+developments.
+c. All public ways shall be properly integrated with the existing and
+proposed system of public ways and dedicated rights-of-way as
+established on the major street or road plan or the land
+development plan.
+d. All public ways shall be properly related to special traffic
+generators, such as industries, business districts, schools,
+churches, and shopping areas or centers; to population densities;
+and to the pattern of existing and proposed land use.
+e. Minor public ways shall be laid out to conform as much as possible
+to the topography; to discourage use by through traffic; to permit
+efficient drainage and utility systems; and to require the minimum
+ways necessary to provide convenient and safe access to property.
+f. The use of curvilinear streets, cul-de-sac, or "U"-shaped streets
+shall be encouraged where such use will result in a more desirable
+layout.
+g. Proposed public ways shall be extended to the boundary lines of
+the tract to be subdivided, unless prevented by topography or other
+physical conditions or unless, in the opinion of the planning
+commission, such extension is not necessary or desirable for the
+coordination of the subdivision design with the existing layout or the
+most advantageous future development of adjacent tracts.
+h. In business and industrial developments, public ways and other
+access routes shall be planned in connection with the grouping of
+buildings, location of rail facilities, and the provision of alleys, truck
+loading and maneuvering areas, and walks and parking areas, so
+as to minimize conflict of movement between the various types of
+traffic, including pedestrian traffic.
+4-103.106 Blocks
+a. Blocks shall have sufficient width to provide for two (2) tiers of lots
+of appropriate depth. Exceptions to this prescribed block width may
+be permitted in blocks adjacent to major public ways, railroads, or
+waterways.
+b. The lengths, widths, and shapes of blocks shall be determined with
+due regard to:
+ (i) provision of adequate building sites suitable to the special
+needs of the type of use contemplated;
+(ii) any zoning requirements as to lot sizes and dimensions;
+ (iii) needs for convenient access, circulation, control, and safety
+of vehicular and pedestrian traffic; and
+ART. IV-11
+(iv) limitations and opportunities of topography.
+c. Block lengths in residential areas shall not exceed sixteen hundred
+(1,600) feet nor be less than two hundred (200) feet, except as the
+planning commission deems necessary to secure efficient use of
+land or desired features of the public way pattern. Wherever
+practicable, blocks along arterial or collector routes shall not be less
+than one thousand (1,000) feet in length.
+d Blocks designed for industrial or commercial uses shall be of such
+length and width as may be deemed suitable by the planning
+commission.
+e. In any long block, the planning commission may require the
+reservation of an easement through the block to accommodate
+utilities, drainage, facilities, and/or pedestrian traffic.
+ A pedestrian walkway, not less than ten (10) feet wide, may be
+required by the planning commission through the approximate
+center of any block more than eight hundred (800) feet long, where
+deemed essential to provide circulation or access to a school,
+playground, shopping center, transportation facility, or other
+community facility.
+4-103.107 Access to Arterials and Collectors
+Where a subdivision borders on or contains an existing or proposed
+arterial or collector route, the planning commission may require that
+access to such public way be limited by:
+a. the subdivision of lots so as to back on the arterial or collector route
+and front on a parallel minor route;
+b. a series of cul-de-sac, "U" shaped public ways, or short loops
+entered from and designed generally at right angles to such a
+parallel public way, with the rear lines of their terminal lots backing
+onto the arterial or collector route; or
+c. a marginal access or service public way, separated from the arterial
+or collector route by a planting or grass strip and having access
+thereto at suitable points.
+The number of residential or local public ways entering on arterial or
+collector routes shall be kept to a minimum.
+4-103.108 Reserve Strips
+The creation of reserve strips adjacent to a proposed public way in such a
+manner as to deny access from adjacent property to such public way shall
+generally not be permitted.
+ART. IV-12
+However, in extraordinary circumstances the planning commission may
+allow creation of a reserve strip to enable a more appropriate pattern of
+lots or public ways. Where such is created the planning commission must
+agree to any and all future depositions of same. A notation to this effect
+shall be entered on the final plat or approved as an auxiliary instrument
+attached thereto.
+4-103.109 Arrangement of Continuing and Dead-End Public Ways
+a. Arrangement of Continuing Public Ways -- The arrangement of
+public ways shall provide for the continuation of major public ways
+between adjacent properties when such continuation is necessary
+for convenient movement of traffic, effective fire protection, efficient
+provision of utilities, and when such continuation is in accordance
+with the major street or road plan. If the adjacent property is
+undeveloped and the public way must be a dead-end public way
+temporarily, the right-of-way shall be extended to the property line.
+A temporary cul-de-sac, temporary T-, or L-shaped turnabout shall
+be provided on all temporary dead-end public ways as required in
+the following turnabout standards, with a notation on the
+subdivision plat that land outside the normal public way right-of-way
+shall revert to abutting property owners whenever the public way is
+continued.
+b. Dead-End Public Ways -- Where a public way does not extend
+beyond the boundary of the subdivision and its continuation is not
+required by the planning commission for access to adjoining
+property, its terminus shall normally not be nearer to such boundary
+than fifty (50) feet. However, the planning commission may require
+the reservation of an appropriate easement to accommodate
+drainage facilities, pedestrian traffic, or utilities. A cul-de-sac
+turnabout shall be provided at the end of a dead-end public way in
+accordance with the design standards of these regulations.
+ For greater convenience to traffic and more effective police and fire
+protection, permanent dead-end public ways shall, in general, be
+limited in length in accordance with the design standards of these
+regulations.
+4-103.2 Design Standards
+4-103.201 Purpose
+In order to provide public ways of suitable location, width, and
+improvement to accommodate prospective traffic and afford satisfactory
+access to police, fire-fighting, sanitation, and road-maintenance
+equipment, and to coordinate public ways so as to compose a convenient
+and safe system and avoid undue hardships to adjoining properties, the
+public way design standards set forth in this section are hereby required.
+(Public way classification shall be as indicated on the land development
+plan or major street or road plan; otherwise, the public way shall be
+classified by the planning commission according to the definitions in Article
+VI, of these regulations.)
+ART. IV-13
+4-103.202 General Design
+The general design of all public ways shall conform to the standards in the
+tables entitled "General Design Standards for Public Ways", which follow
+hereafter.
+4-103.203 Intersections
+a. Public ways shall be laid out so as to intersect as nearly as possible
+at right angles. A proposed intersection of two (2) new public ways
+at an angle of less than seventy-five (75) degrees shall not be
+permitted. An oblique public way should be curved approaching an
+intersection and should be approximately at right angles for at least
+one hundred (100) feet therefrom. Not more than two (2) public
+ways shall intersect at any one point unless specifically approved
+by the planning commission.
+ b. Proposed new intersections along one side of an existing public
+way shall coincide, wherever practicable, with any existing
+intersections on the opposite side of such public way. Jogs within
+public ways having center line offsets of less than one hundred fifty
+(150) feet shall not be permitted, except where the intersected
+public ways have separated dual drives without median breaks at
+either intersection. Where public ways intersect arterial or collector
+routes, their alignment shall be continuous. Intersections of arterial
+or collector public ways shall be at least eight hundred (800) feet
+apart.
+c. Minimum curb radius at the intersection of two (2) minor public
+ways shall be twenty-five (25) feet, and minimum curb radius at an
+intersection involving a collector public way shall be thirty (30) feet.
+Alley intersections and abrupt changes in alignment within a block
+shall have the corners cut off in accordance with standard
+engineering practice to permit safe vehicular movement.
+ d. Where a public way intersection will involve earth banks or existing
+vegetation inside any lot corner that would create a traffic hazard by
+limiting visibility, the subdivider shall cut such ground or vegetation
+(including trees) in connection with the grading of the public rightof-way to the extent necessary to provide adequate sight distance.
+e. Intersections shall be designed with a flat grade wherever practical.
+In hilly or rolling areas, at the approach to an intersection, a leveling
+area shall be provided having not greater than a two (2) percent
+grade for a distance of sixty (60) feet, measured from the nearest
+right-of-way line of the intersecting public way.
+f. The cross-slope on all public ways, including intersections, shall be
+three (3) percent or less.
+ART. IV-14
+4-103.204 Excess Right-of-Way
+A slope easement in excess of the right-of-way designated in these
+regulations may be required whenever, due to topography, additional
+width is necessary to provide adequate earth slopes. Such slopes shall
+not be less than three to one (3:1). Where solid rock is encountered
+slopes shall be one-half to one (1/2:1).
+4-103.205 Railroads and Limited Access Highways
+Railroad right-of-way and limited access highways, where so located as to
+affect the subdivision of adjoining lands, shall be treated as follows:
+a. In residential areas, a buffer strip at least twenty-five (25) feet in
+depth in addition to the normally required depth of the lot may be
+required adjacent to the railroad right-of-way or limited access
+highway. This strip shall be part of the platted lots and shall be
+designated on the plat: "This strip is reserved for screening; the
+placement of structures hereon is prohibited."
+b. In commercial or industrial areas, the nearest public way extending
+parallel or approximately parallel to the railroad shall, wherever
+practicable, be at a sufficient distance therefrom to ensure suitable
+depth for commercial or industrial usage.
+c. Public ways parallel to a railroad, when intersecting a public way
+which crosses the railroad at grade, shall to the extent practicable,
+be at a distance of at least one hundred fifty (150) feet from the
+railroad right-of-way. Such distance shall be determined with due
+consideration of the minimum distance required for future
+separation of grades by means of appropriate approach gradients.
+4-103.206 Bridges
+Bridges of primary benefit to the subdivider, as determined by the planning
+commission, shall be constructed at the full expense of the subdivider
+without reimbursement from the county government. The sharing of
+expenses for the construction of bridges not of primary benefit to the
+subdivider, as determined by the county government, shall be fixed by
+special agreement between the county government and the subdivider.
+The cost shall be charged to the subdivider pro rata as to the percentage
+of his development so served.
+ART. IV-15
+GENERAL DESIGN STANDARDS FOR PUBLIC WAYS
+
+NONRESIDENTIAL PUBLIC WAY
+ RESIDENTIAL (INDUSTRIAL, COMMERCIAL:
+IMPROVEMENT PUBLIC WAY OTHER)
+Minimum Right-of-Way Width (in Feet)
+5Minor 50 60
+Collector 60 60 or (See *Below)
+Arterial * *
+Minimum Width of Roadway or Paved Area (in Feet) not Including Parking
+Requirements
+Ditch Section Curb & Gutter Ditch Section Curb & Gutter
+Minor See Hickman County Road Specifications
+Collector See Hickman County Road Specifications
+Arterial See Hickman County Road Specifications
+Maximum Percentage Grade
+Minor See Hickman County Road Specifications
+Collector See Hickman County Road Specifications
+Arterial See Hickman County Road Specifications
+Pavement Crown
+The paved surface shall slope downward from the centerline of the street outward to the
+edge of the paved surface on each side 2/5ths of an inch per foot.
+Minimum Center Line Radius of Curve (in Feet)**
+Minor 100 200
+Collector 300 300
+Arterial 500 500
+___________________
+* As determined by appropriate governmental representative.
+** Applies where a deflection angle of 15 degrees or more in the alignment of
+pavement occurs.
+ART. IV-16
+(Continued)
+GENERAL DESIGN STANDARDS FOR PUBLIC WAYS
+
+NONRESIDENTIAL PUBLIC WAY
+ RESIDENTIAL (INDUSTRIAL, COMMERCIAL:
+IMPROVEMENT PUBLIC WAY OTHER)
+Minimum Length of Vertical Curves
+Minor 100 feet, but not less than 20 feet for each algebraic difference in grade.
+Collector 100 feet, but not less than 20 feet for each algebraic difference in grade.
+Arterial 300 feet, but not less than 50 feet for each algebraic difference in grade.
+Minimum Length of Tangents Between Reverse Curves (in Feet)
+Minor 100 200
+Collector 100 200
+Arterial 300 400
+Minimum Sight Distance (in Feet)*
+Minor 200 250
+Collector 240 250
+Arterial 300 400
+Intersection Across Corners 75 Feet Back Across Corners 75 Feet Back
+Minimum Turnaround on Cul-de-sacs on Minor Public Ways (in Feet)
+Right-of-way Diameter 100 See Hickman County Road Specifications
+Pavement Diameter 80 See Hickman County Road Specifications
+Length of Cul-de-sac
+Permanent 1,000 Feet
+Temporary 1,000 Feet
+Minimum Radius (in Feet) of Return at Intersections
+At Right-of-way 25 30
+At Pavement 30 50
+____________________
+* The sight distance is measured from a point 4 1/2 feet above the center line of
+the roadway surface to a point 4 inches above the center line of the roadway
+surface.
+ART. IV-17
+4-103.3 Right-of-Way Width Dedication on Existing Public Ways
+Where a subdivision adjoins an existing narrow public way or where the major
+street or road plan or any zoning setback provisions indicate plans for
+realignment or widening of a public way that would require use of some of the
+land in the subdivision, the subdivider shall be required to dedicate, at his
+expense, areas for widening or realigning such public way as set forth below:
+1. the entire right-of-way shall be provided where any part of the subdivision
+is on both sides of the existing public way; or
+2. when the subdivision is located on only one side of an existing public way,
+one-half (1/2) of the required right-of-way, measured from the center line
+of the existing pavement, shall be provided.
+4-103.4 Public Way Surfacing and Improvements
+No public way shall be surfaced until preliminary approval of the subdivision plat
+has been obtained. Surfacing shall be of such character as is suitable for the
+expected traffic. Types and methods of paving shall be according to the
+Hickman County Road Specifications. Adequate provisions shall be made for
+culverts or other drains, and bridges, as required.
+All public ways pavements, shoulders, drainage improvements and structures,
+any curb turnabouts, and sidewalks shall conform to all construction standards
+and specifications adopted by the Hickman County Commission and the Hickman
+County Planning Commission and shall be incorporated into the construction
+plans required to be submitted by the developer for plat approval.
+4-104 Road Construction Specifications
+The road construction specifications are the Hickman County Road Specifications.
+These specifications shall be the minimum standards for any subdivision within the
+jurisdictional area.
+4-105 Drainage and Storm Sewers
+4-105.1 General Requirements
+The planning commission shall not approve any plat of a subdivision which does
+not make adequate provisions for storm water or floodwater run-off channels or
+basins. The storm water drainage system shall be separate and independent
+from any sanitary sewer system.
+4-105.2 Nature of Storm water Facilities
+4-105.201 Location
+The subdivider may be required by the planning commission to transport
+by pipe or open ditch any spring or surface water that may exist prior to or
+as a result of the subdivision. Such drainage facilities shall be located in
+ART. IV-18
+the public way right-of-way, where feasible, or in perpetual unobstructed
+easements of appropriate width and shall be constructed in accordance
+with the construction specifications contained in these regulations.
+4-105.202 Accessibility to Public Storm Sewers
+a. Where a public storm sewer is accessible, the developer shall
+install storm sewer facilities, or if no outlets are within a reasonable
+distance, adequate provision shall be made for the disposal of
+storm waters, subject to the specifications of the appropriate
+governmental representative; inspection of facilities shall be
+conducted by the enforcing officer to assure compliance.
+b. If a connection to a public storm sewer will be provided eventually,
+as determined by the planning commission, the subdivider shall
+make arrangements for future storm water disposal by a public
+system at the time the plat receives final approval. Provisions for
+such connection shall be incorporated by inclusion in the
+performance bond required for the final subdivision plat.
+4-105.203 Accommodation of Upstream Drainage Areas
+A culvert or other drainage facility shall in each case be large enough to
+accommodate potential runoff from its entire upstream drainage area,
+whether inside or outside the subdivision. Necessary facilities shall be
+sized based on the construction specifications and assuming conditions of
+maximum potential watershed development permitted by any zoning
+ordinance.
+4-105.204 Effect on Downstream Drainage Areas
+The planning commission also shall study the effect of each subdivision on
+existing downstream drainage facilities outside the area of the subdivision. Where it is anticipated that the additional runoff incident to the
+development of the subdivision will overload an existing downstream
+drainage facility, the planning commission may withhold approval of the
+subdivision until provision has been made for adequate improvement of
+such drainage facilities in such sum as the planning commission shall
+determine. No subdivision shall be approved unless adequate drainage
+will be provided to an adequate drainage watercourse or facility.
+4-105.205 Areas of Poor Drainage
+Whenever a plat is submitted for an area which is subject to flooding, the
+planning commission may approve such subdivision; provided, that the
+applicant fills the affected floodway fringe area of said subdivision to
+ART. IV-19
+place public way elevations at no more than twelve (12) inches below the
+regulatory flood elevation and first floor elevations (including basements)
+at no less than one (1) foot above the regulatory flood elevation. The plat
+of such subdivision shall provide for a floodway along the bank of any
+stream or watercourse of width sufficient to contain or move the water of
+the regulatory flood, and no fill shall be placed in the floodway; neither
+shall any building nor flood-restrictive structure be erected or placed
+therein. The boundaries of the floodway and floodway fringe area, and the
+regulatory flood elevation, shall be determined by the planning
+commission based upon the review specified in Subsection 2-103.2, of
+these regulations and the submission of flood data in construction plans
+as specified in Section 5-103, of these regulations.
+4-105.206 Floodplain Areas
+The planning commission may when it deems it necessary for the health,
+safety, or welfare of the present and future population of the area or
+necessary to the conservation of water, drainage, and sanitary facilities,
+prohibit the subdivision of any portion of the property which lies within the
+floodplain of any stream or drainage course. The regulatory floodway
+shall be preserved from any and all destruction or damage resulting from
+clearing, grading, or dumping of earth, waste material, or stumps. Any
+subdivision which contains flood prone land shall be subject to the special
+provisions set forth in Subsections 2-101.4; 4-101.4; Section 4-104; and
+Subsection 4-105.2, of these regulations.
+4-105.3 Dedication of Drainage Easements
+4-105.301 General Requirements
+Where a subdivision is traversed by a watercourse, drainageway, channel,
+or stream, there shall be provided a storm water easement or drainage
+right-of-way conforming substantially to the lines of such watercourse and
+of such width and construction as will be adequate. Where open
+drainageways are utilized they shall be designed for the twenty-five (25)
+year frequency flood.
+4-105.302 Drainage Easements
+a. Where topography or other conditions are such as to make
+impracticable the inclusion of drainage facilities within a public way
+right-of-way, perpetual unobstructed easements at least ten (10)
+feet in width for such facilities shall be provided across property
+outside the public way lines and with satisfactory access to public
+ways. Easements shall be indicated on the preliminary and final
+plats. Drainage easements shall be carried from the public way to
+a natural watercourse or to other drainage facilities.
+b. When a new drainage system is to be constructed which will carry
+water across private land outside the subdivision, appropriate
+drainage rights must be secured and indicated on the plat.
+ART. IV-20
+c. The applicant shall dedicate, when required by the planning
+commission, either in fee, or by drainage or conservation
+easement, the land on both sides of an existing watercourse to a
+distance to be determined by the planning commission.
+ d. Along watercourses, low-lying lands within any floodway, as
+determined by the planning commission pursuant to Section 2-103,
+of these regulations, whether or not included in areas for
+dedication, shall be preserved and retained in their natural state as
+drainage ways.
+4-105.303 Ditching, Concrete Ditch Paving, and Culverts and Storm
+Drains
+The design and construction details of drainage facilities shall be in
+accordance with the provisions of these regulations. The design and
+construction details of all such facilities shall be approved by the
+appropriate governmental representative.
+4-106 Water Facilities
+4.106.1 General Requirements
+1. Necessary action shall be taken by the developer to extend a water supply
+system capable of providing domestic water use and fire protection.
+2. Where a public water main is within reasonable access of the subdivision,
+as determined by the planning commission, the subdivider shall install
+adequate water facilities, including fire hydrants, subject to construction
+and material specifications approval of the planning commission, the
+Tennessee Department of Environment and Conservation and these
+regulations.
+3. Where required for fire protection water mains shall not be less than six
+(6) inches in diameter; where water mains are not to be utilized for fire
+protection, the planning commission may approve smaller lines, as
+necessary, to meet potable water demand.
+4. All water systems, whether public or private, located in a flood prone area
+shall be floodproofed to the regulatory flood protection elevation. All water
+supply facilities located below the regulatory flood protection elevation
+shall be designed to prevent the infiltration of floodwaters into the water
+supply system and discharges from the system into floodwaters.
+4-106.2 Fire Hydrants
+Fire hydrants shall be required in all subdivisions where public water is available;
+they shall be located no more than one thousand (1,000) feet apart and be within
+five hundred (500) feet of any residential, commercial, or industrial lot. However,
+the planning commission may require closer spacing where physical conditions
+or types of structures so warrant. To eliminate future public way cutting or
+openings, all underground utilities for fire hydrants, together with the fire hydrants
+themselves, and all other water supply improvements shall be installed before
+any final paving of a public way shown on the subdivision plat, unless otherwise
+ART. IV-21
+approved by the planning commission. A dry hydrant system may be required
+where public water is not available and where water pressure is not adequate for
+fire hydrants.
+4-107 Sewage Facilities
+4-107.1 General Requirements
+The applicant shall install sanitary sewer facilities in a manner prescribed by the
+regulations of the Tennessee Department of Environment and Conservation and
+by any other applicable standards and specifications. All plans shall be designed
+and approved in accordance with the rules, regulations, specifications, and
+standards, of any applicable governmental agency or appropriate unit thereof.
+4-107.2 Mandatory Connection to Public Sewer System
+1. When public sanitary sewers are within reasonable access of the
+subdivision, as determined by the planning commission, the subdivider
+shall provide sanitary sewer facilities to each lot therein and shall connect
+the facilities to the public system. The subdivider shall provide sewers
+which meet standards set forth in the regulations of the Tennessee
+Department of Environment and Conservation.
+2. All sanitary sewer facilities located in a flood hazard area shall be
+floodproofed to the regulatory flood protection elevation. All sewer
+facilities located below the regulatory flood protection elevation shall be
+designed to prevent infiltration of floodwaters into the sewer system and
+discharges from the system into floodwaters.
+4-107.3 Individual Disposal System Requirements
+If public sewer facilities are not available and individual disposal systems are
+proposed, lot areas shall not be less than the minimums specified in these
+regulations; all pertinent soil absorption tests shall be made as directed by the
+county environmentalist and the results submitted to the county health
+department for approval.
+The individual disposal system, including the size of the septic tank and size of
+the tile fields or other secondary treatment device, also shall be approved by the
+county health department.
+The planning commission may prohibit installation of sewage disposal facilities
+requiring soil absorption systems where such systems will not function due to
+high groundwater, flooding, or unsuitable soil characteristics. The planning
+commission may require that the subdivider note on the face of the plat and any
+deed of conveyance that soil absorption fields are prohibited in designated areas.
+ART. IV-22
+4-107.4 Design Criteria for Sanitary Sewers
+Sanitary sewer systems shall be designed for the ultimate tributary population
+based upon appropriate plans and zoning regulations.
+The minimum size of a public sewer line shall be eight (8) inches in diameter with
+individual lot service lines a minimum of four (4) inches.
+Sanitary sewers shall be located within a public street right-of-way, unless
+topography dictates otherwise. Public utility easements shall be provided across
+private property for access to lines and manholes such easements to be of an
+adequate width for service purposes, but in no case less than twenty (20) feet.
+4-108 Pedestrian Ways
+4-108.1 Sidewalks and Bicycle Paths
+Sidewalks and bicycle paths, when included in the subdivision plat, shall adhere
+to the minimum standards and shall be included within the dedicated
+nonpavement right-of-way of all public ways as indicated in the following table
+and shall be improved as required by Subsection 4-103.4, of these regulations.
+Concrete curbs are required for all public ways where sidewalks are to be
+constructed. A median strip of grassed or landscaped area at least two (2) feet
+wide shall separate all sidewalks from adjacent curbs.
+
+SIDEWALK DESIGN
+Class of Street Sidewalk Width
+Nonresidential Public Way
+Residential Public Way (Industrial, Commercial; Other)
+Minor Public Way 4 feet wide 6 feet wide
+Collector Public Way 5 feet wide 6 feet wide
+Arterial Public Way 5 feet wide 6 feet wide
+
+4-108.2 Pedestrian Accesses
+The planning commission may require, in order to facilitate pedestrian access
+from the public way to schools, parks, playgrounds, or other nearby public ways,
+perpetual unobstructed easements at least twenty (20) feet in width. Easements
+shall be indicated on the plat.
+ART. IV-23
+4-109 Utility Easements
+A. Easements down rear lot lines or additionally across lots, if deemed necessary
+by the planning commission, shall be provided for utilities (private or public).
+Such easements shall be at least twenty (20) feet wide. The subdivider shall
+take such actions as are necessary to ensure the coordination and continuation
+of utility easements established on adjacent properties with those proposed
+within his development.
+B. Where topographical or other conditions are such as to make impractical the
+inclusion of utilities within rear lot lines, perpetual unobstructed easements at
+least twenty (20) feet in width shall be provided along side lot lines with
+satisfactory access to public ways or rear lot lines. Easements shall be indicated
+on the plat.
+C. Temporary construction easements exceeding the width of permanent
+easements may be required as necessary until completion of any one project.
+4-110 Public Uses
+4-110.1 Plat to Provide for Public Uses
+Whenever a tract to be subdivided includes a school, recreation use, a portion of
+a major public way, or other public use, as indicated on the land development
+plan and/or major street or road plan, or any portion thereof, such tract shall be
+suitably incorporated by the developer into his plat when first presented for
+review by the planning commission.
+After proper determination of its necessity by the planning commission and the
+appropriate governmental representative(s) involved in the acquisition and use of
+such site, and after a determination has been made to acquire the site by the
+public agency, the site shall be suitably incorporated by the developer into the
+plat prior to final approval by the planning commission and recording of the plat.
+4-110.2 Referral to the Governmental Agency Concerned
+The planning commission shall refer any plat presented in accordance with
+Subsection 4-110.1, to the governmental agency concerned with acquisition of
+the land. The planning commission may propose alternate areas for such
+acquisition and shall allow the appropriate governmental agency thirty (30) days
+for reply.
+Among the areas which the planning commission may propose for public
+acquisition, when the commission deems it appropriate and consistent with the
+policies and purposes set forth in these regulations, is any land within a floodway
+or floodway fringe determined according to the procedure outlined herein.
+The acquiring agency's recommendation, if affirmative, shall include a map
+showing the boundaries and area of the parcel to be acquired and an estimate of
+the time required to complete the acquisition.
+ART. IV-24
+4-110.3 Notice to Property Owner
+Upon receipt of an affirmative report, the planning commission shall notify the
+property owner and shall designate on all plats any areas proposed to be
+acquired by any governmental agency. Upon such designation by the planning
+commission, any reserved portion of any floodway or floodway fringe shall not be
+altered from its natural state by the development in any manner whatsoever,
+except upon written approval of the planning commission.
+4-110.4 Duration of Land Reservation
+The acquisition of land reserved by a governmental agency on the final plat shall
+be initiated within twenty-four (24) months of notification, in writing, from the
+owner that he intends to develop the land. Such letter of intent shall be
+accompanied by a plat of a proposed development and a tentative schedule of
+construction. Failure on the part of the governmental agency to initiate
+acquisition within the prescribed twenty four (24) months shall result in the
+removal of the "reserved" designation from the property involved and the freeing
+of the property for development in accordance with these regulations.
+4-111 Preservation of Natural Features and Amenities
+Existing features which would add value to residential development or to the area as a
+whole, such as trees, watercourses and falls, historic spots, and similar irreplaceable
+assets, shall be preserved in the design of the subdivision, as required by the planning
+commission. No change of grade of the land shall be affected nor shall any natural
+features be removed or relocated until a preliminary subdivision plat has been approved
+by the planning commission.
+4-112 Nonresidential Subdivisions
+4-112.1 General
+If a proposed subdivision includes land which is zoned for a commercial or
+industrial purpose, the layout of the subdivision with respect to such land shall
+make such provisions as the planning commission may require. A nonresidential
+subdivision also shall be subject to all the requirements of site plan approval set
+forth in any zoning ordinance. Site plan approval may proceed simultaneously at
+the discretion of the planning commission. A nonresidential subdivision shall be
+subject to all the requirements of these regulations, as well as such additional
+standards set forth by the planning commission, and shall conform to the
+proposed land development plan, major street or road plan, and any zoning
+ordinance.
+4-112.2 Standards
+In addition to the principles and standards in the regulations, which are
+appropriate to the planning of all subdivisions, the subdivider shall demonstrate
+to the satisfaction of the planning commission that the public way, parcel, and
+block pattern proposed is specifically adapted to the uses anticipated and takes
+into account other uses in the vicinity. The following principles and standards
+shall be observed:
+ART. IV-25
+ART. IV-26
+ 1. proposed industrial parcels shall be suitable in areas and dimensions to
+the types of nonresidential development anticipated;
+ 2. public way rights-of-way and pavements shall be adequate to
+accommodate the type and volume of traffic anticipated;
+ 3. special requirements may be imposed by the governing body with respect
+to any public way, curb, gutter, and sidewalk design and construction
+specifications;
+ 4. special requirements may be imposed by the governing body with respect
+to the installation of public utilities, including water, sewer, and storm
+water drainage;
+ 5. every effort shall be made to protect adjacent residential areas from
+potential nuisance from the proposed nonresidential subdivision, including
+the provision of extra depth in parcels backing on existing or potential
+residential development and provisions for permanently landscaped buffer
+strips, when necessary; and
+ 6. public ways carrying nonresidential traffic, especially trucks, normally shall
+not be extended to the boundaries of adjacent existing or potential
+residential areas.
+ 
+
+ ARTICLE V
+SPECIFICATIONS FOR DOCUMENTS TO BE SUBMITTED
+5-101 Sketch Plat
+5-101.1 General
+Sketch plats submitted to the planning commission, prepared in pen or pencil,
+shall be drawn to a convenient scale no smaller than two hundred (200) feet to
+an inch.
+5-101.2 Features
+The sketch plat shall show:
+1. a scale drawing of the property and the names of the owners of adjoining
+property;
+2. size of the original tract(s) being subdivided;
+3. notation of any existing legal rights-of-way or easements, or other
+encumbrances affecting the property;
+4. approximate topography of the site, at no more than five (5) foot intervals,
+extended into adjacent properties;
+5. any areas which may be affected by flooding;
+6. general public way and lot patterns;
+7. proposed phasing, if any;
+8. vicinity map of property;
+9. date and approximate north point;
+10. name of owner;
+11. name of licensed surveyor; and
+ 12. zoning classification.
+ART. V-1
+5-102 Preliminary Plat
+5-102.1 General
+The preliminary plat shall be prepared by a licensed surveyor, at a convenient
+scale no smaller than two hundred feet to an inch (200’ – 1”). The plat may be
+prepared in pen or pencil, and the sheets shall be numbered in sequence if more
+than one sheet is used. The map prepared for the preliminary plat may be used
+for the final subdivision plat and should be permanently reproducible.
+5-102.2 Features
+The preliminary plat shall include:
+1. the location of the property to be subdivided with respect to surrounding
+property(s) and public way(s);
+2. the names of all adjoining property owners of record, or the names of
+adjoining developments;
+3. the names of adjoining public ways;
+4. the location and dimensions of all boundary lines of the property, figured
+to the nearest hundredth (100th) of a foot;
+5. the location of existing public ways, easements, water bodies, streams,
+and other pertinent features, such as swamps, railroads, buildings, parks,
+cemeteries, drainage ditches, and bridges, as determined by the planning
+commission;
+6. the location and width of all existing and proposed easements, alleys, and
+other public ways, and building setback lines;
+7. the location, dimension, and area of all proposed or existing lots;
+8. culverts, driveway tiles, associated drainage structures sized along with
+necessary easements; electrical and telephone easements;
+9. the position of all existing or proposed buildings within proposed
+condominium developments;
+10. the location and dimension of all property proposed to be set aside for
+park or playground use or other public or private reservation, with
+designation of the purpose thereof, and conditions, if any, of the
+dedication or reservation;
+11. the limits of floodway and floodway fringe areas and the associated
+regulatory flood elevation and regulatory flood protection elevation, as
+determined according to flood maps or flood studies as required;
+12. the name and address of the owner(s) of land to be subdivided, the
+subdivider if other than the owner, and the licensed surveyor preparing the
+plat;
+ART. V-2
+13. the date of the plat, approximate true north point, scale, and title of the
+subdivision;
+14. sufficient data to determine readily the general location, bearing, and
+length of all lines necessary to reproduce such lines upon the ground;
+15. name of the subdivision and all new public ways, as approved by the
+planning commission;
+16. the zoning classification of all zoned lots, as well as an indication of all
+uses other than residential proposed by the subdivider;
+17. the distance and bearing of one of the corners of the boundary of the
+subdivision to the nearest intersection of existing public ways and to the
+original corner of the original survey of which it is a part;
+18. key map showing relation of the subdivision to all public ways, railroads,
+and watercourses in all directions to a distance of at least one-half (1/2)
+mile. (Suggested scale: one inch to one thousand feet (1” – 1,000’);
+19. contours at vertical intervals of not more than two (2) feet where the
+proposed subdivision has an average slope of five (5) percent or less, or
+at vertical intervals of not more than five (5) feet where the average slope
+exceeds five (5) percent (contours to be field surveyed or taken from aerial
+photographs acceptable to the planning commission);
+20. map parcel numbers as recorded on the land tax maps of the county;
+21. The following notations:
+(a) explanation of drainage easements;
+(b) explanation of site easements;
+(c) explanation of reservations; and
+(d) for any lot where public sewer or water systems are not available,
+the following:
+(i) areas to be used for sewage disposal and their percolation
+results, or if the planning commission desires, any other
+acceptable data to show that the site can be served
+effectively by septic tanks;
+(ii) water wells (existing and proposed); and
+(iii) rock outcroppings, marshes, springs, sinkholes, natural
+storm drains, and other outstanding topographical features;
+22. draft of proposed restrictive covenants, if any, to be imposed and
+designation of areas subject to special restrictions; and
+ART. V-3
+23. a form for endorsement of planning commission approval of the
+preliminary plat which shall read as follows:
+ Approved by the Planning Commission,
+with such exceptions or conditions as are indicated in the minutes of the
+Commission on . date
+Preliminary plat approval shall not constitute final approval for recording
+purposes.
+5-103 Construction Plans
+5-103.1 General
+Construction plans shall be prepared for all improvements required by these
+regulations. Plans shall be drawn at a scale of no more than fifty (50) feet to an
+inch. Plans shall be in compliance with the specifications in Article IV, of these
+regulations. Approval of plans must precede actual construction, and no final
+plat shall be considered by the planning commission until the required plans have
+been approved. The construction plans shall be prepared and stamped by a
+licensed engineer engaged in the practice of civil engineering.
+5-103.2 Features
+The following shall be shown on the construction plans.
+1. Profiles showing existing and proposed elevations along center lines of all
+public ways.
+2. Where a proposed road intersects an existing public way or ways, the
+elevation along the center line of the existing public way within one
+hundred (100) feet of the intersection.
+3. Approximate radii of all curves, lengths of tangents, and central angles on
+all public ways.
+4. Proposed public ways, as required by the planning commission; where
+such are required, horizontal stationing shall be at fifty (50) foot intervals
+and cross-sectional elevations shall be to an accuracy of one tenth (1/10)
+foot vertical on a line at right angles to the center line of the public way at
+the following points: the center line of the public way, each property line,
+and points twenty-five (25) feet inside each property line.
+5. Plans and profiles indicating the locations and typical cross-section of
+public way pavements, including curbs and gutters, sidewalks, drainage
+easements, rights-of-way, manholes, and catch basins.
+6. The location of public way signs.
+ART. V-4
+7. The location, size, and invert elevations of existing and proposed sanitary
+sewers, storm water drains, and fire hydrants, showing connection to any
+existing or proposed utility system.
+8. Exact location and size of all water, gas, or other underground utilities or
+structures.
+9. Location, size, elevation, and other appropriate description of any existing
+facilities or utilities, including but not limited to, existing public ways,
+sewers, drains, water mains, easements, water bodies, streams, and other
+pertinent features, such as swamps, railroads, buildings, and features
+noted on the land development plan or major street or road plan.
+10. The water elevations of adjoining lakes or streams and the approximate
+high- and low-water elevations of such lakes or streams shall be shown.
+All elevations shall be referred to the U.S.G.S. datum plane.
+11. If the subdivision borders a lake, river, or stream, the distance and
+bearings of a meander line established not less than twenty (20) feet back
+form the ordinary high-water mark of such waterways.
+12. The developer shall prepare for any portion of a subdivision containing a
+flood prone area, or an area known to be subject to flooding, information
+necessary for the planning commission to determine the suitability of the
+particular site for the proposed development, as follows:
+(a) plans in triplicate drawn to scale showing the nature, location,
+dimensions, and elevation of any part of the subdivision within a
+flood prone area; existing or proposed structures or building sites,
+fill, storage of materials and floodproofing measures, as specified in
+these regulations; and the relationship of the above to the location
+of the stream channel, floodway, floodway fringe, the regulatory
+flood elevation, and the regulatory flood protection elevation;
+(b) a typical valley cross-section showing the channel of the stream,
+elevation of land areas adjoining each side of the channel, crosssectional areas to be occupied by the proposed development, and
+high-water information, if required by the planning commission;
+(c) surface-view plans showing elevations and contours of the ground;
+ (d) pertinent structures, fill, or elevations of public ways;
+(e) water supply, sanitary facilities, soil types, and other pertinent
+information, as required by the planning commission; and
+(f) specifications for building construction and materials, flood
+proofing, filling, dredging, grading, storage of materials, water
+supply, and sanitary facilities.
+ART. V-5
+13. Contours at the same vertical interval as on the preliminary plat.
+14. In addition to the other requirements of this section, construction plans for
+condominium subdivisions shall contain "as built" drawings of all
+underground utilities, regardless of proposed ownership, and the
+construction design of all public facilities which are proposed for dedication
+to the governing body.
+15. A notation of construction plans approval by appropriate persons or
+governmental representatives.
+16. Title, name, address, stamp and signature of engineer who prepared the
+plans.
+17. Date of plans, including any revision dates.
+18. An erosion and sediment control plan shall be prepared for each
+development required to submit construction plans. Such plan shall
+demonstrate the manner in which the general principals for erosion and
+sediment control set out in Subsection 4-102.503 are to be implemented
+on the site covered by the construction plans.
+5-104 Final Subdivision Plat
+5-104.1 General
+The final subdivision plat shall be prepared on transparent drafting material at a
+scale no smaller than two hundred feet to the inch (200’ – 1”) on sheets of county
+register plat book size. The use of an appropriate smaller scale may be
+permitted for lots larger than two (2) acres. When more than one (1) sheet is
+required, an index sheet of the same size shall be filed showing the entire
+subdivision with the sheets numbered in sequence.
+Construction plans, if required as described in Section 5-103, of these
+regulations, shall have been approved prior to planning commission approval of
+the final subdivision plat.
+5-104.2 Features
+The final plat shall include:
+1. The location of the property to be subdivided with respect to surrounding
+property(s) and public ways.
+2. The names of all adjoining property owners of record or the names of
+adjoining developments.
+3. The names of adjoining public ways.
+ART. V-6
+4. The exact boundary lines of the tract, determined by a field survey,
+showing angles to the nearest minute and distance to the nearest one
+hundredth (1/100) of a foot. The adjusted accuracy of the survey shall
+meet or exceed the standards set forth in Title 62, Chapter 18, of the
+Tennessee Code, for the category of survey required by these regulations.
+The category of survey shall be determined according to the average size
+of lots (see Table below) within the proposed subdivision.
+
+ACCURACY OF SURVEYS*
+ Category I Urban and Subdivision
+ Category II Suburban and Subdivision
+ Category III All Other Surveys
+______
+NOTE: Surveys must meet the minimum accuracy requirements provided
+above for the category where the survey is located. The category (I,
+II, or III, as defined above) must be determined by the surveyor to the
+best of his knowledge and belief at the time of the survey. Nothing in
+this rule shall preclude a surveyor from using a greater degree of
+accuracy than that required as a minimum for any category provided
+above.
+A distance and bearing shall be provided which will link a point on the
+boundary of the subdivision to a monument in the right-of-way of the
+nearest prominent public way intersection.
+5. The location of all public ways, easements, water bodies, large streams or
+rivers, railroads, parks, and cemeteries.
+6. The limits of floodway and floodway fringe areas and the regulatory flood
+elevation and regulatory flood protection elevation; as determined by the
+planning commission.
+7. The location and width of all easements and rights-of-way for public ways,
+as well as the building setback lines on all lots.
+8. The location, dimensions, and area of all lots. All dimensions shall be field
+run to the nearest one hundredth of a foot and angles to the nearest
+minute. Lot areas shall be shown to the nearest tenth of a square foot.
+9. The location, area, and dimensions, to the accuracy set forth in Item 8
+above, of all property to be set aside for park or playground use or other
+public or private reservation, with a designation of the purpose thereof,
+and conditions, if any, of the dedication or reservation.
+ART. V-7
+10. The final plat of a condominium subdivision shall contain, in addition to the
+other information required by this section:
+(a) an "as-built" building location and boundary survey, to "American
+Land Title Association" or other similar standards, showing
+complete and accurate dimensions and angles of the boundary of
+the parcel(s) on which the condominium is located, together with
+exterior dimensions and locations relative to those boundaries of
+the building(s) which constitute the condominium subdivision;
+(b) some sort of datum plane or other suitable vertical location
+reference. In meeting these requirements, it is only necessary that
+the upper and lower limits of each level of each condominium unit
+be identified specifically in relation to the vertical reference, (e.g.,
+an appropriate permanent monument or other acceptable reference
+datum or fixed known point). Elaborate exterior elevations and
+architectural detail are not necessary to satisfy this requirement;
+and
+(c) copies of deed covenants, the charter and by-laws of any
+homeowners' association established; and special information
+which the planning commission may require to protect the rights of
+future owners of the condominium or the public in general.
+11. The name and address of the owner(s) of the land being subdivided.
+12. The name and address of the subdivider if other than the owner.
+13. The name and stamp of the licensed surveyor preparing the plat.
+14. The date of the plat, approximate true north point, scale, and title of the
+subdivision.
+15. Sufficient data to determine readily the location, bearing, and length of all
+lines necessary to reproduce such lines upon the ground. This shall
+include the radius, central angle, and tangent distance for the center line
+of the curved public ways and curved property lines that are not the
+boundary of curved public ways. The location of all monuments and pins
+shall be indicated on the plat.
+16. The name of all public ways.
+17. The zoning classification of all lots, as well as an indication of uses other
+than residential proposed by the subdivider.
+18. The total acreage within the subdivision.
+19. Lot numbers, where required.
+20. The line size and location of water and sewer facilities.
+ART. V-8
+21. The location of all fire hydrants.
+22. The diameter and width of all driveway culverts.
+23. For any lot where public sewer or water system is not available, the
+following shall be shown:
+(a) areas to be used for sewage disposal; and
+(b) water wells (existing and proposed).
+24. Applicable certifications in the form reproduced in this section shall appear
+upon the final plat. All required certificates shall bear the signature of the
+approving or authorizing agent at the time of application for final plat
+approval, except that the form for endorsement of the planning
+commission's approval for recording shall appear unsigned at the time of
+application for approval.
+25. State Department of Environment and Conservation, public water and
+sewer design layout and approval stamps, if applicable; also, actual
+design plans for filing in appropriate governmental representative's office.
+26. Commitment notes may be printed or stamped on the final plat reflecting
+location and dimension of easements, or extent of other agreements or
+factual data, in lieu of drafted illustration, when applicable, and as
+approved by the planning commission.
+5-104.3 Plat Certificates
+ 1. Certification showing that the applicant is the landowner; that he offers for
+dedication public ways, rights-of-way, and any site for public use; and that
+he consents to the subdivision plan.
+ CERTIFICATE OF OWNERSHIP AND DEDICATION
+I (we) hereby certify that I am (we are) the owner(s) of the property shown
+and described hereon as evidenced in Book Number ____, page ____,
+County Registers Office, and that I (we) hereby adopt this plan of
+subdivision with my (our) free consent, establish the minimum building
+restriction lines, and that offers of irrevocable dedication for all public
+ways, utilities, and other facilities have been filed.
+ ____________________, 20 __ __________________________
+ Date Owner
+ __________________________________________________________
+Title (if acting for partnership or corporation)
+ART. V-9
+2. Certification by a registered land surveyor as to the accuracy of the land
+survey.
+CERTIFICATE OF SURVEY ACCURACY
+I (we) hereby certify that to the best of my (our) knowledge and belief this
+is a true and accurate survey of the property shown hereon; that this is a
+Class "_____" Land Survey as defined in Title 62, Chapter 18, Tennessee
+Code, and that the ratio of precision is greater than or equal to 1: ______.
+ _______________, 20__ _____________________________________ Date Registered Land Surveyor - Number .
+ 3. Certification by appropriate governmental or quasi-governmental official(s)
+that sewage disposal and/or water system(s) has/have been installed.
+CERTIFICATE OF APPROVAL OF WATER SYSTEM
+I hereby certify that the water system(s) outlined or indicated on the final
+subdivision plat entitled _______________________________ has/have
+been installed in accordance with current local and state government
+requirements, or a sufficient bond or other surety has been filed to
+guarantee said installation.
+ _______________, 20__ ________________________________ Date Name, Title and Agency or Authorized
+ Approving Agent
+CERTIFICATE OF APPROVAL OF SEWER SYSTEMS
+I hereby certify that the sewer systems outlined or indicated on the final
+subdivision plat entitled ________________________________ have
+been installed in accordance with current local and state government
+requirements or a sufficient bond or cash has been filed which will
+guarantee said installation.
+Sewer System ____________, 20__ __________________________ Date Name, Title, and Agency of
+ Authorized Approving Agent
+ART. V-10
+ CERTIFICATE OF APPROVAL
+ PRIVATE SUBSURFACE SEWAGE DISPOSAL
+ General approval is hereby granted for lots proposed hereon as being
+suitable for subsurface sewage disposal with the listed and/or attached
+restrictions.
+Before the initiation of construction, the location of the house or other
+structures and plans for the subsurface sewage disposal system shall be
+approved by the local health authority.
+ _________________, 20__ ________________________________ Date Local Health Authority
+ 4. Certification on the final plat by appropriate governmental representative
+that the subdivider has complied with one of the following:
+(a) installation of all public way improvements in accordance with the
+requirements of these regulations; or
+(b) in lieu of compliance with subdivision improvement requirements,
+certification that surety has been posted by the subdivider in an
+amount approved by appropriate governmental representative to
+guarantee completion of all improvements.
+ CERTIFICATE OF APPROVAL
+OF PUBLIC WAYS FOR BOND POSTING
+I hereby certify: (1) that all designated public ways on this final
+subdivision plat have been installed in an acceptable manner and
+according to the specifications of the _____________________________
+Subdivision Regulations, or (2) that a performance bond or other surety
+has been posted with the planning commission to guarantee completion of
+all required improvements in case of default.
+ _______________, 20__ _____________________________________ Date Appropriate Governmental Representative
+5. For a subdivision containing common open space or facilities, certification
+on the final plat of dedication of common areas in accordance with
+procedures established in these regulations.
+ART. V-11
+ CERTIFICATION OF COMMON AREAS DEDICATION
+_______________________ in recording this plat has designated certain
+areas of land shown hereon as common areas intended for use by the
+homeowners within ________________________________ for recreation
+ (Name of Subdivision)
+and related activities. The above described areas are not dedicated for
+use by the general public, but are dedicated to the common use of the
+homeowners within the named subdivision.
+"Declaration of Covenants and Restrictions," applicable to the above
+named subdivision, is hereby incorporated and made a part of this plat.
+ _________________, 20__ ________________________________ Date Owner
+6. Certification on the final plat of planning commission approval for
+recording of the plat.
+ CERTIFICATE OF APPROVAL FOR RECORDING
+I hereby certify that the subdivision plat shown hereon has been found to
+comply with the ______________________ Subdivision Regulations, with
+the exception of such variances, if any, as are noted in the minutes of the
+planning commission, and that it has been approved for recording in the
+Office of the County Register.
+ ____________, 20__ ________________________________ Date Secretary, Planning Commission
+7. Notation of Possible Flooding -- If any portion of the land being subdivided
+is subject to flooding as defined in these regulations, a notation shall be
+made on the plat that development or modification of the land within any
+floodway delineated within plat is prohibited and that development within
+floodway fringes delineated on the plat shall be done in such a manner
+that any structure shall be protected against flood damage to at least the
+regulatory flood protection elevation, which elevation shall be stated in the
+notation. Any additional restrictions imposed by the planning commission
+upon development within flood prone areas also shall be indicated on the
+plat.
+8. Notation of Health Restrictions -- Any modifications or limitations which
+may be imposed by the state or county health department shall be clearly
+indicated on the plat.
+9. Notation of Private Restrictions -- Private restrictions and trusteeships and
+their periods of existence shall be indicated on the plat. Should these
+restrictions or trusteeships be of such length as to make their lettering
+impracticable and thus necessitate the preparation of a separate
+instrument, reference to such instrument shall be made on the plat or, if
+the restrictions and trusteeships are of record, the plat shall note where
+they are recorded.
+ART. V-12
+10. Private Driveway Certification – This drive is to be built and maintained
+jointly by all owners taking access from this private driveway, and is not
+intended to become a public road. The Hickman County Highway
+Commission may, at their discretion, agree to accept this road into the
+County Highway System if all property owners agree to (1) petition the
+Highway Commission for a public road and (2) build or pay for upgrading
+to County specifications in effect at the time of the request. Signature and
+Date of County Road Supervisor required. Any owner(s) of lots currently
+taking access from this private driveway must sign, thereby
+acknowledging awareness of the above maintenance statement and
+awareness that access via this private driveway is limited to five (5) lots
+with a minimum of five (5) acres each.
+Owner Signature Map Parcel Back Page Number Date
+5-105 Form of Dedication Offer
+The form of the offer of irrevocable dedication, required by Subsection 2-104.1, Item 5,
+of these regulations, shall be as reproduced in this section and approved by the city
+attorney. The form may be modified as required by the city attorney.
+Copies of this form may be obtained at the office of the enforcing officer.
+FORM FOR OFFER OF
+IRREVOCABLE DEDICATION
+AGREEMENT made this ________ day of ________________, 20__, by and between
+________________________, a ____________________, having its office and place of
+business at _______________________, Tennessee, hereinafter designated as the
+"local government".
+WHEREAS, the _______________ _______________ Planning Commission is in the
+process of approving a subdivision plat entitled __________________________, dated
+______________________, and made by ______________________; and
+WHEREAS, said map designates certain public improvements consisting of
+______________________________________________ to be dedicated to the City of
+______________________, free and clear of all encumbrances and liens, pursuant to
+the requirements of the planning commission and the local government; and
+WHEREAS, the developer, simultaneously herewith, shall post a performance bond with
+the city for the construction, maintenance, and dedication of said improvements, if
+required;
+WHEREAS, the developer is desirous of offering for dedication the said improvements
+and land to the city more particularly described in Schedule _____________________
+attached hereto;
+WHEREAS, the developer has delivered deeds of conveyance to the city for the said
+land and improvements as described herein;
+ART. V-13
+NOW, THEREFORE, in consideration of the sum of one dollar ($1.00) lawful money of
+the United States paid by the city to the developer and other good and valuable
+consideration, it is mutually AGREED as follows:
+A. The developer herewith delivers to the city deeds of conveyance for the
+premises described in Schedule _________________________ attached
+hereto, said delivery being a formal offer of dedication to the city until the
+acceptance or rejection of such offer of dedication by the city.
+B. The developer agrees that said formal offer of dedication is irrevocable
+and can be accepted by the city at the time.
+C. The developer agrees to complete the construction and maintenance of
+the land and improvements pursuant to the performance bond and the
+requirements of the ________________ _________________ Planning
+Commission and any ordinances, regulations, requirements, covenants,
+and agreements that may be imposed by the city with respect thereto and,
+upon acceptance by the city of the offer of dedication, furnish to the city a
+sworn statement certifying that the premises are free and clear of all liens
+and encumbrances and shall furnish to the city a check for all necessary
+fees and taxes to record the deeds heretofore delivered.
+D. That this irrevocable offer of dedication shall run with land and shall be
+binding on all assigns, guarantees, successors, or heirs of the developer.
+ ______________, 20____ ________________________________ Date Developer
+ (CORPORATE SEAL)
+ ATTEST: FOR THE COUNTY OF: _____________________
+ BY: __________________________
+ ________________, 20__ __________________________
+ART. V-14
+ART. V-15
+ACKNOWLEDGEMENT:
+COPARTNERSHIP
+ STATE OF TENNESSEE
+ (COUNTY OF __________________) SS: _________________
+ On this ____ day of _______________, 20__, before me personally
+appeared ______________________________, to me known and known
+to me to be one of the firm _________________________________,
+described in and who executed the foregoing instrument, and he
+thereupon acknowledged to me that he executed such instrument as and
+for the act and deed of said firm.
+ ______________________________
+ CORPORATE
+ STATE OF TENNESSEE
+ (COUNTY OF __________________) SS: _________________
+ On this ____ day of _________, 20__, before me personally appeared
+_____________________, to me known, who, being by me first duly
+sworn, did depose and said that he resides in ____________________;
+that he is the ____________________ of ________________, the
+corporate seal affixed to said instrument is such corporate seal; that it was
+so affixed by order and authority of the Board of Directors of said
+corporation, and that he signed his name thereto by like order and
+authority.
+ __________________________
+ INDIVIDUAL 
+
+ ARTICLE VI
+DEFINITIONS
+6-101 Usage
+A. For the purpose of these regulations certain numbers, abbreviations, terms, and
+words used herein shall be used, interpreted, and defined as set forth in this
+article.
+B. Unless the context clearly indicates to the contrary, words used in the present
+tense include the future tense and words used in the plural include the singular;
+the word "herein" means "in these regulations"; and the word "regulations"
+means "these regulations".
+C. A "person" includes a corporation, a partnership, and an unincorporated
+association of persons, such as a club; "shall" is always mandatory; a "building"
+or "structure" includes any part thereof; "used" or "occupied", as applies to any
+land or building, shall be construed to include "intended, arranged, or designed to
+be used or occupied".
+6-102 Words and Terms Defined
+Alley -- A public or private right-of-way primarily designed to serve as secondary access
+to the side or rear of those properties whose principal frontage is on some other street.
+Applicant -- The owner of land proposed to be subdivided or his authorized
+representative. Consent shall be required from the legal owner of the premise(s).
+Architect -- An architect or landscape architect certified and registered by the State
+Board of Architectural and Engineer Examiners pursuant to Title 62, Chapter 2,
+Tennessee Code, to practice in Tennessee.
+Arterial Street or Road -- A major public way intended to move traffic to and from major
+industrial areas or a route for traffic between communities or large areas and which has
+an average daily traffic count in excess of three thousand (3,000).
+Block -- A tract of land bounded by public ways or by a public parks, cemeteries,
+railroad rights-of-way, or shorelines or waterways or a combination of such.
+Bond -- An instrument with a clause, with a sum of money fixed as a penalty, binding
+the parties to pay the same: conditioned, however, that the payment of the penalty may
+be avoided by the performance by some one or more of the parties of certain acts.
+Building -- Any structure built for the support, shelter, or enclosure of persons, animals,
+chattels, or movable property of any kind; the term includes a mobile home.
+ART. VI-1
+Capital Improvements Program -- A proposed schedule of future projects, listed in order
+of construction priority, together with cost estimates and the anticipated means of
+financing each project. All major projects requiring the expenditure of public funds, over
+and above the annual local government operating expenses, for the purchase,
+construction, or replacement of the physical assets of the community are included.
+Collector Street or Road -- A major public way intended to move traffic from local ways
+to arterial routes. Collector routes serve a neighborhood or large subdivision(s), and
+normally have an average daily traffic count ranging from one thousand and one (1,001)
+to three thousand (3,000).
+Common Elements -- Any portion of a condominium which is held in common by owners
+of condominium units. These elements may be either general common elements or
+limited common elements, as defined below.
+General Common Elements -- Any of the common elements of a condominium
+which are held in joint ownership by all owners of the condominium.
+Limited Common Elements -- Any of the common elements of a condominium
+which are reserved for use by the owner of a particular condominium unit or
+group of units.
+Condominium -- A form of ownership of less than the whole of a building or system of
+buildings under the provisions of Title 66, Chapter 27, Tennessee Code, which provides
+the mechanics and facilities for formal filing and recordation of divided interests in real
+property, whether the division is vertical or horizontal.
+Condominium Subdivision -- The subdivision of property through the establishment of a
+condominium or horizontal property regime.
+Horizontal Condominium Subdivision -- A subdivision where each unit occupies
+some ground space.
+Vertical Condominium Subdivision -- A subdivision of a multi-story building in
+which one (1) or more units do not occupy ground space.
+Condominium Unit -- A space conveyed by separate title and located within a
+condominium structure.
+Construction Plan -- The maps or drawings accompanying a subdivision plat and
+showing the specific location and design of improvements to be installed in the
+subdivision in accordance with the requirements of the planning commission.
+Contractor -- An individual, firm, or corporation with whom an owner or authorized agent
+has executed a work agreement.
+County Environmentalist -- An agent designated to administer local and/or state health
+regulations.
+Cul-de-sac -- A minor street having only one outlet and having an appropriate terminal
+for the safe and convenient reversal of traffic movement; definition includes: dead end,
+turn-around, or turn-about.
+ART. VI-2
+Design Specifications -- Written descriptions of a technical nature of materials,
+equipment, construction systems, standards, and workmanship required for a project
+intended for local government ownership or maintenance.
+Developer -- The owner of land proposed to be subdivided or his authorized
+representative.
+Dwelling Unit -- A room, or rooms connected together constituting a separate,
+independent housekeeping establishment for owner occupancy, rental or lease on a
+daily, weekly, monthly, or longer basis; physically separated from any other room(s) or
+dwelling units which may be in the same structure; and containing independent cooking
+and sleeping facilities.
+Easement -- Authorization by a property owner for the use by another, for a specified
+purpose, of any designated part of his property.
+Enforcing Officer -- The building inspector or such person designated by the chief
+executive officer to be responsible for enforcing the provisions of these regulations.
+Engineer -- An engineer certified and registered by the State Board of Architectural and
+Engineer Examiners pursuant to Title 62, Chapter 2, Tennessee Code, to practice in
+Tennessee.
+Equal Degree of Encroachment -- The delineation of floodway limits so that floodplain
+lands on both sides of a stream are capable to conveying a proportionate share of flood
+flows. This is determined by considering the hydraulic conveyance of the floodplain
+along both sides of a stream for a significant reach.
+Escrow -- A fiduciary agreement with the local government in lieu of actual performance
+and intended to assure performance. An escrow account may be provided as a bond
+subject to agreement of the planning commission.
+External Subdivision Boundary -- All points along the periphery of a subdivision.
+Final Subdivision Plat -- The final map or drawing and accompanying materials,
+described in these regulations, on which the subdivider's plan of the subdivision is
+presented to the planning commission for approval and which, if approved by the
+commission, is recorded with the county register of deeds.
+Flood -- A temporary rise in stream level that results in inundation of areas not ordinarily
+covered by water.
+Flood Frequency -- The statistically determined average for how often a specific flood
+level or discharge may be equaled or exceeded.
+Flood Hazard Boundary Map -- An official map on which the boundaries of the
+floodplain areas having special flood hazards have been delineated.
+Flood Hazard or Flood Prone Area -- The maximum area of the floodplain that, on the
+average, is likely to be flooded once every one hundred years (i.e., that has a one (1)
+percent chance of being flooded in any year).
+ART. VI-3
+Floodplain -- A land area adjoining a river, stream watercourse, bay, or lake which is
+likely to be flooded. It is composed of a floodway and floodway fringe.
+Floodplain Management Program -- The overall program of corrective and preventive
+measures for reducing flood damage, including but not limited to emergency
+preparedness plans, flood control works, building code regulations, health regulations,
+zoning ordinance regulations, and these subdivision regulations.
+Flood Profile -- A graph showing the water surface elevation or height or a particular
+flood event for any point along the longitudinal course of a stream. The flood profile is
+determined through the use of standard open-channel hydraulic calculations.
+Floodproofing -- Any combination of structural and nonstructural additions, changes, or
+adjustments to properties and structures which reduce or eliminate potential flood
+damage to lands; water facilities, sanitary facilities, and other utilities; structures; and
+contents of buildings; and which prevent pollution of floodwaters from such natural or
+man-made sources.
+Floodway -- The stream channel and adjacent overbank areas required to carry and
+safely discharge the 100-year flood without increasing flood levels more than one foot
+above natural flood levels.
+Floodway Encroachment Limits -- The lines marking the limits of floodways on official
+federal, state, and local floodplain maps.
+Floodway Fringe -- The area adjoining a watercourse which, although not lying within a
+floodway, has been or may hereafter be covered by a 100-year flood.
+Frontage -- That side of a lot abutting a public way ordinarily regarded as the front of the
+lot. It shall not be considered as the ordinary side of a corner lot.
+General Plan -- The official statement of the planning commission which sets forth major
+policies concerning future development of the jurisdictional area and meeting the
+provisions set forth in Sections 13-3-301 thru 13-3-304, Tennessee Code.
+Governmental Agency -- Any public body other than the governing body.
+Governing Body -- The chief legislative body of any government.
+Governmental Representative -- An outside person or designated local official or
+employee authorized to act on behalf of the governing body in making determinations
+regarding legal, public works, planning, community development, or other public
+business.
+Grade -- The slope of a public way specified in percentage terms.
+Highway, Limited Access -- A freeway or expressway providing a trafficway for through
+traffic, in respect to which owners or occupants of abutting property(s) or lands and
+other persons have no legal right of access to or from the trafficway, except at such
+points and in such manner as may be determined by the public authority having
+jurisdiction over such trafficway.
+ART. VI-4
+Horizontal Property Act -- "The Tennessee Horizontal Property Act" as codified in Title
+66, Chapter 2, Tennessee Code.
+Individual Sewage Disposal System -- A septic tank, seepage tile sewage disposal
+system, or any other sewage treatment device other than a public treatment system
+approved by the appropriate governmental representative.
+Internal Subdivision Boundary -- All points within a subdivision which do not constitute
+external boundaries.
+Joint Ownership -- Joint ownership among persons shall be construed as the same
+owner for the purpose of imposing subdivision regulations.
+Jurisdictional Area -- Planning boundary(s) established in keeping with Sections 13-3-
+102, 13-3-201, and 13-3-301, Tennessee Code.
+Land Development Plan -- An element of the general plan which sets out a plan or
+scheme of future land usage.
+Land Surveyor -- A land surveyor certified and registered by the State Board of Land
+Survey Examiners pursuant to Title 62, Chapter 18, Tennessee Code, to practice in
+Tennessee.
+Legal Counsel -- The person designated by the governing body to provide legal
+assistance for the administration of these and other regulations.
+Lot - A tract, plot, or portion of a subdivision or parcel of land intended as a unit for the
+purpose, whether immediate or future, or transfer of ownership, or for building
+development.
+Lot, Corner -- A lot situated at the intersection of two (2) public ways.
+Lot Improvement -- Any building, structure, place, work of art, or other object or
+improvement of the land on which they are situated constituting a physical betterment of
+real property, or any part of such betterment.
+Major Street or Road -- A public way which is classified as a collector or arterial public
+way according to these regulations or by the major street or road plan for the
+jurisdictional area.
+Major Street or Road Plan -- The plan adopted by the planning commission, pursuant to
+Section 13-3-402, Tennessee Code, showing, among other things, "the general
+location, character, and extent of public ways... (and) the removal, relocation,
+extension, widening, narrowing, vacating, abandonment or change of use of existing
+public ways..."
+Major Subdivision -- All subdivisions not classified as minor subdivisions including but
+not limited to subdivisions of five (5) or more lots or subdivisions of any size requiring
+any new or improved road, the extension of government facilities, or the creation of any
+public improvements, or containing any flood prone area.
+ART. VI-5
+Minor Street or Road -- A public way which is not classified as an arterial or collector.
+Minor Subdivision -- Any subdivision containing less than five (5) lots fronting on an
+existing public way; not involving any new or improved public way, the extension of
+public facilities, or the creation of any public improvements, and not in conflict with any
+provision of the adopted general plan, major street or road plan, zoning ordinance, or
+these regulations.
+National Flood Insurance Program -- A program established by the U.S. Government in
+the National Flood Insurance Act of 1968, and expanded in the Flood Disaster
+Protection Act of 1973, in order to provide a flood insurance at rates made affordable
+through a federal subsidy in local political jurisdictions which adopt and enforce
+floodplain management programs meeting the requirements of the National Flood
+Insurance Program regulations. The program regulations are found at 24 Code of
+Federal Regulations, Chapter X, Subchapter B.
+Offsite -- Any premise not located within the area of the property to be subdivided,
+whether or not in the same ownership of the applicant for subdivision approval.
+One Hundred-Year Flood -- A flood having an average frequency of occurrence of once
+in 100 years, although it may occur in any year. It is based on statistical analysis of
+stream flow records available for the watershed and analysis of rainfall and runoff
+characteristics in the general region of the watershed.
+Owner -- Any person, group of persons, firm or firms corporation or corporations, or any
+other legal entity having legal title to or sufficient proprietary interest in the real property.
+Performance Bond -- See "Bond".
+Perimeter Street -- Any existing street to which the parcel of land to be subdivided abuts
+on only one side.
+Planning Commission -- A public planning body established pursuant to Title 13,
+Tennessee Code, to execute a partial or full planning program within authorized area
+limits.
+Preliminary Plat -- The preliminary drawing or drawings, described in these regulations,
+indicating the proposed manner of layout of the subdivision to be submitted to the
+planning commission for approval.
+Premise(s) -- A tract of land together with any buildings or structures which may be
+thereon.
+Public Improvement -- Any drainage ditch, roadway, parkway, sidewalk, pedestrian way,
+tree, lawn, off-street parking area, lot improvement, or other facility for which the local
+government may ultimately assume the responsibility for maintenance and operation or
+which may affect an improvement for which government responsibility is established.
+Public Way -- Any publicly owned street, alley, sidewalk, or lane right-of-way which
+provides for movement of pedestrians or vehicles.
+ART. VI-6
+Reach -- A hydraulic engineering term to describe longitudinal segments of a stream or
+river. A reach generally includes the segment of the flood hazard area where flood
+heights are influenced by a man-made area where flood or natural obstruction. In an
+urban area, the segment of a stream or river between two (2) consecutive bridge
+crossings typically would constitute a reach.
+Regulatory Flood -- The one hundred-year flood.
+Regulatory Flood Protection Elevation -- The elevation of the regulatory flood plus one
+foot of freeboard to provide a safety factor.
+Resubdivision -- A change in a map of any approved or recorded subdivision plat
+altering the number of lots incorporated within the confines of the original plat.
+Right-of-Way -- A strip of land occupied or intended to be occupied by a public way
+crosswalk, railroad, electric transmission line, oil or gas pipeline, water main, sanitary or
+storm sewer line, or for another special use. The usage of the term "right-of-way", for
+land platting purposes, shall mean that every right-of-way hereafter established and
+shown on a final plat is to be separate and distinct from the lots or parcels adjoining
+such right-of-way and shall not be included within the dimensions or areas of such lots
+or parcels.
+Sale or Lease -- Any immediate or future transfer of ownership, including contract of
+sale or transfer, of an interest in a subdivision or part thereof, whether by metes and
+bounds, deed, contract, plat, map, or other written instrument.
+Same Ownership -- Ownership by the same person, corporation, firm entity,
+partnership, or unincorporated association or ownership by different corporations, firms,
+partnerships, entities, or unincorporated associations, in which a stockholder, partner,
+associate, or a member of his family owns an interest in each corporation, firm,
+partnership, entity, or unincorporated association.
+Setback -- The distance between a building wall and the nearest public way right-ofway.
+Sketch Plat -- A sketch preparatory to the preliminary plat (or final subdivision plat, in
+the case of minor subdivisions).
+Special Flood Hazard Map -- The official map designated by the Federal Insurance
+Administrator to identify floodplain areas having special flood hazards.
+Staff Assistant to the Planning Commission -- The person(s) employed by the local
+governing body to assist the planning commission in planning and land use regulation
+activities.
+Start of Construction -- For purposes of subdivision control any alteration of the original
+surface area of the land, from and after the date of adoption of these regulations.
+Structure -- Anything constructed above or below ground.
+ART. VI-7
+ART. VI-8
+Subdivider -- Any person who (1) having an interest in land, causes it, directly or
+indirectly, to be divided into a subdivision or who (2) directly or indirectly, sells, leases,
+or develops, or offers to sell, lease, or develop, or advertises for sale, lease, or
+development, any interest, lot, parcel site, unit, or plot in a subdivision or who (3)
+engages, directly or indirectly, or through an agent in the business of selling, leasing,
+developing, or offering for sale, lease, or development a subdivision or any interest, lot,
+parcel site, unit, or plot in a subdivision or who (4) is directly or indirectly controlled by or
+under direct or indirect common control with any of the foregoing.
+Subdivision -- "Subdivision" means the division of a tract or parcel of land into two (2) or
+more lots, sites, or other divisions requiring new street or utility construction, or any
+division of less than five (5) acres for the purpose, whether immediate or future, of sale
+or building development, and includes resubdivision and when appropriate to the
+context, relates to the process of resubdividing or to the land or area subdivided. (See
+Sections 13-3-401, Tennessee Code.)
+Subdivision Agent -- Any person who represents or acts for or on behalf of a subdivider
+or developer in selling, leasing, or developing or offering to sell, lease, or develop any
+interest, lot, parcel, unit, site, or plot in a subdivision, except in an instance where only
+legal counsel is provided.
+Temporary Improvement -- Any improvement built and maintained by a subdivider
+during construction of the subdivision and prior to release of the surety for completion of
+required improvements.
+Twenty-Five Year Flood -- A flood having an average frequency of occurrence of once
+in twenty-five (25) years.
+Water Surface Elevation -- The heights in relation to mean-sea-level expected to be
+reached by floods of various magnitudes and frequencies at pertinent points in the
+floodplain. Also the level of natural flows or collectors or water which may be expected
+to be found above or below surface.
+Zoning Resolution -- A statute, legally adopted pursuant to Title 13, Tennessee Code , for the purpose of regulating by district, land development or use for a designated area. 
+
+ARTICLE VII
+ADOPTION OF REGULATIONS AND AMENDMENTS
+7-101 Original Enactment
+In order that land shall be subdivided in accordance with the objectives and standards
+set forth in these regulations, these subdivision regulations are hereby adopted this
+______________ day of ________________, 20____, and immediately shall be in full
+force and effect. Pursuant to Section 13-3-403, Tennessee Code, a public hearing was
+held on these regulations _______________________, 20____, at
+_____________________________________________________________________
+ Date Time Place
+in __________________________________, notice of which was given by publication
+(County)
+_________________________________________, on _________________, 20____.
+ (Name of Newspaper) Date
+______________________________________ __________________________
+ Chairman Date
+ATTEST:
+______________________________________ __________________________
+ Secretary Date
+ART. VII-1 
