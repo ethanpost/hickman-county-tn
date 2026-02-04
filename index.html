@@ -108,6 +108,32 @@
             box-shadow: 0 0 0 4px rgba(31, 41, 55, 0.12);
         }
 
+        .refresh-button {
+            border: 1px solid var(--panel-border);
+            background-color: var(--panel);
+            color: var(--text);
+            font-size: 12px;
+            font-weight: 600;
+            padding: 8px 14px;
+            border-radius: 999px;
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+            transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+            margin-left: 8px;
+        }
+
+        .refresh-button:hover {
+            border-color: var(--accent);
+            color: var(--accent-strong);
+            background-color: var(--chip);
+            box-shadow: 0 0 0 4px rgba(31, 41, 55, 0.12);
+        }
+
+        .refresh-button:active {
+            transform: scale(0.98);
+        }
+
         .content {
             padding: 26px 28px 34px;
         }
@@ -198,9 +224,14 @@
                 <div class="site-title">Hickman County, TN</div>
                 <div class="subtitle">Meeting outlines and documents</div>
             </div>
-            <button class="theme-toggle" type="button" id="theme-toggle" aria-pressed="false">
-                <span id="theme-toggle-text">Dark</span>
-            </button>
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <button class="refresh-button" type="button" id="refresh-button" title="Refresh outlines">
+                    ↻ Refresh
+                </button>
+                <button class="theme-toggle" type="button" id="theme-toggle" aria-pressed="false">
+                    <span id="theme-toggle-text">Dark</span>
+                </button>
+            </div>
         </header>
 
         <main class="content">
@@ -246,7 +277,11 @@
             const contentDiv = document.getElementById('content');
             
             try {
-                const response = await fetch('pages/outlines.json');
+                // Add cache-busting to ensure fresh content
+                const cacheBuster = `?t=${Date.now()}`;
+                const response = await fetch(`pages/outlines.json${cacheBuster}`, {
+                    cache: 'no-store'
+                });
                 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
@@ -314,6 +349,12 @@
         document.addEventListener('DOMContentLoaded', () => {
             initTheme();
             loadOutlines();
+            
+            // Add refresh button functionality
+            const refreshButton = document.getElementById('refresh-button');
+            refreshButton.addEventListener('click', () => {
+                loadOutlines();
+            });
         });
     </script>
 </body>
