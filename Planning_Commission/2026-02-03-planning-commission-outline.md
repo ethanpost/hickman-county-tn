@@ -1,4 +1,5 @@
-# February 3, 2026 - Planning Commission Meeting Outline
+# Planning Commission Meeting Outline
+## February 3, 2026
 
 > **Disclaimer:**  
 > This outline was created using AI based on an automatically generated transcript. The transcript and this outline is likely to contain errors, inaccuracies, or omissions. Always refer to the original audio recording if you need to verify any details or for official purposes.
