@@ -19,3 +19,12 @@ Replace "$ "
 
 ## Remove blank lines.
 ^\s*\n
+
+
+## Add line numbers
+find /c/home/hickman-county-tn/Raw_Data/Budgets -type f -name "all_tables.csv" | while read file; do
+    d=$(dirname $file)
+    b=$(basename $file)
+    cp $file ${d}/$b.bak
+    awk '{print "\"" NR "\"," $0}' ${d}/$b.bak > $file
+done
