@@ -21,25 +21,25 @@ BEGIN
     IF NOT does_table_exist('hickman_county_budget_4cols') THEN
         EXECUTE IMMEDIATE q'{
             CREATE TABLE hickman_county_budget_4cols (
-                FUND                               VARCHAR2(128) DEFAULT NULL,
-                ACCOUNT                            VARCHAR2(128) DEFAULT NULL,
-                BUDGETED_2021                      NUMBER        DEFAULT NULL,
-                BUDGETED_2022                      NUMBER        DEFAULT NULL,
-                BUDGETED_2023                      NUMBER        DEFAULT NULL,
-                BUDGETED_2024                      NUMBER        DEFAULT NULL,
-                BUDGETED_2025                      NUMBER        DEFAULT NULL,
-                TOTAL_BUDGETED_2021_2025           NUMBER        DEFAULT NULL,
-                INCREASE_DECREASE_2022             NUMBER        DEFAULT NULL,
-                INCREASE_DECREASE_2023             NUMBER        DEFAULT NULL,
-                INCREASE_DECREASE_2024             NUMBER        DEFAULT NULL,
-                INCREASE_DECREASE_2025             NUMBER        DEFAULT NULL,
-                INCREASE_DECREASE_NET        NUMBER        DEFAULT NULL,
-                PCT_CHANGE_2022                NUMBER        DEFAULT NULL,
-                PCT_CHANGE_2023                NUMBER        DEFAULT NULL,
-                PCT_CHANGE_2024                NUMBER        DEFAULT NULL,
-                PCT_CHANGE_2025                NUMBER        DEFAULT NULL,
-                PCT_CHANGE_2021_2025           NUMBER        DEFAULT NULL,
-                AVG_PCT_CHANGE NUMBER       DEFAULT NULL
+                FUND                        VARCHAR2(128) DEFAULT NULL,
+                ACCOUNT                     VARCHAR2(128) DEFAULT NULL,
+                BUDGETED_2021               NUMBER        DEFAULT NULL,
+                BUDGETED_2022               NUMBER        DEFAULT NULL,
+                BUDGETED_2023               NUMBER        DEFAULT NULL,
+                BUDGETED_2024               NUMBER        DEFAULT NULL,
+                BUDGETED_2025               NUMBER        DEFAULT NULL,
+                TTL_BUDGETED_2021_2025      NUMBER        DEFAULT NULL,
+                PCT_CHANGE_2021_2025        NUMBER        DEFAULT NULL,
+                NET_CHANGE_2021_2025        NUMBER        DEFAULT NULL,
+                AVG_PCT_CHANGE_2021_2025    NUMBER        DEFAULT NULL,
+                CHANGE_2022                 NUMBER        DEFAULT NULL,
+                CHANGE_2023                 NUMBER        DEFAULT NULL,
+                CHANGE_2024                 NUMBER        DEFAULT NULL,
+                CHANGE_2025                 NUMBER        DEFAULT NULL,
+                PCT_CHANGE_2022             NUMBER        DEFAULT NULL,
+                PCT_CHANGE_2023             NUMBER        DEFAULT NULL,
+                PCT_CHANGE_2024             NUMBER        DEFAULT NULL,
+                PCT_CHANGE_2025             NUMBER        DEFAULT NULL
             );
         }';
     END IF;
@@ -131,12 +131,12 @@ update hickman_county_budget_4cols
        BUDGETED_2025 = nvl(BUDGETED_2025, 0);
 
 update hickman_county_budget_4cols 
-set INCREASE_DECREASE_2022 = BUDGETED_2022-BUDGETED_2021,
-    INCREASE_DECREASE_2023 = BUDGETED_2023-BUDGETED_2022,
-    INCREASE_DECREASE_2024 = BUDGETED_2024-BUDGETED_2023,
-    INCREASE_DECREASE_2025 = BUDGETED_2025-BUDGETED_2024,
-    INCREASE_DECREASE_NET = BUDGETED_2025-BUDGETED_2021,
-    TOTAL_BUDGETED_2021_2025 = BUDGETED_2021+BUDGETED_2022+BUDGETED_2023+BUDGETED_2024+BUDGETED_2025;
+set CHANGE_2022 = BUDGETED_2022-BUDGETED_2021,
+    CHANGE_2023 = BUDGETED_2023-BUDGETED_2022,
+    CHANGE_2024 = BUDGETED_2024-BUDGETED_2023,
+    CHANGE_2025 = BUDGETED_2025-BUDGETED_2024,
+    NET_CHANGE_2021_2025 = BUDGETED_2025-BUDGETED_2021,
+    TTL_BUDGETED_2021_2025 = BUDGETED_2021+BUDGETED_2022+BUDGETED_2023+BUDGETED_2024+BUDGETED_2025;
 
 declare
    cursor c_budget is
@@ -150,7 +150,7 @@ begin
       elsif r.BUDGETED_2021 > 0 and r.BUDGETED_2022 = 0 then
          r.PCT_CHANGE_2022 := -100;
       else
-         r.PCT_CHANGE_2022 := round(r.INCREASE_DECREASE_2022/r.BUDGETED_2021 * 100, 1);
+         r.PCT_CHANGE_2022 := round(r.CHANGE_2022/r.BUDGETED_2021 * 100, 1);
       end if;
       if r.BUDGETED_2022 = r.BUDGETED_2023 then 
          r.PCT_CHANGE_2023 := 0;
@@ -159,7 +159,7 @@ begin
       elsif r.BUDGETED_2022 > 0 and r.BUDGETED_2023 = 0 then
          r.PCT_CHANGE_2023 := -100;
       else
-         r.PCT_CHANGE_2023 := round(r.INCREASE_DECREASE_2023/r.BUDGETED_2022 * 100, 1);
+         r.PCT_CHANGE_2023 := round(r.CHANGE_2023/r.BUDGETED_2022 * 100, 1);
       end if;
       if r.BUDGETED_2023 = r.BUDGETED_2024 then 
          r.PCT_CHANGE_2024 := 0;
@@ -168,7 +168,7 @@ begin
       elsif r.BUDGETED_2023 > 0 and r.BUDGETED_2024 = 0 then
          r.PCT_CHANGE_2024 := -100;
       else
-         r.PCT_CHANGE_2024 := round(r.INCREASE_DECREASE_2024/r.BUDGETED_2023 * 100, 1);
+         r.PCT_CHANGE_2024 := round(r.CHANGE_2024/r.BUDGETED_2023 * 100, 1);
       end if;
       if r.BUDGETED_2024 = r.BUDGETED_2025 then 
          r.PCT_CHANGE_2025 := 0;
@@ -177,7 +177,7 @@ begin
       elsif r.BUDGETED_2024 > 0 and r.BUDGETED_2025 = 0 then
          r.PCT_CHANGE_2025 := -100;
       else
-         r.PCT_CHANGE_2025 := round(r.INCREASE_DECREASE_2025/r.BUDGETED_2024 * 100, 1);
+         r.PCT_CHANGE_2025 := round(r.CHANGE_2025/r.BUDGETED_2024 * 100, 1);
       end if;
       if r.BUDGETED_2021 = 0 and r.BUDGETED_2025 = 0 then 
          r.PCT_CHANGE_2021_2025 := 0;
@@ -186,7 +186,7 @@ begin
       elsif r.BUDGETED_2021 > 0 and r.BUDGETED_2025 = 0 then
          r.PCT_CHANGE_2021_2025 := -100;
       else
-         r.PCT_CHANGE_2021_2025 := round(r.INCREASE_DECREASE_NET/r.BUDGETED_2021 * 100, 1);
+         r.PCT_CHANGE_2021_2025 := round(r.NET_CHANGE_2021_2025/r.BUDGETED_2021 * 100, 1);
       end if;
       update hickman_county_budget_4cols 
          set PCT_CHANGE_2022 = r.PCT_CHANGE_2022,
@@ -194,14 +194,14 @@ begin
              PCT_CHANGE_2024 = r.PCT_CHANGE_2024,
              PCT_CHANGE_2025 = r.PCT_CHANGE_2025,
              PCT_CHANGE_2021_2025 = r.PCT_CHANGE_2021_2025,
-             AVG_PCT_CHANGE = round((r.PCT_CHANGE_2022+r.PCT_CHANGE_2023+r.PCT_CHANGE_2024+r.PCT_CHANGE_2025)/4, 1)
+             AVG_PCT_CHANGE_2021_2025 = round((r.PCT_CHANGE_2022+r.PCT_CHANGE_2023+r.PCT_CHANGE_2024+r.PCT_CHANGE_2025)/4, 1)
          where account = r.account;
    end loop;
    commit;
 end;
 /
 
--- select * from hickman_county_budget_4cols order by total_budgeted_2021_2025 desc;
+-- select * from hickman_county_budget_4cols order by TTL_BUDGETED_2021_2025 desc;
 
 update hickman_county_budget_4cols set fund='GENERAL' where REGEXP_LIKE(account, '^5[0-9]{4} .*$');
 update hickman_county_budget_4cols set fund='GENERAL' where account like '54110%';
@@ -215,6 +215,57 @@ update hickman_county_budget_4cols set fund='AMERICAN RESCUE PLAN ACT GRANT #7 (
 update hickman_county_budget_4cols set fund='VARIOUS' where account like '99100%';
 commit;
 
--- select * from hickman_county_budget_4cols order by total_budgeted_2021_2025 desc;
+-- select * from hickman_county_budget_4cols order by 8 desc;
 
-select * from hickman_county_budget_4cols where account like 'Total%' order by 8 desc;
+
+select account,
+       -- SINCE_2021 
+       round(PCT_CHANGE_2021_2025)||'%' PCT_CHANGE_2021_2025,
+       round(AVG_PCT_CHANGE_2021_2025)||'%' AVG_PCT_CHANGE_2021_2025,
+       round(PCT_CHANGE_2025)||'%' PCT_CHANGE_2025,
+       TO_CHAR(BUDGETED_2025, 'FM999G999G999G990') as BUDGETED_2025,
+       TO_CHAR(BUDGETED_2021, 'FM999G999G999G990') as BUDGETED_2021,
+       TO_CHAR(BUDGETED_2024, 'FM999G999G999G990') ||
+         ' * ' ||
+         case 
+            when PCT_CHANGE_2024 > 0 then 'up ' || abs(PCT_CHANGE_2024) || '%'
+            when PCT_CHANGE_2024 < 0 then 'down ' || abs(PCT_CHANGE_2024) || '%'
+            else '0%'
+         end ||
+         ' * ' ||
+         case 
+            when CHANGE_2024 < 0 then '-$' || TO_CHAR(abs(CHANGE_2024), 'FM999G999G999G990')
+            else '$' || TO_CHAR(CHANGE_2024, 'FM999G999G999G990')
+         end as info2024,
+
+       TO_CHAR(BUDGETED_2023, 'FM999G999G999G990') ||
+         ' * ' ||
+         case 
+            when PCT_CHANGE_2023 > 0 then 'up ' || abs(PCT_CHANGE_2023) || '%'
+            when PCT_CHANGE_2023 < 0 then 'down ' || abs(PCT_CHANGE_2023) || '%'
+            else '0%'
+         end ||
+         ' * ' ||
+         case 
+            when CHANGE_2023 < 0 then '-$' || TO_CHAR(abs(CHANGE_2023), 'FM999G999G999G990')
+            else '$' || TO_CHAR(CHANGE_2023, 'FM999G999G999G990')
+         end as info2023,
+
+       TO_CHAR(BUDGETED_2022, 'FM999G999G999G990') ||
+         ' * ' ||
+         case 
+            when PCT_CHANGE_2022 > 0 then 'up ' || abs(PCT_CHANGE_2022) || '%'
+            when PCT_CHANGE_2022 < 0 then 'down ' || abs(PCT_CHANGE_2022) || '%'
+            else '0%'
+         end ||
+         ' * ' ||
+         case 
+            when CHANGE_2022 < 0 then '-$' || TO_CHAR(abs(CHANGE_2022), 'FM999G999G999G990')
+            else '$' || TO_CHAR(CHANGE_2022, 'FM999G999G999G990')
+         end as info2022,
+
+       fund
+  from hickman_county_budget_4cols 
+ where account not like 'Total%'
+   and hickman_county_budget_4cols.budgeted_2025 > 500000
+ order by hickman_county_budget_4cols.BUDGETED_2025 desc;
