@@ -65,7 +65,7 @@
 ### Landfill Expansion Permit
 - Discussion of proposal to hire consultant for landfill expansion permit
 - Previous consultant (Joe House) has retired
-- New consultant (Jason Barge) recommended by previous consultant
+- New consultant (Jason Repsher) recommended by previous consultant
 - Proposed expansion: 5-6 acres north of shop building
 - Estimated 18-month process with state
 - Would provide 300-400,000 cubic yards of additional space
