@@ -220,9 +220,9 @@ commit;
 
 select account,
        -- SINCE_2021 
-       round(PCT_CHANGE_2021_2025)||'%' PCT_CHANGE_2021_2025,
-       round(AVG_PCT_CHANGE_2021_2025)||'%' AVG_PCT_CHANGE_2021_2025,
-       round(PCT_CHANGE_2025)||'%' PCT_CHANGE_2025,
+       round(PCT_CHANGE_2021_2025) PCT_CHANGE_2021_2025,
+       round(AVG_PCT_CHANGE_2021_2025) AVG_PCT_CHANGE_2021_2025,
+       round(PCT_CHANGE_2025) PCT_CHANGE_2025,
        TO_CHAR(BUDGETED_2025, 'FM999G999G999G990') as BUDGETED_2025,
        TO_CHAR(BUDGETED_2021, 'FM999G999G999G990') as BUDGETED_2021,
        TO_CHAR(BUDGETED_2024, 'FM999G999G999G990') ||
@@ -268,4 +268,17 @@ select account,
   from hickman_county_budget_4cols 
  where account not like 'Total%'
    and hickman_county_budget_4cols.budgeted_2025 > 500000
+ order by hickman_county_budget_4cols.BUDGETED_2025 desc;
+
+-- Spreadsheet export SQL
+ select fund,
+       account,
+       round(PCT_CHANGE_2021_2025) "% Change Since 2021",
+       round(AVG_PCT_CHANGE_2021_2025) "Avg % Annual Change",
+       BUDGETED_2025 "2025",
+       BUDGETED_2024 "2024",
+       BUDGETED_2023 "2023",
+       BUDGETED_2022 "2022",
+       BUDGETED_2021 "2021"
+  from hickman_county_budget_4cols 
  order by hickman_county_budget_4cols.BUDGETED_2025 desc;

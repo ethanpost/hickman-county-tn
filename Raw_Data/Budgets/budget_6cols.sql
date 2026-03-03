@@ -151,31 +151,15 @@ commit;
 select a.*,
        case 
          when budgeted_2021 is null or budgeted_2021 = 0 then null
-         else round((budgeted_2022 - budgeted_2021) / budgeted_2021 * 100)
-       end pct_change_2021_2022,
-       case 
-         when budgeted_2022 is null or budgeted_2022 = 0 then null
-         else round((budgeted_2023 - budgeted_2022) / budgeted_2022 * 100)
-       end pct_change_2022_2023,
-       case 
-         when budgeted_2023 is null or budgeted_2023 = 0 then null
-         else round((budgeted_2024 - budgeted_2023) / budgeted_2023 * 100)
-       end pct_change_2023_2024,
-       case 
-         when budgeted_2024 is null or budgeted_2024 = 0 then null
-         else round((budgeted_2025 - budgeted_2024) / budgeted_2024 * 100)
-       end pct_change_2024_2025,
-       case 
-         when budgeted_2021 is null or budgeted_2021 = 0 then null
          else round((budgeted_2025 - budgeted_2021) / budgeted_2021 * 100)
        end pct_change_2021_2025
   from (
 select account, 
-       sum(nvl(budgeted_2021, 0)) budgeted_2021,
-       sum(nvl(budgeted_2022, 0)) budgeted_2022,
-       sum(nvl(budgeted_2023, 0)) budgeted_2023,
+       sum(nvl(budgeted_2025, 0)) budgeted_2025,
        sum(nvl(budgeted_2024, 0)) budgeted_2024,
-       sum(nvl(budgeted_2025, 0)) budgeted_2025
+       sum(nvl(budgeted_2023, 0)) budgeted_2023,
+       sum(nvl(budgeted_2022, 0)) budgeted_2022,
+       sum(nvl(budgeted_2021, 0)) budgeted_2021
 from hickman_county_budget_6cols
 group by account) a
 where a.account not like 'TOTAL%'
@@ -185,3 +169,44 @@ order by a.budgeted_2021+a.budgeted_2022+a.budgeted_2023+a.budgeted_2024+a.budge
 
 -- select * from hickman_county_budget_6cols_upload where account like '499 OT%' order by budget_year desc;
 -- select * from hickman_county_budget_6cols_upload where account like '340 %' or account like 'x46511%' order by account, year;
+
+select a.*,
+       case 
+         when budgeted_2021 is null or budgeted_2021 = 0 then null
+         else round((budgeted_2025 - budgeted_2021) / budgeted_2021 * 100)
+       end pct_change_2021_2025
+  from (
+select account, 
+       sum(nvl(budgeted_2025, 0)) budgeted_2025,
+       sum(nvl(budgeted_2024, 0)) budgeted_2024,
+       sum(nvl(budgeted_2023, 0)) budgeted_2023,
+       sum(nvl(budgeted_2022, 0)) budgeted_2022,
+       sum(nvl(budgeted_2021, 0)) budgeted_2021
+from hickman_county_budget_6cols
+group by account) a
+where a.account not like 'TOTAL%'
+order by a.budgeted_2021+a.budgeted_2022+a.budgeted_2023+a.budgeted_2024+a.budgeted_2025 desc;
+
+select key, 
+       account, 
+       case 
+         when actual_2021 is null or actual_2021 = 0 then null
+         else round((budgeted_2025-actual_2021)/actual_2021*100)
+       end pct_change_2021_2025,
+       budgeted_2025, 
+       budgeted_2024,
+       actual_2023,
+       budgeted_2023,
+       actual_2022,
+       budgeted_2022,
+       actual_2021,
+       budgeted_2021
+  from hickman_county_budget_6cols 
+ where budgeted_2025 is not null
+   and account not like 'TOTAL%'
+   and case 
+         when actual_2021 is null or actual_2021 = 0 then null
+         else round((budgeted_2025-actual_2021)/actual_2021*100)
+       end is not null
+   and budgeted_2025 > 500000
+  order by 3 desc;
