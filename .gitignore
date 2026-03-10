@@ -1,5 +1,1 @@
-# Exclude files starting with 2025
-2025*
-
-# Exclude working folder
-_working/
+_archive/
