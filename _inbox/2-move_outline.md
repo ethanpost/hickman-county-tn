@@ -15,7 +15,19 @@ You must follow these instructions exactly.
 --------------------------------
 ALLOWED DESTINATION FOLDERS
 --------------------------------
-{{PASTE_ALLOWED_FOLDER_LIST_HERE}}
+Board_of_Equalization
+Board_of_Zoning_and_Appeals
+Budget_and_Finance_Committees
+County_Commission
+Elections
+Health_Foundation
+Health_Safety_and_Properties
+Industrial_Board
+Opioid_Settlement
+Planning_Commission
+School_Board
+Solid_Waste
+Weekly_Summary
 
 You may choose only one folder from the list above.
 Do not invent new folders.
@@ -26,7 +38,7 @@ If nothing is clearly specific, choose the most general applicable folder from t
 INPUT ASSUMPTIONS
 --------------------------------
 - `outline.md` is in the current working directory.
-- `outlines.json` is in the current working directory.
+- `outlines.json` is in the current working directory or the root directory above the current working directory.
 - `outline.md` is Markdown.
 - `outlines.json` is a JSON array of objects.
 - The header of `outline.md` usually contains fields like:
