@@ -502,7 +502,8 @@
       <h1 id="page-title">Find Hickman County meeting files fast.</h1>
       <p>
         Browse meeting outlines, summaries, and commission notes by committee, date, or title.
-        This page reads directly from <code>files.json</code> and keeps the interface focused on quick discovery.
+        Each record in <code>files.json</code> lists a <code>folder</code> (where the file lives on disk) and a
+        <code>filename</code> (basename only inside that folder). Links open <code>folder/filename</code> relative to this site.
       </p>
       <div class="stats" id="stats" aria-live="polite">
         <div class="stat-card">
@@ -524,7 +525,7 @@
       <div class="controls-grid">
         <div class="field">
           <label for="search">Search files</label>
-          <input class="input" id="search" type="search" placeholder="Search title, filename, or path">
+          <input class="input" id="search" type="search" placeholder="Search title, folder, filename, or committee">
         </div>
 
         <div class="field">
@@ -611,18 +612,72 @@
       return value.replace(/[_-]+/g, ' ').replace(/\b\w/g, (character) => character.toUpperCase());
     }
 
-    function getCategory(path = '') {
-      const [segment = 'General'] = path.split('/');
-      return segment;
+    /** Basename only; `filename` in files.json should not include directories. */
+    function fileBasename(name) {
+      if (!name) {
+        return '';
+      }
+      const normalized = String(name).replace(/\\/g, '/');
+      const segments = normalized.split('/');
+      return segments.pop() || '';
+    }
+
+    /** Trim slashes from folder so we join a clean relative path. */
+    function normalizeFolder(folder) {
+      return String(folder || '')
+        .replace(/\\/g, '/')
+        .replace(/^\/+/g, '')
+        .replace(/\/+$/g, '');
+    }
+
+    /**
+     * URL to the markdown file: folder (directory) + basename(filename).
+     * Segments are encoded separately so spaces and special characters resolve correctly.
+     */
+    function fileHref(item) {
+      const folder = normalizeFolder(item.folder);
+      const base = fileBasename(item.filename);
+      const segments = [...folder.split('/').filter(Boolean), base].filter(Boolean);
+      if (!segments.length) {
+        return '';
+      }
+      return segments.map((segment) => encodeURIComponent(segment)).join('/');
+    }
+
+    /** Display path: folder/filename for clarity in the list. */
+    function fileDisplayPath(item) {
+      const folder = normalizeFolder(item.folder);
+      const base = fileBasename(item.filename);
+      if (folder && base) {
+        return `${folder}/${base}`;
+      }
+      return base || folder || '';
+    }
+
+    function getCategoryKey(item) {
+      if (item.committee) {
+        return item.committee;
+      }
+      const base = fileBasename(item.filename);
+      const dated = base.match(/^\d{4}-\d{2}-\d{2}-(.+)\.md$/i);
+      if (!dated) {
+        return 'General';
+      }
+      let slug = dated[1];
+      if (slug.endsWith('-outline')) {
+        slug = slug.slice(0, -'-outline'.length);
+      }
+      return slug;
     }
 
     function enrichItem(item) {
-      const categoryKey = getCategory(item.path || '');
+      const categoryKey = getCategoryKey(item);
+      const categoryLabel = item.committee || titleizeCategory(categoryKey);
       return {
         ...item,
         categoryKey,
-        categoryLabel: titleizeCategory(categoryKey),
-        searchText: [item.title, item.filename, item.path, categoryKey]
+        categoryLabel,
+        searchText: [item.title, item.filename, item.folder, item.committee, categoryKey]
           .filter(Boolean)
           .join(' ')
           .toLowerCase()
@@ -668,11 +723,11 @@
 
     function populateCommitteeOptions(items) {
       const committees = [...new Set(items.map((item) => item.categoryKey))].sort((left, right) =>
-        titleizeCategory(left).localeCompare(titleizeCategory(right))
+        left.localeCompare(right, undefined, { sensitivity: 'base' })
       );
 
       elements.committee.innerHTML = '<option value="all">All committees</option>' + committees
-        .map((committee) => `<option value="${committee}">${titleizeCategory(committee)}</option>`)
+        .map((committee) => `<option value="${escapeHtml(committee)}">${escapeHtml(committee)}</option>`)
         .join('');
     }
 
@@ -712,7 +767,7 @@
       }
 
       if (state.committee !== 'all') {
-        chips.push(`<span class="chip">Committee: ${escapeHtml(titleizeCategory(state.committee))}</span>`);
+        chips.push(`<span class="chip">Committee: ${escapeHtml(state.committee)}</span>`);
       }
 
       chips.push(`<span class="chip">View: ${state.view === 'list' ? 'List' : 'Grouped'}</span>`);
@@ -734,7 +789,7 @@
       }
 
       const qualifier = state.committee !== 'all'
-        ? ` in ${titleizeCategory(state.committee)}`
+        ? ` in ${state.committee}`
         : '';
 
       elements.summary.textContent = `${base}${qualifier}. Sorted ${describeSort(state.sort)}.`;
@@ -778,11 +833,10 @@
                 <h2 class="result-title">${escapeHtml(item.title)}</h2>
                 <div class="result-meta">
                   <span class="badge">${escapeHtml(item.categoryLabel)}</span>
-                  <span class="meta-text">${escapeHtml(item.filename)}</span>
-                  <span class="meta-text">${escapeHtml(item.path)}</span>
+                  <span class="meta-text">${escapeHtml(fileDisplayPath(item))}</span>
                 </div>
               </div>
-              <a class="open-link" href="${encodeURI(item.path)}" aria-label="Open ${escapeHtml(item.title)}" title="Open ${escapeHtml(item.title)}">↗</a>
+              <a class="open-link" href="${fileHref(item)}" aria-label="Open ${escapeHtml(item.title)}" title="Open ${escapeHtml(item.title)}">↗</a>
             </article>
           `).join('')}
         </div>
@@ -818,14 +872,14 @@
               <ul>
                 ${groupItems.map((item) => `
                   <li>
-                    <a class="group-link" href="${encodeURI(item.path)}">
+                    <a class="group-link" href="${fileHref(item)}">
                       <div class="result-date">
                         ${formatShortDate(item.date)}
                         <span class="result-year">${item.date.slice(0, 4)}</span>
                       </div>
                       <div>
                         <strong>${escapeHtml(item.title)}</strong>
-                        <span>${escapeHtml(item.filename)} · ${escapeHtml(item.path)}</span>
+                        <span>${escapeHtml(fileDisplayPath(item))}</span>
                       </div>
                     </a>
                   </li>
