@@ -213,7 +213,7 @@
 
     .hero p {
       margin: 0.75rem 0 0;
-      max-width: 65ch;
+      max-width: 120ch;
       color: var(--text-soft);
       font-size: 0.95rem;
       line-height: 1.65;
