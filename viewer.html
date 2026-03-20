@@ -14,13 +14,8 @@
     <main class="page viewer-page">
         <article class="viewer-card">
             <header class="viewer-header">
-                <div class="viewer-header-left">
-                    <a href="index.html" class="back-link">Back to index</a>
-                    <h1 class="viewer-title">Hickman County, TN</h1>
-                </div>
-                <button class="theme-toggle" type="button" id="theme-toggle" aria-pressed="false">
-                    <span id="theme-toggle-text">Dark</span>
-                </button>
+                <a href="index.html" class="back-link">Back to index</a>
+                <h1 class="viewer-title">Hickman County, TN</h1>
             </header>
             <div id="content">
                 <div class="loading">Loading document...</div>
@@ -29,37 +24,6 @@
     </main>
 
     <script>
-        const themeToggle = document.getElementById('theme-toggle');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-
-        function applyTheme(theme) {
-            document.body.dataset.theme = theme;
-            themeToggle.setAttribute('aria-pressed', theme === 'dark');
-            const toggleText = document.getElementById('theme-toggle-text');
-            toggleText.textContent = theme === 'dark' ? 'Light' : 'Dark';
-        }
-
-        function initTheme() {
-            const stored = localStorage.getItem('theme');
-            if (stored) {
-                applyTheme(stored);
-                return;
-            }
-            applyTheme(prefersDark.matches ? 'dark' : 'light');
-        }
-
-        themeToggle.addEventListener('click', () => {
-            const nextTheme = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
-            localStorage.setItem('theme', nextTheme);
-            applyTheme(nextTheme);
-        });
-
-        prefersDark.addEventListener('change', (event) => {
-            if (!localStorage.getItem('theme')) {
-                applyTheme(event.matches ? 'dark' : 'light');
-            }
-        });
-
         async function loadMarkdown() {
             const contentDiv = document.getElementById('content');
             
@@ -107,7 +71,6 @@
 
         // Load markdown when page loads
         document.addEventListener('DOMContentLoaded', () => {
-            initTheme();
             loadMarkdown();
         });
     </script>
