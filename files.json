@@ -162,9 +162,16 @@
   },
   {
     "folder": "Documents",
-    "committee": "Elections",
+    "committee": "Documents",
     "filename": "2025-05-05-county-primary-election-candidates.md",
     "date": "2026-05-05",
     "title": "County Primary Election Candidates - May 5, 2025"
+  },
+  {
+    "folder": "Documents",
+    "committee": "Documents",
+    "filename": "Subdivision_Regulations.md",
+    "date": "2026-03-20",
+    "title": "Subdivision Regulations"
   }
 ]
