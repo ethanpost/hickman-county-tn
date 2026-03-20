@@ -155,9 +155,16 @@
   },
   {
     "folder": "Documents",
-    "committee": "Resources",
-    "filename": "contacts.md",
+    "committee": "Documents",
+    "filename": "county-and-state-contacts.md",
     "date": "2026-03-20",
-    "title": "Contacts - State & County Officials"
+    "title": "County and State Contacts"
+  },
+  {
+    "folder": "Documents",
+    "committee": "Elections",
+    "filename": "2025-05-05-county-primary-election-candidates.md",
+    "date": "2026-05-05",
+    "title": "County Primary Election Candidates - May 5, 2025"
   }
 ]
