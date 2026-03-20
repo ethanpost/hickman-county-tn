@@ -1,33 +1,124 @@
 :root {
-      --bg: hsl(216 20% 96%);
-      --bg-rgb: 240 243 248;
-      --surface: #ffffff;
-      --surface-muted: hsl(216 18% 95%);
-      --text: hsl(216 50% 10%);
-      --text-soft: hsl(216 20% 36%);
-      --text-faint: hsl(216 14% 50%);
-      --border: hsl(216 18% 82%);
-      --border-rgb: 196 205 218;
-      --border-hover: hsl(216 24% 68%);
-      --border-dashed: hsl(216 16% 76%);
-      --navy: hsla(162, 93%, 27%, 0.767);
-      --navy-light: hsla(162, 47%, 54%, 0.889);
-      --navy-rgb: 0 40 82;
-      --accent: hsla(162, 93%, 27%, 0.767);
-      --accent-soft: hsl(216 50% 94%);
-      --accent-rgb: 0 40 82;
-      --patriot-red: hsla(162, 93%, 27%, 0.767);
-      --patriot-red-rgb: 191 10 48;
-      --red-soft: hsl(349 60% 95%);
-      --shadow-rgb: 10 24 50;
-      --error: hsl(2 65% 38%);
-      --error-rgb: 160 34 34;
-      --shadow: 0 2px 8px rgb(var(--shadow-rgb) / 0.10);
-      --radius-lg: 6px;
-      --radius-md: 4px;
-      --radius-sm: 3px;
-      --max-width: 1080px;
-    }
+  /* Shared primitives used by all palettes */
+  --white: #ffffff;
+  --white-rgb: 255 255 255;
+  --transparent: transparent;
+
+  /* Glass/overlay whites */
+  --glass-96: rgb(var(--white-rgb) / 0.96);
+  --glass-50: rgb(var(--white-rgb) / 0.5);
+  --glass-30: rgb(var(--white-rgb) / 0.3);
+  --glass-20: rgb(var(--white-rgb) / 0.2);
+  --glass-10: rgb(var(--white-rgb) / 0.1);
+
+  /* Status colors */
+  --badge-text: hsl(116.31deg 93% 27% / 12%);
+
+  /* Layout tokens */
+  --radius-lg: 6px;
+  --radius-md: 4px;
+  --radius-sm: 3px;
+  --max-width: 1080px;
+
+  /* Derived tokens (depend on per-theme --shadow-rgb) */
+  --shadow: 0 2px 8px rgb(var(--shadow-rgb) / 0.10);
+}
+
+/* =============================
+   Theme palettes (edit to try)
+   Uncomment ONE block below.
+   ============================= */
+
+/* --- Default (current) --- */
+:root {
+  --bg: hsl(216 20% 96%);
+  --bg-rgb: 240 243 248;
+  --surface: var(--white);
+  --surface-muted: hsl(216 18% 95%);
+  --text: hsl(216 50% 10%);
+  --text-soft: hsl(216, 63%, 30%);
+  --text-faint: hsl(216 14% 50%);
+  --border: hsl(216 18% 82%);
+  --border-rgb: 196 205 218;
+  --border-hover: hsl(216 24% 68%);
+  --border-dashed: hsl(216 16% 76%);
+  --primary: hsl(242.03deg 13.67% 43.09% / 91%);
+  --primary-light: hsla(240, 6%, 68%, 0.91);
+  --primary-rgb: 0 40 82;
+  --accent: hsl(242.03deg 13.67% 43.09% / 91%);
+  --accent-soft: hsl(216 50% 94%);
+  --accent-rgb: 0 40 82;
+  --patriot-red: hsl(351.14deg 78.54% 55.97% / 91%);
+  --eyebrow-bg: hsl(351.14deg 78.54% 55.97% / 91%);
+  --primary: hsla(215, 15%, 29%, 0.91);
+  --primary-light: hsla(215, 15%, 60%, 0.91);
+  --primary-rgb: 21 35 62;
+  --patriot-red-rgb: 191 10 48;
+  --red-soft: hsl(349 60% 95%);
+  --shadow-rgb: 10 24 50;
+  --error: hsl(2 65% 38%);
+  --error-rgb: 160 34 34;
+}
+
+/* --- Ocean (alt) --- */
+/* :root {
+  --bg: hsl(216 20% 96%);
+  --bg-rgb: 240 243 248;
+  --surface: var(--white);
+  --surface-muted: hsl(200 35% 95%);
+  --text: hsl(214 35% 12%);
+  --text-soft: hsl(206 30% 30%);
+  --text-faint: hsl(216 14% 50%);
+  --border: hsl(200 20% 84%);
+  --border-rgb: 176 198 215;
+  --border-hover: hsl(202 25% 68%);
+  --border-dashed: hsl(201 22% 76%);
+
+  --primary: hsl(198 50% 34% / 0.92);
+  --primary-light: hsla(198, 45%, 60%, 0.91);
+  --primary-rgb: 43 104 130;
+  --accent: hsl(198 50% 34% / 0.92);
+  --accent-soft: hsl(190 50% 94%);
+  --accent-rgb: 43 104 130;
+
+  --patriot-red: hsl(8 78% 46% / 0.91);
+  --patriot-red-rgb: 209 50 26;
+  --red-soft: hsl(8 85% 94%);
+
+  --shadow-rgb: 20 62 82;
+  --error: hsl(2 65% 38%);
+  --error-rgb: 160 34 34;
+} */
+
+/* --- Sunset (alt) --- */
+/* :root {
+  --bg: hsl(216 20% 96%);
+  --bg-rgb: 240 243 248;
+  --surface: var(--white);
+  --surface-muted: hsl(265 25% 95%);
+  --text: hsl(230 30% 12%);
+  --text-soft: hsl(250 25% 30%);
+  --text-faint: hsl(216 14% 50%);
+  --border: hsl(252 20% 84%);
+  --border-rgb: 196 186 220;
+  --border-hover: hsl(258 26% 68%);
+  --border-dashed: hsl(255 20% 76%);
+
+  --primary: hsl(265 28% 36% / 91%);
+  --primary-light: hsla(265, 30%, 62%, 0.91);
+  --primary-rgb: 88 66 118;
+  --accent: hsl(265 28% 36% / 91%);
+  --accent-soft: hsl(260 45% 94%);
+  --accent-rgb: 88 66 118;
+
+  --patriot-red: hsl(355 70% 45% / 0.91);
+  --patriot-red-rgb: 195 34 48;
+  --red-soft: hsl(355 80% 95%);
+
+  --shadow-rgb: 60 35 80;
+  --error: hsl(2 65% 38%);
+  --error-rgb: 160 34 34;
+} */
 
     * {
       box-sizing: border-box;
@@ -86,10 +177,10 @@
         90deg,
         var(--patriot-red) 0%,
         var(--patriot-red) 33.3%,
-        #ffffff 33.3%,
-        #ffffff 66.6%,
-        var(--navy) 66.6%,
-        var(--navy) 100%
+        var(--white) 33.3%,
+        var(--white) 66.6%,
+        var(--primary) 66.6%,
+        var(--primary) 100%
       );
     }
 
@@ -99,8 +190,8 @@
       gap: 0.5rem;
       padding: 0.3rem 0.7rem;
       border-radius: var(--radius-sm);
-      background: var(--navy);
-      color: #ffffff;
+      background: var(--eyebrow-bg);
+  color: var(--white);
       font-size: 0.72rem;
       font-weight: 800;
       letter-spacing: 0.12em;
@@ -116,7 +207,7 @@
       line-height: 1.1;
       letter-spacing: -0.02em;
       font-weight: 900;
-      color: var(--navy);
+      color: var(--primary);
       max-width: 16ch;
     }
 
@@ -156,7 +247,7 @@
       font-size: 1.15rem;
       font-weight: 800;
       letter-spacing: -0.02em;
-      color: var(--navy);
+      color: var(--primary);
     }
 
     /* ─── Controls bar ─── */
@@ -165,10 +256,10 @@
       top: 0;
       z-index: 5;
       margin-top: 0.75rem;
-      background: rgb(255 255 255 / 0.96);
+  background: var(--glass-96);
       backdrop-filter: blur(8px);
       border: 1px solid var(--border);
-      border-top: 3px solid var(--navy);
+      border-top: 3px solid var(--primary);
       border-radius: var(--radius-lg);
       padding: 1rem;
       box-shadow: var(--shadow);
@@ -215,8 +306,8 @@
     .button:focus,
     .toggle:focus-visible {
       outline: none;
-      border-color: var(--navy);
-      box-shadow: 0 0 0 3px rgb(var(--navy-rgb) / 0.15);
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgb(var(--primary-rgb) / 0.15);
     }
 
     .toggle-group {
@@ -248,9 +339,9 @@
     }
 
     .toggle[aria-pressed="true"] {
-      background: var(--navy);
-      border-color: var(--navy);
-      color: #ffffff;
+      background: var(--primary);
+      border-color: var(--primary);
+  color: var(--white);
     }
 
     .button {
@@ -334,12 +425,12 @@
     }
 
     .result-item:hover {
-      box-shadow: 0 2px 8px rgb(var(--navy-rgb) / 0.08);
+      box-shadow: 0 2px 8px rgb(var(--primary-rgb) / 0.08);
     }
 
     .result-date {
       font-weight: 800;
-      color: var(--navy);
+      color: var(--primary);
       font-size: 0.88rem;
     }
 
@@ -384,8 +475,8 @@
       align-items: center;
       padding: 0.25rem 0.55rem;
       border-radius: var(--radius-sm);
-      background: var(--navy);
-      color: hsl(116.31deg 93% 27% / 12%);
+      background: var(--primary);
+  color: var(--badge-text);
       font-size: 0.68rem;
       font-weight: 800;
       letter-spacing: 0.06em;
@@ -429,7 +520,7 @@
       font-weight: 800;
       text-transform: uppercase;
       letter-spacing: 0.06em;
-      color: var(--navy);
+      color: var(--primary);
     }
 
     .group-count {
@@ -448,14 +539,14 @@
 
     .group-card li {
       border: 1px solid var(--border);
-      border-left: 3px solid var(--navy);
+      border-left: 3px solid var(--primary);
       border-radius: var(--radius-md);
       background: var(--surface);
       transition: border-color 120ms ease, box-shadow 120ms ease;
     }
 
     .group-card li:hover {
-      box-shadow: 0 2px 8px rgb(var(--navy-rgb) / 0.08);
+      box-shadow: 0 2px 8px rgb(var(--primary-rgb) / 0.08);
     }
 
     .group-link {
@@ -467,7 +558,7 @@
     }
 
     .group-link:focus-visible {
-      outline: 2px solid var(--navy);
+      outline: 2px solid var(--primary);
       outline-offset: 2px;
       border-radius: var(--radius-md);
     }
@@ -490,7 +581,7 @@
       padding: 2rem;
       background: var(--surface);
       border: 1px dashed var(--border-dashed);
-      border-left: 4px solid var(--navy);
+      border-left: 4px solid var(--primary);
       border-radius: var(--radius-md);
       text-align: center;
       color: var(--text-soft);
@@ -500,7 +591,7 @@
     .status-card h2 {
       margin-top: 0;
       margin-bottom: 0.5rem;
-      color: var(--navy);
+      color: var(--primary);
       font-size: 1.05rem;
       font-weight: 800;
       text-transform: uppercase;
@@ -580,8 +671,8 @@
   flex-wrap: wrap;
   padding: 1rem 1.5rem;
   border-bottom: 1px solid var(--border);
-  background: var(--navy);
-  color: #ffffff;
+  background: var(--primary);
+  color: var(--white);
 }
 
 .viewer-title {
@@ -590,7 +681,7 @@
   font-weight: 800;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .viewer-header .back-link {
@@ -599,9 +690,9 @@
   gap: 0.35rem;
   padding: 0.4rem 0.75rem;
   border-radius: var(--radius-sm);
-  border: 1px solid rgb(255 255 255 / 0.3);
-  background: rgb(255 255 255 / 0.1);
-  color: #ffffff;
+  border: 1px solid var(--glass-30);
+  background: var(--glass-10);
+  color: var(--white);
   font-size: 0.78rem;
   font-weight: 700;
   text-decoration: none;
@@ -617,8 +708,8 @@
 .viewer-header .back-link:hover,
 .viewer-header .back-link:focus-visible {
   outline: none;
-  background: rgb(255 255 255 / 0.2);
-  border-color: rgb(255 255 255 / 0.5);
+  background: var(--glass-20);
+  border-color: var(--glass-50);
 }
 
 .viewer-card .loading {
@@ -649,7 +740,7 @@
   margin-bottom: 1rem;
   font-size: 1.35rem;
   font-weight: 800;
-  color: var(--navy);
+  color: var(--primary);
   border-bottom: 2px solid var(--patriot-red);
   padding-bottom: 0.5rem;
   letter-spacing: -0.01em;
@@ -660,7 +751,7 @@
   margin-bottom: 0.75rem;
   font-size: 1.15rem;
   font-weight: 800;
-  color: var(--navy);
+  color: var(--primary);
   letter-spacing: -0.01em;
 }
 
@@ -706,7 +797,7 @@
 }
 
 .viewer-card #content a {
-  color: var(--navy-light);
+  color: var(--primary-light);
   text-decoration: underline;
   text-underline-offset: 2px;
   font-weight: 600;
@@ -735,7 +826,7 @@
 }
 
 .viewer-card #content pre code {
-  background: transparent;
+  background: var(--transparent);
   padding: 0;
   border: 0;
 }
@@ -762,8 +853,8 @@
 }
 
 .viewer-card #content th {
-  background: var(--navy);
-  color: #ffffff;
+  background: var(--primary);
+  color: var(--white);
   font-weight: 700;
   font-size: 0.78rem;
   text-transform: uppercase;
