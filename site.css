@@ -10,13 +10,13 @@
       --border-rgb: 196 205 218;
       --border-hover: hsl(216 24% 68%);
       --border-dashed: hsl(216 16% 76%);
-      --navy: hsl(216 100% 16%);
-      --navy-light: hsl(216 60% 28%);
+      --navy: hsla(162, 93%, 27%, 0.767);
+      --navy-light: hsla(162, 47%, 54%, 0.889);
       --navy-rgb: 0 40 82;
-      --accent: hsl(216 100% 16%);
+      --accent: hsla(162, 93%, 27%, 0.767);
       --accent-soft: hsl(216 50% 94%);
       --accent-rgb: 0 40 82;
-      --patriot-red: hsl(216 100% 16%);
+      --patriot-red: hsla(162, 93%, 27%, 0.767);
       --patriot-red-rgb: 191 10 48;
       --red-soft: hsl(349 60% 95%);
       --shadow-rgb: 10 24 50;
