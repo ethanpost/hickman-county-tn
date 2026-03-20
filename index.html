@@ -344,20 +344,21 @@
         <div class="results">
           ${items.map((item) => `
             <article class="result-item">
-              <div class="result-date-wrap">
-                <div class="result-date">
-                  ${formatShortDate(item.date)}
-                  <span class="result-year">${item.date.slice(0, 4)}</span>
+              <a class="result-item-link" href="${fileHref(item)}" aria-label="Open ${escapeHtml(item.title)}">
+                <div class="result-date-wrap">
+                  <div class="result-date">
+                    ${formatShortDate(item.date)}
+                    <span class="result-year">${item.date.slice(0, 4)}</span>
+                  </div>
                 </div>
-              </div>
-              <div>
-                <h2 class="result-title">${escapeHtml(item.title)}</h2>
-                <div class="result-meta">
-                  <span class="badge">${escapeHtml(item.categoryLabel)}</span>
-                  <span class="meta-text">${escapeHtml(fileDisplayPath(item))}</span>
+                <div>
+                  <h2 class="result-title">${escapeHtml(item.title)}</h2>
+                  <div class="result-meta">
+                    <span class="badge">${escapeHtml(item.categoryLabel)}</span>
+                    <span class="meta-text">${escapeHtml(fileDisplayPath(item))}</span>
+                  </div>
                 </div>
-              </div>
-              <a class="open-link" href="${fileHref(item)}" aria-label="Open ${escapeHtml(item.title)}" title="Open ${escapeHtml(item.title)}">↗</a>
+              </a>
             </article>
           `).join('')}
         </div>
