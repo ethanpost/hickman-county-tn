@@ -503,7 +503,8 @@
       <p>
         Browse meeting outlines, summaries, and commission notes by committee, date, or title.
         Each record in <code>files.json</code> lists a <code>folder</code> (where the file lives on disk) and a
-        <code>filename</code> (basename only inside that folder). Links open <code>folder/filename</code> relative to this site.
+        <code>filename</code> (basename only inside that folder). Open links render that file in
+        <code>viewer.html</code> as HTML.
       </p>
       <div class="stats" id="stats" aria-live="polite">
         <div class="stat-card">
@@ -630,19 +631,27 @@
         .replace(/\/+$/g, '');
     }
 
-    /**
-     * URL to the markdown file: only `folder` + basename(`filename`) from files.json.
-     * Committee labels and any legacy `path` field are ignored so links match on-disk layout.
-     * Segments are encoded separately so spaces and special characters resolve correctly.
-     */
-    function fileHref(item) {
+    /** Relative path to the .md from site root: `folder` segments + basename(`filename`) only. */
+    function fileMarkdownRelPath(item) {
       const base = fileBasename(item.filename);
       if (!base) {
         return '';
       }
       const folder = normalizeFolder(item.folder);
       const segments = [...folder.split('/').filter(Boolean), base];
-      return segments.map((segment) => encodeURIComponent(segment)).join('/');
+      return segments.join('/');
+    }
+
+    /**
+     * Opens viewer.html with ?file=… so markdown is rendered as HTML.
+     * Only uses `folder` + basename(`filename`); committee is not part of the path.
+     */
+    function fileHref(item) {
+      const rel = fileMarkdownRelPath(item);
+      if (!rel) {
+        return '';
+      }
+      return `viewer.html?file=${encodeURIComponent(rel)}`;
     }
 
     /** Display path: folder/filename for clarity in the list (same sources as fileHref). */
