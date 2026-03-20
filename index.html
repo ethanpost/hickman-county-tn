@@ -631,20 +631,21 @@
     }
 
     /**
-     * URL to the markdown file: folder (directory) + basename(filename).
+     * URL to the markdown file: only `folder` + basename(`filename`) from files.json.
+     * Committee labels and any legacy `path` field are ignored so links match on-disk layout.
      * Segments are encoded separately so spaces and special characters resolve correctly.
      */
     function fileHref(item) {
-      const folder = normalizeFolder(item.folder);
       const base = fileBasename(item.filename);
-      const segments = [...folder.split('/').filter(Boolean), base].filter(Boolean);
-      if (!segments.length) {
+      if (!base) {
         return '';
       }
+      const folder = normalizeFolder(item.folder);
+      const segments = [...folder.split('/').filter(Boolean), base];
       return segments.map((segment) => encodeURIComponent(segment)).join('/');
     }
 
-    /** Display path: folder/filename for clarity in the list. */
+    /** Display path: folder/filename for clarity in the list (same sources as fileHref). */
     function fileDisplayPath(item) {
       const folder = normalizeFolder(item.folder);
       const base = fileBasename(item.filename);
