@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hickman County Meeting Archive</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --surface-muted: #f1f5f9;
+      --text: #0f172a;
+      --text-soft: #475569;
+      --text-faint: #64748b;
+      --border: #dbe3ee;
+      --accent: #1d4ed8;
+      --accent-soft: #dbeafe;
+      --shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --radius-sm: 999px;
+      --max-width: 1080px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      color-scheme: light;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #f8fafc 0%, #eef4fb 100%);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    select {
+      font: inherit;
+    }
+
+    .page {
+      width: min(calc(100% - 2rem), var(--max-width));
+      margin: 0 auto;
+      padding: 2rem 0 3rem;
+    }
+
+    .hero {
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid rgba(219, 227, 238, 0.9);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(14px);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-sm);
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(2rem, 3vw, 3.25rem);
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      max-width: 12ch;
+    }
+
+    .hero p {
+      margin: 1rem 0 0;
+      max-width: 65ch;
+      color: var(--text-soft);
+      font-size: 1.03rem;
+      line-height: 1.7;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 1.75rem;
+    }
+
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.1rem;
+    }
+
+    .stat-label {
+      color: var(--text-faint);
+      font-size: 0.84rem;
+      margin-bottom: 0.45rem;
+    }
+
+    .stat-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    .controls {
+      position: sticky;
+      top: 0.75rem;
+      z-index: 5;
+      margin-top: 1.5rem;
+      background: rgba(248, 250, 252, 0.92);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(219, 227, 238, 0.95);
+      border-radius: 22px;
+      padding: 1rem;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    }
+
+    .controls-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 2.2fr) repeat(3, minmax(160px, 1fr)) auto;
+      gap: 0.85rem;
+      align-items: end;
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+
+    .field label,
+    .toggle-label {
+      font-size: 0.85rem;
+      color: var(--text-soft);
+      font-weight: 600;
+    }
+
+    .input,
+    .select,
+    .button {
+      width: 100%;
+      min-height: 46px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      padding: 0.8rem 0.95rem;
+      transition: border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
+    }
+
+    .input:focus,
+    .select:focus,
+    .button:focus,
+    .toggle:focus-visible {
+      outline: none;
+      border-color: rgba(29, 78, 216, 0.55);
+      box-shadow: 0 0 0 4px rgba(29, 78, 216, 0.12);
+    }
+
+    .toggle-group {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .toggle {
+      min-height: 46px;
+      padding: 0.8rem 1rem;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-soft);
+      font-weight: 600;
+      cursor: pointer;
+      flex: 1;
+    }
+
+    .toggle[aria-pressed="true"] {
+      background: var(--accent-soft);
+      border-color: rgba(29, 78, 216, 0.25);
+      color: var(--accent);
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      cursor: pointer;
+      font-weight: 700;
+      background: var(--surface-muted);
+    }
+
+    .button:hover,
+    .toggle:hover,
+    .result-item:hover,
+    .group-card li:hover {
+      border-color: #c3d0e0;
+    }
+
+    .summary-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.75rem;
+      align-items: center;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .summary-text {
+      color: var(--text-soft);
+      font-size: 0.95rem;
+    }
+
+    .chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.45rem 0.75rem;
+      border-radius: var(--radius-sm);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text-soft);
+      font-size: 0.84rem;
+      font-weight: 600;
+    }
+
+    .results {
+      display: grid;
+      gap: 0.9rem;
+    }
+
+    .result-item,
+    .group-card {
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.04);
+    }
+
+    .result-item {
+      display: grid;
+      grid-template-columns: minmax(110px, 128px) minmax(0, 1fr) auto;
+      gap: 1rem;
+      align-items: start;
+      padding: 1rem 1.1rem;
+    }
+
+    .result-date {
+      font-weight: 700;
+      color: var(--text);
+      font-size: 0.96rem;
+    }
+
+    .result-year {
+      display: block;
+      margin-top: 0.15rem;
+      font-size: 0.8rem;
+      color: var(--text-faint);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .result-title {
+      margin: 0;
+      font-size: 1.05rem;
+      line-height: 1.45;
+      letter-spacing: -0.01em;
+    }
+
+    .result-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.7rem;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.34rem 0.68rem;
+      border-radius: var(--radius-sm);
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+
+    .meta-text {
+      color: var(--text-faint);
+      font-size: 0.84rem;
+      word-break: break-word;
+    }
+
+    .open-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 42px;
+      min-height: 42px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      color: var(--accent);
+      background: var(--surface);
+      font-weight: 700;
+    }
+
+    .open-link:hover,
+    .open-link:focus-visible {
+      outline: none;
+      background: var(--accent-soft);
+      border-color: rgba(29, 78, 216, 0.25);
+    }
+
+    .grouped-results {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .group-card {
+      padding: 1.1rem;
+    }
+
+    .group-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .group-title {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+    }
+
+    .group-count {
+      color: var(--text-faint);
+      font-size: 0.84rem;
+      font-weight: 600;
+    }
+
+    .group-card ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 0.7rem;
+    }
+
+    .group-card li {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--surface);
+      transition: border-color 160ms ease;
+    }
+
+    .group-link {
+      display: grid;
+      grid-template-columns: minmax(96px, 120px) minmax(0, 1fr);
+      gap: 0.85rem;
+      align-items: start;
+      padding: 0.9rem;
+    }
+
+    .group-link strong {
+      display: block;
+      line-height: 1.45;
+      margin-bottom: 0.25rem;
+    }
+
+    .group-link span {
+      color: var(--text-faint);
+      font-size: 0.84rem;
+      word-break: break-word;
+    }
+
+    .empty-state,
+    .status-card {
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.84);
+      border: 1px dashed #bfd0e3;
+      border-radius: 18px;
+      text-align: center;
+      color: var(--text-soft);
+    }
+
+    .empty-state h2,
+    .status-card h2 {
+      margin-top: 0;
+      margin-bottom: 0.65rem;
+      color: var(--text);
+      font-size: 1.15rem;
+    }
+
+    .footer-note {
+      margin-top: 1rem;
+      color: var(--text-faint);
+      font-size: 0.85rem;
+      text-align: center;
+    }
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 980px) {
+      .controls-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .result-item {
+        grid-template-columns: minmax(0, 1fr) auto;
+      }
+
+      .result-date-wrap {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .page {
+        width: min(calc(100% - 1rem), var(--max-width));
+        padding-top: 1rem;
+      }
+
+      .hero,
+      .controls,
+      .result-item,
+      .group-card,
+      .status-card,
+      .empty-state {
+        border-radius: 16px;
+      }
+
+      .hero {
+        padding: 1.4rem;
+      }
+
+      .stats,
+      .controls-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .summary-bar,
+      .group-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .result-item {
+        grid-template-columns: 1fr;
+      }
+
+      .group-link {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="eyebrow">Meeting archive</div>
+      <h1 id="page-title">Find Hickman County meeting files fast.</h1>
+      <p>
+        Browse meeting outlines, summaries, and commission notes by committee, date, or title.
+        This page reads directly from <code>files.json</code> and keeps the interface focused on quick discovery.
+      </p>
+      <div class="stats" id="stats" aria-live="polite">
+        <div class="stat-card">
+          <div class="stat-label">Files</div>
+          <div class="stat-value">—</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Date range</div>
+          <div class="stat-value">—</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Committees</div>
+          <div class="stat-value">—</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="controls" aria-label="Filters and sorting">
+      <div class="controls-grid">
+        <div class="field">
+          <label for="search">Search files</label>
+          <input class="input" id="search" type="search" placeholder="Search title, filename, or path">
+        </div>
+
+        <div class="field">
+          <label for="committee-filter">Committee</label>
+          <select class="select" id="committee-filter">
+            <option value="all">All committees</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="sort-by">Sort</label>
+          <select class="select" id="sort-by">
+            <option value="date-desc">Newest first</option>
+            <option value="date-asc">Oldest first</option>
+            <option value="title-asc">Title A–Z</option>
+            <option value="title-desc">Title Z–A</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <div class="toggle-label">View</div>
+          <div class="toggle-group" role="group" aria-label="View mode">
+            <button class="toggle" id="view-list" type="button" aria-pressed="true">List</button>
+            <button class="toggle" id="view-grouped" type="button" aria-pressed="false">Grouped</button>
+          </div>
+        </div>
+
+        <div class="field">
+          <span class="toggle-label">Actions</span>
+          <button class="button" id="reset-controls" type="button">Reset</button>
+        </div>
+      </div>
+    </section>
+
+    <section aria-live="polite" aria-atomic="true">
+      <div class="summary-bar">
+        <div class="summary-text" id="results-summary">Loading files…</div>
+        <div class="chip-row" id="active-filters"></div>
+      </div>
+      <div id="results-region">
+        <div class="status-card">
+          <h2>Loading archive</h2>
+          <p>Please wait while the meeting files are loaded.</p>
+        </div>
+      </div>
+      <p class="footer-note">Powered by a single static page and the current <code>files.json</code> dataset.</p>
+    </section>
+  </main>
+
+  <script>
+    const state = {
+      items: [],
+      query: '',
+      committee: 'all',
+      sort: 'date-desc',
+      view: 'list'
+    };
+
+    const elements = {
+      stats: document.getElementById('stats'),
+      search: document.getElementById('search'),
+      committee: document.getElementById('committee-filter'),
+      sort: document.getElementById('sort-by'),
+      viewList: document.getElementById('view-list'),
+      viewGrouped: document.getElementById('view-grouped'),
+      reset: document.getElementById('reset-controls'),
+      summary: document.getElementById('results-summary'),
+      activeFilters: document.getElementById('active-filters'),
+      resultsRegion: document.getElementById('results-region')
+    };
+
+    const formatter = new Intl.DateTimeFormat('en-US', {
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric'
+    });
+
+    const shortMonthFormatter = new Intl.DateTimeFormat('en-US', {
+      month: 'short',
+      day: 'numeric'
+    });
+
+    function titleizeCategory(value) {
+      return value.replace(/[_-]+/g, ' ').replace(/\b\w/g, (character) => character.toUpperCase());
+    }
+
+    function getCategory(path = '') {
+      const [segment = 'General'] = path.split('/');
+      return segment;
+    }
+
+    function enrichItem(item) {
+      const categoryKey = getCategory(item.path || '');
+      return {
+        ...item,
+        categoryKey,
+        categoryLabel: titleizeCategory(categoryKey),
+        searchText: [item.title, item.filename, item.path, categoryKey]
+          .filter(Boolean)
+          .join(' ')
+          .toLowerCase()
+      };
+    }
+
+    function formatDate(value) {
+      return formatter.format(new Date(`${value}T00:00:00`));
+    }
+
+    function formatShortDate(value) {
+      return shortMonthFormatter.format(new Date(`${value}T00:00:00`));
+    }
+
+    function updateStats(items) {
+      if (!items.length) {
+        elements.stats.innerHTML = `
+          <div class="stat-card"><div class="stat-label">Files</div><div class="stat-value">0</div></div>
+          <div class="stat-card"><div class="stat-label">Date range</div><div class="stat-value">—</div></div>
+          <div class="stat-card"><div class="stat-label">Committees</div><div class="stat-value">0</div></div>
+        `;
+        return;
+      }
+
+      const sortedDates = items.map((item) => item.date).sort();
+      const committees = new Set(items.map((item) => item.categoryKey));
+
+      elements.stats.innerHTML = `
+        <div class="stat-card">
+          <div class="stat-label">Files</div>
+          <div class="stat-value">${items.length}</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Date range</div>
+          <div class="stat-value">${formatShortDate(sortedDates[0])} – ${formatShortDate(sortedDates.at(-1))}</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-label">Committees</div>
+          <div class="stat-value">${committees.size}</div>
+        </div>
+      `;
+    }
+
+    function populateCommitteeOptions(items) {
+      const committees = [...new Set(items.map((item) => item.categoryKey))].sort((left, right) =>
+        titleizeCategory(left).localeCompare(titleizeCategory(right))
+      );
+
+      elements.committee.innerHTML = '<option value="all">All committees</option>' + committees
+        .map((committee) => `<option value="${committee}">${titleizeCategory(committee)}</option>`)
+        .join('');
+    }
+
+    function getFilteredItems() {
+      let filtered = [...state.items];
+
+      if (state.query) {
+        filtered = filtered.filter((item) => item.searchText.includes(state.query));
+      }
+
+      if (state.committee !== 'all') {
+        filtered = filtered.filter((item) => item.categoryKey === state.committee);
+      }
+
+      filtered.sort((left, right) => {
+        switch (state.sort) {
+          case 'date-asc':
+            return left.date.localeCompare(right.date);
+          case 'title-asc':
+            return left.title.localeCompare(right.title);
+          case 'title-desc':
+            return right.title.localeCompare(left.title);
+          case 'date-desc':
+          default:
+            return right.date.localeCompare(left.date);
+        }
+      });
+
+      return filtered;
+    }
+
+    function renderActiveFilters(filteredItems) {
+      const chips = [];
+
+      if (state.query) {
+        chips.push(`<span class="chip">Search: “${escapeHtml(state.query)}”</span>`);
+      }
+
+      if (state.committee !== 'all') {
+        chips.push(`<span class="chip">Committee: ${escapeHtml(titleizeCategory(state.committee))}</span>`);
+      }
+
+      chips.push(`<span class="chip">View: ${state.view === 'list' ? 'List' : 'Grouped'}</span>`);
+      chips.push(`<span class="chip">Showing ${filteredItems.length} of ${state.items.length}</span>`);
+
+      elements.activeFilters.innerHTML = chips.join('');
+    }
+
+    function renderSummary(filteredItems) {
+      if (!state.items.length) {
+        elements.summary.textContent = 'No files available.';
+        return;
+      }
+
+      const base = `Showing ${filteredItems.length} of ${state.items.length} files`;
+      if (!filteredItems.length) {
+        elements.summary.textContent = `${base}. Try clearing or changing your filters.`;
+        return;
+      }
+
+      const qualifier = state.committee !== 'all'
+        ? ` in ${titleizeCategory(state.committee)}`
+        : '';
+
+      elements.summary.textContent = `${base}${qualifier}. Sorted ${describeSort(state.sort)}.`;
+    }
+
+    function describeSort(sort) {
+      switch (sort) {
+        case 'date-asc':
+          return 'by oldest first';
+        case 'title-asc':
+          return 'alphabetically A–Z';
+        case 'title-desc':
+          return 'alphabetically Z–A';
+        case 'date-desc':
+        default:
+          return 'by newest first';
+      }
+    }
+
+    function renderList(items) {
+      if (!items.length) {
+        return `
+          <div class="empty-state">
+            <h2>No files match the current filters</h2>
+            <p>Try a different search term, switch committees, or reset the controls to see the full archive.</p>
+          </div>
+        `;
+      }
+
+      return `
+        <div class="results">
+          ${items.map((item) => `
+            <article class="result-item">
+              <div class="result-date-wrap">
+                <div class="result-date">
+                  ${formatShortDate(item.date)}
+                  <span class="result-year">${item.date.slice(0, 4)}</span>
+                </div>
+              </div>
+              <div>
+                <h2 class="result-title">${escapeHtml(item.title)}</h2>
+                <div class="result-meta">
+                  <span class="badge">${escapeHtml(item.categoryLabel)}</span>
+                  <span class="meta-text">${escapeHtml(item.filename)}</span>
+                  <span class="meta-text">${escapeHtml(item.path)}</span>
+                </div>
+              </div>
+              <a class="open-link" href="${encodeURI(item.path)}" aria-label="Open ${escapeHtml(item.title)}" title="Open ${escapeHtml(item.title)}">↗</a>
+            </article>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    function renderGrouped(items) {
+      if (!items.length) {
+        return `
+          <div class="empty-state">
+            <h2>No groups to show</h2>
+            <p>Adjust your search or filter settings to bring matching committees back into view.</p>
+          </div>
+        `;
+      }
+
+      const groups = items.reduce((accumulator, item) => {
+        accumulator[item.categoryLabel] ??= [];
+        accumulator[item.categoryLabel].push(item);
+        return accumulator;
+      }, {});
+
+      const orderedGroups = Object.entries(groups).sort(([left], [right]) => left.localeCompare(right));
+
+      return `
+        <div class="grouped-results">
+          ${orderedGroups.map(([groupName, groupItems]) => `
+            <section class="group-card">
+              <div class="group-header">
+                <h2 class="group-title">${escapeHtml(groupName)}</h2>
+                <div class="group-count">${groupItems.length} file${groupItems.length === 1 ? '' : 's'}</div>
+              </div>
+              <ul>
+                ${groupItems.map((item) => `
+                  <li>
+                    <a class="group-link" href="${encodeURI(item.path)}">
+                      <div class="result-date">
+                        ${formatShortDate(item.date)}
+                        <span class="result-year">${item.date.slice(0, 4)}</span>
+                      </div>
+                      <div>
+                        <strong>${escapeHtml(item.title)}</strong>
+                        <span>${escapeHtml(item.filename)} · ${escapeHtml(item.path)}</span>
+                      </div>
+                    </a>
+                  </li>
+                `).join('')}
+              </ul>
+            </section>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    function renderResults() {
+      const filteredItems = getFilteredItems();
+      renderSummary(filteredItems);
+      renderActiveFilters(filteredItems);
+      elements.resultsRegion.innerHTML = state.view === 'list'
+        ? renderList(filteredItems)
+        : renderGrouped(filteredItems);
+    }
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll('&', '&amp;')
+        .replaceAll('<', '&lt;')
+        .replaceAll('>', '&gt;')
+        .replaceAll('"', '&quot;')
+        .replaceAll("'", '&#39;');
+    }
+
+    function bindEvents() {
+      elements.search.addEventListener('input', (event) => {
+        state.query = event.target.value.trim().toLowerCase();
+        renderResults();
+      });
+
+      elements.committee.addEventListener('change', (event) => {
+        state.committee = event.target.value;
+        renderResults();
+      });
+
+      elements.sort.addEventListener('change', (event) => {
+        state.sort = event.target.value;
+        renderResults();
+      });
+
+      elements.viewList.addEventListener('click', () => {
+        state.view = 'list';
+        syncViewButtons();
+        renderResults();
+      });
+
+      elements.viewGrouped.addEventListener('click', () => {
+        state.view = 'grouped';
+        syncViewButtons();
+        renderResults();
+      });
+
+      elements.reset.addEventListener('click', () => {
+        state.query = '';
+        state.committee = 'all';
+        state.sort = 'date-desc';
+        state.view = 'list';
+
+        elements.search.value = '';
+        elements.committee.value = 'all';
+        elements.sort.value = 'date-desc';
+
+        syncViewButtons();
+        renderResults();
+      });
+    }
+
+    function syncViewButtons() {
+      elements.viewList.setAttribute('aria-pressed', String(state.view === 'list'));
+      elements.viewGrouped.setAttribute('aria-pressed', String(state.view === 'grouped'));
+    }
+
+    async function loadArchive() {
+      try {
+        const response = await fetch('files.json');
+        if (!response.ok) {
+          throw new Error(`Request failed with ${response.status}`);
+        }
+
+        const data = await response.json();
+        state.items = data.map(enrichItem);
+        updateStats(state.items);
+        populateCommitteeOptions(state.items);
+        bindEvents();
+        renderResults();
+      } catch (error) {
+        elements.summary.textContent = 'Unable to load files.';
+        elements.resultsRegion.innerHTML = `
+          <div class="status-card">
+            <h2>Archive unavailable</h2>
+            <p>The page could not load <code>files.json</code>. Please confirm the file exists and that you are serving this directory over HTTP.</p>
+          </div>
+        `;
+      }
+    }
+
+    loadArchive();
+  </script>
+</body>
+</html>
