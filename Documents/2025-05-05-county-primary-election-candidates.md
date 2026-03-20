@@ -1,5 +1,7 @@
 # BALLOT
 
+> **Note:** Links to candidate pages, social media profiles, or contact information have not all been independently validated. If you see any errors or missing information, please reach out and I’ll correct them promptly. (Wouldn’t it be convenient if the Election Commission posted this info for every candidate on the county website?)
+
 # Contested Races
 
 ## County Mayor
@@ -66,8 +68,11 @@
 - Clay Chesser (I)
 ### New Candidates
 - Jim Tanner (D)
+  - Former EMA Director for Hickman County
 - Robert Warden (I)
-- Steve Anglin (I)
+  - [Vice President of the Banana Pudding Festival](https://www.hickmancountychamber.org/about)
+  - Also member of the Hickman County Chamber of Commerce
+- [Steve Leman Anglin](https://www.facebook.com/stephen.anglin.793240/) (I)
 
 ## Constable District 1
 - Timothy D. Black Sr. (I)
