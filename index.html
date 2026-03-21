@@ -17,20 +17,6 @@
       <p>
         County meeting outlines, summaries, and notes by committee, date, or title, and more.
       </p>
-      <div class="stats" id="stats" aria-live="polite">
-        <div class="stat-card">
-          <div class="stat-label">Files</div>
-          <div class="stat-value">—</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-label">Date range</div>
-          <div class="stat-value">—</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-label">Committees</div>
-          <div class="stat-value">—</div>
-        </div>
-      </div>
     </section>
 
     <section class="controls" aria-label="Filters and sorting">
@@ -97,7 +83,6 @@
     };
 
     const elements = {
-      stats: document.getElementById('stats'),
       search: document.getElementById('search'),
       committee: document.getElementById('committee-filter'),
       sort: document.getElementById('sort-by'),
@@ -211,35 +196,6 @@
 
     function formatShortDate(value) {
       return shortMonthFormatter.format(new Date(`${value}T00:00:00`));
-    }
-
-    function updateStats(items) {
-      if (!items.length) {
-        elements.stats.innerHTML = `
-          <div class="stat-card"><div class="stat-label">Files</div><div class="stat-value">0</div></div>
-          <div class="stat-card"><div class="stat-label">Date range</div><div class="stat-value">—</div></div>
-          <div class="stat-card"><div class="stat-label">Committees</div><div class="stat-value">0</div></div>
-        `;
-        return;
-      }
-
-      const sortedDates = items.map((item) => item.date).sort();
-      const committees = new Set(items.map((item) => item.categoryKey));
-
-      elements.stats.innerHTML = `
-        <div class="stat-card">
-          <div class="stat-label">Files</div>
-          <div class="stat-value">${items.length}</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-label">Date range</div>
-          <div class="stat-value">${formatShortDate(sortedDates[0])} – ${formatShortDate(sortedDates.at(-1))}</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-label">Committees</div>
-          <div class="stat-value">${committees.size}</div>
-        </div>
-      `;
     }
 
     function populateCommitteeOptions(items) {
@@ -488,7 +444,6 @@
 
         const data = await response.json();
         state.items = data.map(enrichItem);
-        updateStats(state.items);
         populateCommitteeOptions(state.items);
         bindEvents();
         renderResults();

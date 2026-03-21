@@ -219,37 +219,6 @@
       line-height: 1.65;
     }
 
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 0.75rem;
-      margin-top: 1.5rem;
-    }
-
-    .stat-card {
-      background: var(--surface-muted);
-      border: 1px solid var(--border);
-      border-left: 3px solid var(--patriot-red);
-      border-radius: var(--radius-md);
-      padding: 0.85rem 1rem;
-    }
-
-    .stat-label {
-      color: var(--text-faint);
-      font-size: 0.72rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 0.3rem;
-    }
-
-    .stat-value {
-      font-size: 1.15rem;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      color: var(--primary);
-    }
-
     /* ─── Controls bar ─── */
     .controls {
       position: sticky;
@@ -633,7 +602,6 @@
         padding-top: calc(1.25rem + 5px);
       }
 
-      .stats,
       .controls-grid {
         grid-template-columns: 1fr;
       }
