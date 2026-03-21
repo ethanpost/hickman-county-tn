@@ -15,7 +15,7 @@
   - [robertatkinson742@gmail.com](mailto:robertatkinson742@gmail.com)
 - [Chris Chilton (R)](https://www.facebook.com/chris.chilton.37)
   - [Chrischilton72@gmail.com](mailto:Chrischilton72@gmail.com)
-- Terrie Christie (D) or possibly (I)?
+- Terrie Christie (I)
   - [iVoterGuide Answers](https://ivoterguide.com/candidate/89045/race/23973/election/1348)
   - Not sure if this is the same person. Questions are for last years election in District 7 which is our district.
   - [Video from 2025 election she ran in.](https://www.newschannel5.com/news/newschannel-5-investigates/independent-candidates-challenge-two-party-system-in-tennessee-congressional-race)
@@ -70,7 +70,7 @@
   - [Instagram](https://www.instagram.com/lindsayblaze/)
   - [GasBoss](https://www.facebook.com/people/Gas-Boss/61553563230500/)
 - Garen Graves (R)
-- Kathy Redden (D)
+- Kathy Redden (I)
 
 ## Commissioner District 5
 
@@ -102,7 +102,7 @@
 
 ### New Candidates
 
-- Jim Tanner (D)
+- Jim Tanner (I)
   - Former EMA Director for Hickman County
 - Robert Warden (I)
   - [Vice President of the Banana Pudding Festival](https://www.hickmancountychamber.org/about)
@@ -156,7 +156,7 @@
 
 ## Constable District 4
 
-- Jerry Deal (D)
+- Jerry Deal (I)
 
 ## Constable District 6
 
@@ -184,7 +184,7 @@
 
 ## Road Board District 2
 
-- Carl Sullivan (D)
+- Carl Sullivan (I)
 
 ## Road Board District 3
 
@@ -208,7 +208,7 @@
 
 ## School Board District 6
 
-- Christy Mays (D)
+- Christy Mays (I)
 
 ## Sheriff
 
