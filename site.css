@@ -17,7 +17,7 @@
   /* File entry badges (files.json `badges`); HSL for easy tuning */
   --file-badge-red: hsl(355 72% 40%);
   --file-badge-blue: hsl(230 78% 44%);
-  --file-badge-yellow: hsl(69 91% 49%);
+  --file-badge-yellow: hsl(36 80% 38%);
   --file-badge-green: hsl(145 78% 30%);
 
   /* Layout tokens */
