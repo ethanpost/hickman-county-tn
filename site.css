@@ -391,12 +391,18 @@
     }
 
     .result-item {
+      position: relative;
       border: 1px solid var(--border);
       border-left: 3px solid var(--patriot-red);
       border-radius: var(--radius-md);
       background: var(--surface);
       transition: border-color 120ms ease, box-shadow 120ms ease;
       padding: 0;
+    }
+
+    /* Keep titles from running under absolutely positioned file badges */
+    .result-item:has(.result-file-badges) .group-link {
+      padding-right: max(6.75rem, 22%);
     }
 
     .result-item:hover {
@@ -459,17 +465,27 @@
 
     /* ─── Optional file badges (status pills + tooltip) ─── */
     .result-file-badges {
+      position: absolute;
+      top: 0.75rem;
+      right: 0.85rem;
       display: flex;
       flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: flex-start;
       gap: 0.4rem;
-      padding: 0 0.85rem 0.75rem;
-      margin-top: -0.2rem;
+      max-width: min(13rem, 46%);
+      margin: 0;
+      padding: 0;
+      pointer-events: none;
     }
 
-    @media (min-width: 701px) {
-      .result-file-badges {
-        padding-left: calc(0.85rem + 110px + 0.75rem);
-      }
+    .result-file-badges > * {
+      pointer-events: auto;
+    }
+
+    .result-file-badges .file-badge-tooltip {
+      left: auto;
+      right: 0;
     }
 
     .file-badge-host {
@@ -626,11 +642,21 @@
     }
 
     .group-card li {
+      position: relative;
       border: 1px solid var(--border);
       border-left: 3px solid var(--primary);
       border-radius: var(--radius-md);
       background: var(--surface);
       transition: border-color 120ms ease, box-shadow 120ms ease;
+    }
+
+    .group-card li:has(.result-file-badges) .group-link {
+      padding-right: max(6.75rem, 22%);
+    }
+
+    .group-card li .result-file-badges .file-badge-tooltip {
+      left: auto;
+      right: 0;
     }
 
     .group-card li:hover {
@@ -734,6 +760,25 @@
 
       .group-link {
         grid-template-columns: 1fr;
+      }
+
+      .result-item:has(.result-file-badges) .group-link,
+      .group-card li:has(.result-file-badges) .group-link {
+        padding-right: 0.85rem;
+      }
+
+      .result-file-badges {
+        position: static;
+        max-width: none;
+        justify-content: flex-end;
+        padding: 0 0.85rem 0.75rem;
+        margin-top: -0.15rem;
+      }
+
+      .result-file-badges .file-badge-tooltip,
+      .group-card li .result-file-badges .file-badge-tooltip {
+        left: 0;
+        right: auto;
       }
     }
 
