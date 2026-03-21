@@ -1,4 +1,7 @@
-# DRAFT 1
+# Subdivision Regulations
+
+> **Disclaimer.** An artificial intelligence tool converted this material from an Adobe (PDF) document into text and then into formatted Markdown. Wording, numbering, tables, and layout may not match the official source. **Always verify against the original, authoritative document** from Hickman County (or the issuing body) before relying on this file or taking any action based on it.
+
 ## Subdivision Regulations
 
 ## Hickman County, Tennessee
@@ -13,7 +16,6 @@
 
 ## Hickman County Regional Planning Commission
 
-and the
 ## Tennessee Department Of Economic And Community Development
 
 ## Local Planning Office
