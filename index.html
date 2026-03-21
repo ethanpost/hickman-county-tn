@@ -15,7 +15,7 @@
       <div class="eyebrow">Hickman County, TN</div>
       <h1 id="page-title">What's going on in Hickman County?</h1>
       <p>
-        County meeting outlines, summaries, and notes by committee, date, or title, and more.
+        County meeting outlines, summaries, and notes by category, date, or title, and more.
       </p>
     </section>
 
@@ -23,13 +23,13 @@
       <div class="controls-grid">
         <div class="field">
           <label for="search">Search files</label>
-          <input class="input" id="search" type="search" placeholder="Search title, folder, filename, or committee">
+          <input class="input" id="search" type="search" placeholder="Search title, folder, filename, or category">
         </div>
 
         <div class="field">
-          <label for="committee-filter">Committee</label>
-          <select class="select" id="committee-filter">
-            <option value="all">All committees</option>
+          <label for="category-filter">Category</label>
+          <select class="select" id="category-filter">
+            <option value="all">All categories</option>
           </select>
         </div>
 
@@ -77,14 +77,14 @@
     const state = {
       items: [],
       query: '',
-      committee: 'all',
+      category: 'all',
       sort: 'date-desc',
       view: 'list'
     };
 
     const elements = {
       search: document.getElementById('search'),
-      committee: document.getElementById('committee-filter'),
+      categorySelect: document.getElementById('category-filter'),
       sort: document.getElementById('sort-by'),
       viewList: document.getElementById('view-list'),
       viewGrouped: document.getElementById('view-grouped'),
@@ -140,7 +140,7 @@
 
     /**
      * Opens viewer.html with ?file=… so markdown is rendered as HTML.
-     * Only uses `folder` + basename(`filename`); committee is not part of the path.
+     * Only uses `folder` + basename(`filename`); category is not part of the path.
      */
     function fileHref(item) {
       const rel = fileMarkdownRelPath(item);
@@ -151,8 +151,8 @@
     }
 
     function getCategoryKey(item) {
-      if (item.committee) {
-        return item.committee;
+      if (item.category) {
+        return item.category;
       }
       const base = fileBasename(item.filename);
       const dated = base.match(/^\d{4}-\d{2}-\d{2}-(.+)\.md$/i);
@@ -168,12 +168,12 @@
 
     function enrichItem(item) {
       const categoryKey = getCategoryKey(item);
-      const categoryLabel = item.committee || titleizeCategory(categoryKey);
+      const categoryLabel = item.category || titleizeCategory(categoryKey);
       return {
         ...item,
         categoryKey,
         categoryLabel,
-        searchText: [item.title, item.filename, item.folder, item.committee, categoryKey]
+        searchText: [item.title, item.filename, item.folder, item.category, categoryKey]
           .filter(Boolean)
           .join(' ')
           .toLowerCase()
@@ -188,13 +188,13 @@
       return shortMonthFormatter.format(new Date(`${value}T00:00:00`));
     }
 
-    function populateCommitteeOptions(items) {
-      const committees = [...new Set(items.map((item) => item.categoryKey))].sort((left, right) =>
+    function populateCategoryOptions(items) {
+      const categories = [...new Set(items.map((item) => item.categoryKey))].sort((left, right) =>
         left.localeCompare(right, undefined, { sensitivity: 'base' })
       );
 
-      elements.committee.innerHTML = '<option value="all">All committees</option>' + committees
-        .map((committee) => `<option value="${escapeHtml(committee)}">${escapeHtml(committee)}</option>`)
+      elements.categorySelect.innerHTML = '<option value="all">All categories</option>' + categories
+        .map((category) => `<option value="${escapeHtml(category)}">${escapeHtml(category)}</option>`)
         .join('');
     }
 
@@ -205,8 +205,8 @@
         filtered = filtered.filter((item) => item.searchText.includes(state.query));
       }
 
-      if (state.committee !== 'all') {
-        filtered = filtered.filter((item) => item.categoryKey === state.committee);
+      if (state.category !== 'all') {
+        filtered = filtered.filter((item) => item.categoryKey === state.category);
       }
 
       filtered.sort((left, right) => {
@@ -233,8 +233,8 @@
         chips.push(`<span class="chip">Search: “${escapeHtml(state.query)}”</span>`);
       }
 
-      if (state.committee !== 'all') {
-        chips.push(`<span class="chip">Committee: ${escapeHtml(state.committee)}</span>`);
+      if (state.category !== 'all') {
+        chips.push(`<span class="chip">Category: ${escapeHtml(state.category)}</span>`);
       }
 
       chips.push(`<span class="chip">View: ${state.view === 'list' ? 'List' : 'Grouped'}</span>`);
@@ -255,8 +255,8 @@
         return;
       }
 
-      const qualifier = state.committee !== 'all'
-        ? ` in ${state.committee}`
+      const qualifier = state.category !== 'all'
+        ? ` in ${state.category}`
         : '';
 
       elements.summary.textContent = `${base}${qualifier}. Sorted ${describeSort(state.sort)}.`;
@@ -281,7 +281,7 @@
         return `
           <div class="empty-state">
             <h2>No files match the current filters</h2>
-            <p>Try a different search term, switch committees, or reset the controls to see the full archive.</p>
+            <p>Try a different search term, switch categories, or reset the controls to see the full archive.</p>
           </div>
         `;
       }
@@ -315,7 +315,7 @@
         return `
           <div class="empty-state">
             <h2>No groups to show</h2>
-            <p>Adjust your search or filter settings to bring matching committees back into view.</p>
+            <p>Adjust your search or filter settings to bring matching categories back into view.</p>
           </div>
         `;
       }
@@ -381,8 +381,8 @@
         renderResults();
       });
 
-      elements.committee.addEventListener('change', (event) => {
-        state.committee = event.target.value;
+      elements.categorySelect.addEventListener('change', (event) => {
+        state.category = event.target.value;
         renderResults();
       });
 
@@ -405,12 +405,12 @@
 
       elements.reset.addEventListener('click', () => {
         state.query = '';
-        state.committee = 'all';
+        state.category = 'all';
         state.sort = 'date-desc';
         state.view = 'list';
 
         elements.search.value = '';
-        elements.committee.value = 'all';
+        elements.categorySelect.value = 'all';
         elements.sort.value = 'date-desc';
 
         syncViewButtons();
@@ -432,7 +432,7 @@
 
         const data = await response.json();
         state.items = data.map(enrichItem);
-        populateCommitteeOptions(state.items);
+        populateCategoryOptions(state.items);
         bindEvents();
         renderResults();
       } catch (error) {
