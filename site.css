@@ -17,7 +17,7 @@
   /* File entry badges (files.json `badges`); HSL for easy tuning */
   --file-badge-red: hsl(355 72% 40%);
   --file-badge-blue: hsl(230 78% 44%);
-  --file-badge-yellow: hsl(69, 91%, 49%);
+  --file-badge-yellow: hsl(69 91% 49%);
   --file-badge-green: hsl(145 78% 30%);
 
   /* Layout tokens */
@@ -401,7 +401,8 @@
     }
 
     /* Keep titles from running under absolutely positioned file badges */
-    .result-item:has(.result-file-badges) .group-link {
+    .result-item:has(.result-file-badges) .group-link,
+    .result-item.result-item--badges .group-link {
       padding-right: max(6.75rem, 22%);
     }
 
@@ -504,10 +505,11 @@
       align-items: center;
       gap: 0.35rem;
       margin: 0;
-      padding: 0.22rem 0.5rem;
-      border-radius: var(--radius-md);
+      padding: 0.22rem 0.55rem;
+      border-radius: 9999px;
       border: 1px solid var(--file-badge-accent);
-      background: color-mix(in srgb, var(--file-badge-accent) 14%, var(--surface));
+      /* Fallback when color-mix is unsupported (entire declaration would be dropped) */
+      background: var(--surface-muted);
       color: var(--file-badge-accent);
       font-size: 0.625rem;
       font-weight: 800;
@@ -517,6 +519,14 @@
       text-transform: uppercase;
       cursor: pointer;
       box-shadow: none;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+    @supports (background: color-mix(in srgb, red 50%, blue 50%)) {
+      .file-badge {
+        background: color-mix(in srgb, var(--file-badge-accent) 14%, var(--surface));
+      }
     }
 
     .file-badge:focus-visible {
@@ -581,6 +591,7 @@
       opacity: 0;
       visibility: hidden;
       pointer-events: none;
+      z-index: 50;
       transition:
         opacity 140ms ease,
         visibility 140ms ease;
@@ -650,7 +661,8 @@
       transition: border-color 120ms ease, box-shadow 120ms ease;
     }
 
-    .group-card li:has(.result-file-badges) .group-link {
+    .group-card li:has(.result-file-badges) .group-link,
+    .group-card li.group-list-item--badges .group-link {
       padding-right: max(6.75rem, 22%);
     }
 
@@ -763,7 +775,9 @@
       }
 
       .result-item:has(.result-file-badges) .group-link,
-      .group-card li:has(.result-file-badges) .group-link {
+      .result-item.result-item--badges .group-link,
+      .group-card li:has(.result-file-badges) .group-link,
+      .group-card li.group-list-item--badges .group-link {
         padding-right: 0.85rem;
       }
 

@@ -344,7 +344,7 @@
       return `
         <div class="results">
           ${items.map((item) => `
-            <article class="result-item">
+            <article class="result-item${item.badges.length ? ' result-item--badges' : ''}">
               <a class="group-link" href="${fileHref(item)}" aria-label="Open ${escapeHtml(item.title)}">
                 <div class="result-date-wrap">
                   <div class="result-date">
@@ -394,7 +394,7 @@
               </div>
               <ul>
                 ${groupItems.map((item) => `
-                  <li>
+                  <li${item.badges.length ? ' class="group-list-item--badges"' : ''}>
                     <a class="group-link" href="${fileHref(item)}">
                       <div class="result-date">
                         ${formatShortDate(item.date)}
