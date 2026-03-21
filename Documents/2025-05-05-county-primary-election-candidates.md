@@ -35,6 +35,7 @@
 - [Shelley Farinato (R)](https://www.facebook.com/people/Shelley-for-District-1/61588517767463)
 - Jonathan Lacasse (I)
 - Rodney Rochelle (I)
+  - Was an Associate Minister at Fairfield Church of Christ?
 
 ## Commissioner District 2
 
