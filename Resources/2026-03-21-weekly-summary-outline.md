@@ -3,9 +3,11 @@
 *Disclaimer: This summary is based on personal review of meetings, transcripts, and public discussion. The purpose of this project is to gather and share the broadest possible range of information from as many sources as possible, as quickly and accessibly as possible—automation and perfect accuracy are nice, but prioritizing them would seriously limit both speed and coverage. If you notice any errors or omissions, please email me—or, if you're technical, feel free to submit a correction directly to the GitHub repository via a pull request. Some details may be incomplete or evolving, and your feedback helps keep this resource useful for everyone.* 
 
 ### Links
+
 - [What's Going On In Hickman County Website](https://ethanpost.github.io/hickman-county-tn/index.html)
 - [TN Department of Education - Hickman County School District](https://tdepublicschools.ondemand.sas.com/district/00410)
 - [TN Firefly - Explains how school funding works in Tennessee](https://www.tnfirefly.com/tennessee-school-funding)
+- [Election Candidates Tracking](https://ethanpost.github.io/hickman-county-tn/viewer.html?file=Documents%2F2025-05-05-county-primary-election-candidates.md)
 - [Title 29 - Nuisance Laws](https://law.justia.com/codes/tennessee/title-29/chapter-3/section-29-3-101/)
 - [GitHub Repo](https://github.com/ethanpost/hickman-county-tn)
 
