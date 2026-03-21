@@ -166,6 +166,18 @@
     "filename": "2026-03-21-weekly-summary-outline.md",
     "date": "2026-03-21",
     "title": "Weekly Summary Outline - March 21, 2026"
+    "badges": [
+      {
+        "label": "Spending",
+        "color": "red",
+        "message": "State mandated teacher pay minimums and the need to increase pay for EMS in order to retain paramedics will likely result in larger budget requests for the next fiscal year starting in July."
+      },
+      {
+        "label": "Law Enforcement",
+        "color": "green",
+        "message": "County Commissioners may be voting to give the Sheriff's Department the power to enforce Tennessee nuisance laws."
+      }
+    ]
   },
   {
     "folder": "Documents",
