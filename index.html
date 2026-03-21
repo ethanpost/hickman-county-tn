@@ -166,18 +166,73 @@
       return slug;
     }
 
+    const FILE_BADGE_COLORS = new Set(['red', 'blue', 'yellow', 'green']);
+
+    function normalizeBadges(item) {
+      const raw = item.badges;
+      if (!Array.isArray(raw)) {
+        return [];
+      }
+      return raw
+        .filter((entry) => entry && typeof entry.label === 'string' && entry.label.trim())
+        .map((entry) => {
+          const color = String(entry.color || 'blue').toLowerCase();
+          return {
+            label: entry.label.trim(),
+            color: FILE_BADGE_COLORS.has(color) ? color : 'blue',
+            message: typeof entry.message === 'string' ? entry.message : ''
+          };
+        });
+    }
+
     function enrichItem(item) {
       const categoryKey = getCategoryKey(item);
       const categoryLabel = item.category || titleizeCategory(categoryKey);
+      const badges = normalizeBadges(item);
+      const badgeSearch = badges.flatMap((b) => [b.label, b.message].filter(Boolean));
       return {
         ...item,
+        badges,
         categoryKey,
         categoryLabel,
-        searchText: [item.title, item.filename, item.folder, item.category, categoryKey]
+        searchText: [item.title, item.filename, item.folder, item.category, categoryKey, ...badgeSearch]
           .filter(Boolean)
           .join(' ')
           .toLowerCase()
       };
+    }
+
+    function fileBadgeDomId(item, badgeIndex) {
+      const path = fileMarkdownRelPath(item).replace(/[^a-zA-Z0-9_-]+/g, '-').replace(/^-|-$/g, '') || 'file';
+      return `fb-${path}-${badgeIndex}`.replace(/-+/g, '-');
+    }
+
+    function renderFileBadgesHtml(item) {
+      const badges = item.badges;
+      if (!badges.length) {
+        return '';
+      }
+      return `
+        <div class="result-file-badges">
+          ${badges.map((badge, index) => {
+            const tipId = fileBadgeDomId(item, index);
+            const labelUpper = escapeHtml(badge.label).toUpperCase();
+            return `
+            <div class="file-badge-host">
+              <button
+                type="button"
+                class="file-badge file-badge--${badge.color}"
+                aria-expanded="false"
+                aria-controls="${tipId}"
+                aria-describedby="${tipId}"
+              >
+                <span class="file-badge__dot" aria-hidden="true"></span>
+                <span class="file-badge__label">${labelUpper}</span>
+              </button>
+              <div class="file-badge-tooltip" id="${tipId}" role="tooltip">${escapeHtml(badge.message)}</div>
+            </div>`;
+          }).join('')}
+        </div>`;
     }
 
     function formatDate(value) {
@@ -304,6 +359,7 @@
                   </div>
                 </div>
               </a>
+              ${renderFileBadgesHtml(item)}
             </article>
           `).join('')}
         </div>
@@ -348,6 +404,7 @@
                         <strong>${escapeHtml(item.title)}</strong>
                       </div>
                     </a>
+                    ${renderFileBadgesHtml(item)}
                   </li>
                 `).join('')}
               </ul>
@@ -375,7 +432,65 @@
         .replaceAll("'", '&#39;');
     }
 
+    function closeAllFileBadges(root) {
+      root.querySelectorAll('.file-badge-host.is-open').forEach((host) => {
+        host.classList.remove('is-open');
+        host.querySelector('button.file-badge')?.setAttribute('aria-expanded', 'false');
+      });
+    }
+
+    function bindFileBadgeInteractions(root) {
+      root.addEventListener('click', (event) => {
+        const trigger = event.target.closest('.file-badge-host button.file-badge');
+        if (!trigger || !root.contains(trigger)) {
+          return;
+        }
+        event.preventDefault();
+        event.stopPropagation();
+        const host = trigger.closest('.file-badge-host');
+        const wasOpen = host.classList.contains('is-open');
+        closeAllFileBadges(root);
+        if (!wasOpen) {
+          host.classList.add('is-open');
+          trigger.setAttribute('aria-expanded', 'true');
+        }
+      });
+
+      root.addEventListener(
+        'focusout',
+        (event) => {
+          const host = event.target.closest?.('.file-badge-host');
+          if (!host || !root.contains(host)) {
+            return;
+          }
+          queueMicrotask(() => {
+            if (!host.contains(document.activeElement)) {
+              host.classList.remove('is-open');
+              host.querySelector('button.file-badge')?.setAttribute('aria-expanded', 'false');
+            }
+          });
+        },
+        true
+      );
+
+      document.addEventListener('click', (event) => {
+        if (event.target.closest('.file-badge-host')) {
+          return;
+        }
+        closeAllFileBadges(root);
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key !== 'Escape') {
+          return;
+        }
+        closeAllFileBadges(root);
+      });
+    }
+
     function bindEvents() {
+      bindFileBadgeInteractions(elements.resultsRegion);
+
       elements.search.addEventListener('input', (event) => {
         state.query = event.target.value.trim().toLowerCase();
         renderResults();

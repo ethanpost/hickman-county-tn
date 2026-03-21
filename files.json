@@ -39,7 +39,14 @@
     "category": "Solid Waste",
     "filename": "2026-01-08-tn-waste-to-jobs-act-oppose.md",
     "date": "2026-01-08",
-    "title": "Guide to the Tennessee Waste to Jobs Act (SB0269) **OPPOSE**"
+    "title": "Guide to the Tennessee Waste to Jobs Act (SB0269) **OPPOSE**",
+    "badges": [
+      {
+        "label": "Oppose",
+        "color": "red",
+        "message": "This resource argues against the Tennessee Waste to Jobs Act (SB0269) and explains concerns for Hickman County."
+      }
+    ]
   },
   {
     "folder": "Resources",
