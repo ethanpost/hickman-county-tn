@@ -2,6 +2,10 @@
 
 > **Note:** Links to candidate pages, social media profiles, or contact information have not all been independently validated. If you see any errors or missing information, please reach out and I’ll correct them promptly. (Wouldn’t it be convenient if the Election Commission posted this info for every candidate on the county website?)
 
+
+
+[Who will be on the May 5th ballot.](https://mainstreetmediatn.com/articles/hct-print/updated-full-guide-to-hickman-county-voting-from-may-primaries-to-november-generals/)
+
 # Contested Races
 
 ## County Mayor
@@ -10,10 +14,14 @@
   - Was Hickman County Building Commissioner. Retired in June of 2025.
   - [robertatkinson742@gmail.com](mailto:robertatkinson742@gmail.com)
 - [Chris Chilton (R)](https://www.facebook.com/chris.chilton.37)
-- Terrie Christie (D)
+  - [Chrischilton72@gmail.com](mailto:Chrischilton72@gmail.com)
+- Terrie Christie (D) or possibly (I)?
   - [iVoterGuide Answers](https://ivoterguide.com/candidate/89045/race/23973/election/1348)
   - Not sure if this is the same person. Questions are for last years election in District 7 which is our district.
+  - [Video from 2025 election she ran in.](https://www.newschannel5.com/news/newschannel-5-investigates/independent-candidates-challenge-two-party-system-in-tennessee-congressional-race)
 - [Mark Qualls (I)](https://www.facebook.com/hcunified/)
+  - [Markdqualls@gmail.com](mailto:Markdqualls@gmail.com)
+  - [https://www.hcunified.com/](https://www.hcunified.com/)
 
 ## Commissioner District 1
 
