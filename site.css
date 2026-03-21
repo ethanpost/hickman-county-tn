@@ -467,12 +467,13 @@
     /* ─── Optional file badges (status pills + tooltip) ─── */
     .result-file-badges {
       position: absolute;
-      top: 0.75rem;
+      top: 50%;
       right: 0.85rem;
+      transform: translateY(-50%);
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-end;
-      align-items: flex-start;
+      align-items: center;
       gap: 0.4rem;
       max-width: min(13rem, 46%);
       margin: 0;
@@ -506,7 +507,7 @@
       gap: 0.25rem;
       margin: 0;
       padding: 0.22rem 0.55rem;
-      border-radius: 9999px;
+      border-radius: var(--radius-md);
       border: 1px solid var(--file-badge-accent);
       /* Fallback when color-mix is unsupported (entire declaration would be dropped) */
       background: var(--surface-muted);
@@ -769,6 +770,7 @@
 
       .result-file-badges {
         position: static;
+        transform: none;
         max-width: none;
         justify-content: flex-end;
         padding: 0 0.85rem 0.75rem;
