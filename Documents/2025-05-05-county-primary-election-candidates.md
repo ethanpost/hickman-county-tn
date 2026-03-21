@@ -2,9 +2,9 @@
 
 > **Note:** Links to candidate pages, social media profiles, or contact information have not all been independently validated. If you see any errors or missing information, please reach out and I’ll correct them promptly. (Wouldn’t it be convenient if the Election Commission posted this info for every candidate on the county website?)
 
-
-
 [Who will be on the May 5th ballot.](https://mainstreetmediatn.com/articles/hct-print/updated-full-guide-to-hickman-county-voting-from-may-primaries-to-november-generals/)
+
+[Most of the candidate listed came from the Hickman County Times article.](https://mainstreetmediatn.com/pageview/viewer/hct2026-03-05#page=8)
 
 # Contested Races
 
