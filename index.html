@@ -150,16 +150,6 @@
       return `viewer.html?file=${encodeURIComponent(rel)}`;
     }
 
-    /** Display path: folder/filename for clarity in the list (same sources as fileHref). */
-    function fileDisplayPath(item) {
-      const folder = normalizeFolder(item.folder);
-      const base = fileBasename(item.filename);
-      if (folder && base) {
-        return `${folder}/${base}`;
-      }
-      return base || folder || '';
-    }
-
     function getCategoryKey(item) {
       if (item.committee) {
         return item.committee;
@@ -311,7 +301,6 @@
                   <h2 class="result-title">${escapeHtml(item.title)}</h2>
                   <div class="result-meta">
                     <span class="badge">${escapeHtml(item.categoryLabel)}</span>
-                    <span class="meta-text">${escapeHtml(fileDisplayPath(item))}</span>
                   </div>
                 </div>
               </a>
@@ -357,7 +346,6 @@
                       </div>
                       <div>
                         <strong>${escapeHtml(item.title)}</strong>
-                        <span>${escapeHtml(fileDisplayPath(item))}</span>
                       </div>
                     </a>
                   </li>
