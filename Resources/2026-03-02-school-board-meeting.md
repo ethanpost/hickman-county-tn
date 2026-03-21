@@ -1,8 +1,8 @@
 # Meeting Outline
 
-**Source:** https://www.youtube.com/watch?v=J0wqd_frh64  
+**Source:** [https://www.youtube.com/watch?v=J0wqd_frh64](https://www.youtube.com/watch?v=J0wqd_frh64)  
 **Title:** HCBOE March School Board Meeting - March 2, 2026  
-**Channel:** Hickman Co. Schools Community/Business Partnerships  
+**Channel:** [Hickman Co. Schools Community/Business Partnerships](https://www.youtube.com/@hickmanco.schoolscommunity5512)  
 **Date:** 2026-03-03T05:25:28-08:00  
 
 > **Disclaimer:**  
@@ -73,7 +73,6 @@
     - Chaperones mentioned; general plan presented to the board.
   - Motion and second to approve the volleyball trip request; motion passes by voice vote.
   - Board wishes the team well and encourages them to enjoy the trip.
-
 - **JROTC (Junior ROTC) Drill Competition Trip**
   - Request to attend a 7th Brigade drill competition in Knox, Kentucky.
   - Details:
@@ -83,7 +82,6 @@
     - Described as a recurring annual type of trip.
   - Motion and second to approve the JROTC trip; motion passes (six in favor).
   - Board encourages participants to have a good trip.
-
 - **East Hickman High School Senior Trip to Dollywood**
   - Senior class president presents request for senior trip.
   - Destination and logistics:
@@ -175,7 +173,6 @@
     - Roll call vote:
       - All six board members vote “yes”.
     - Motion passes unanimously.
-
 - **Resolution Designating Authorized Officials for DLTM Grant Administration**
   - Requirement:
     - Grant requires a formal board resolution naming specific individuals to submit paperwork, reimbursement requests, ordering documents, and other grant-related forms.
@@ -220,7 +217,6 @@
   - **Decision**
     - Motion and second to approve Policy 1.901 on second reading.
     - Voice vote in favor; motion passes (six in favor noted).
-
 - **Policy Review Group – Policies 1.803 through 2.400**
   - Policies 1.803 through 2.400 are up for review.
   - This agenda item is an acknowledgment of review status rather than a second reading.
@@ -279,7 +275,6 @@
     - Motion and second to approve the contract.
     - Voice vote in favor; motion passes (six in favor, none opposed).
     - Board agrees to sign the contract at the conclusion of the meeting.
-
 - **Discussion of Early Start as Consultant**
   - Rationale:
     - The board previously arranged for the outgoing director (Mr. Mullins) to start early as a consultant before his official term to allow for overlap and smoother transition.
