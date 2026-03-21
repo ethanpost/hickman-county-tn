@@ -106,6 +106,20 @@
   },
   {
     "folder": "Resources",
+    "category": "School Board",
+    "filename": "2026-02-09-school-board-meeting.md",
+    "date": "2026-02-09",
+    "title": "School Board Meeting Outline - February 9, 2026",
+    "badges": [
+      {
+        "label": "Spending",
+        "color": "yellow",
+        "message": "The board approved technology purchases including up to $121,500 for Chromebook replacements and a new student information system with an estimated five-year cost of approximately $125,000, in addition to possible add-on fees and a future budget amendment."
+      }
+    ]
+  },
+  {
+    "folder": "Resources",
     "category": "Weekly Summary",
     "filename": "2026-02-12-weekly-summary-outline.md",
     "date": "2026-02-12",
