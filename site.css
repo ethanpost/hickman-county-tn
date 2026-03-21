@@ -410,6 +410,12 @@
       box-shadow: 0 2px 8px rgb(var(--primary-rgb) / 0.08);
     }
 
+    .result-item:has(.file-badge-host:hover),
+    .result-item:has(.file-badge-host:focus-within),
+    .result-item:has(.file-badge-host.is-open) {
+      z-index: 10;
+    }
+
     .result-date {
       font-weight: 800;
       color: var(--primary);
@@ -567,7 +573,7 @@
     .file-badge-tooltip {
       position: absolute;
       left: 0;
-      top: calc(100% + 6px);
+      top: calc(100% + 8px);
       min-width: 11rem;
       max-width: min(22rem, calc(100vw - 2rem));
       padding: 0.55rem 0.65rem;
@@ -580,11 +586,11 @@
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius-md);
-      box-shadow: var(--shadow);
+      box-shadow: 0 4px 16px rgb(0 0 0 / 0.14), 0 1px 4px rgb(0 0 0 / 0.08);
       opacity: 0;
       visibility: hidden;
       pointer-events: none;
-      z-index: 50;
+      z-index: 100;
       transition:
         opacity 140ms ease,
         visibility 140ms ease;
@@ -666,6 +672,12 @@
 
     .group-card li:hover {
       box-shadow: 0 2px 8px rgb(var(--primary-rgb) / 0.08);
+    }
+
+    .group-card li:has(.file-badge-host:hover),
+    .group-card li:has(.file-badge-host:focus-within),
+    .group-card li:has(.file-badge-host.is-open) {
+      z-index: 10;
     }
 
     .group-link {
