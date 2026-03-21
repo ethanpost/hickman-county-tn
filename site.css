@@ -503,7 +503,7 @@
       --file-badge-accent: var(--file-badge-blue);
       display: inline-flex;
       align-items: center;
-      gap: 0.35rem;
+      gap: 0.25rem;
       margin: 0;
       padding: 0.22rem 0.55rem;
       border-radius: 9999px;
@@ -548,20 +548,6 @@
 
     .file-badge--green {
       --file-badge-accent: var(--file-badge-green);
-    }
-
-    .file-badge__dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: currentcolor;
-      flex-shrink: 0;
-    }
-
-    .file-badge--green .file-badge__dot {
-      box-shadow:
-        0 0 0 1px rgb(var(--shadow-rgb) / 0.12),
-        0 0 10px hsl(145 90% 42% / 0.5);
     }
 
     .file-badge__label {
