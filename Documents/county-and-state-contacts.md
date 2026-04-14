@@ -165,6 +165,25 @@ References: [SCTDD Staff](https://www.sctdd.org/meet-our-staff/), [TN Three-Star
 | Keith Nash | County Commissioner, District 5 | kkeithnash@bellsouth.net | — |
 | Andy Maddox | Mayor's Representative | — | (615) 405-4412 |
 
+
+---
+
+
+## Board of Education Members
+
+| Name                | Title/Role           | District  | Address                                       | Phone         | Email                         |
+|---------------------|----------------------|-----------|-----------------------------------------------|---------------|-------------------------------|
+| Tim Hobbs           | Chairman             | District 3| 9220 Old Bon Aqua Road, Bon Aqua, TN 37025    | 931-670-4976  | Not publicly listed           |
+| Doug Lane           | Vice-Chairman        | District 5| 2059 Lake Drive, Centerville, TN 37033        | 931-623-2667  | Not publicly listed           |
+| Jane Herron         | Chairman Pro Tem     | District 1| P.O. Box 13, Nunnelly, TN 37098               | 931-729-4149  | Not publicly listed           |
+| Christy Mays        | TN Legislative Rep.  | District 6| 450 Hwy. 50, Centerville, TN 37033            | 615-351-1586  | Not publicly listed           |
+| Brandon Tidwell     | Member               | District 4| 10820 North Tidwell Road, Bon Aqua, TN 37025  | —             | Not publicly listed           |
+| Dr. Tabitha Cude    | Member               | District 7| 4141 Lewis Drive, Centerville, TN 37033       | —             | Not publicly listed           |
+| Pippa Taylor        | Member               | District 2| 6585 Oak Hill Road, Lyles, TN 37098           | 931-996-1583  | Not publicly listed           |
+
+> **Note:** Email not publicly listed (contact email form available on the official page).
+
+
 ---
 
 ## Parsing tips for AI
@@ -174,3 +193,4 @@ References: [SCTDD Staff](https://www.sctdd.org/meet-our-staff/), [TN Three-Star
 - **By district:** In Commissioners and Zoning tables, filter on the District column.
 - **Ready-made lists:** Some sections include a "Comma-separated" line for copy-paste or script use.
 - **Missing data:** `—` indicates no value; "TBD" or "VACANT" used where noted.
+
