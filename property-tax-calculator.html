@@ -120,6 +120,29 @@
       border-top: 1px solid var(--gray-200);
     }
 
+    .explainer-figure {
+      margin: 0 0 var(--space-6);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      overflow: hidden;
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .explainer-figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .explainer-figure figcaption {
+      padding: var(--space-3) var(--space-4);
+      font-size: var(--step--1);
+      color: var(--gray-600);
+      background: var(--gray-50);
+      border-top: 1px solid var(--gray-200);
+    }
+
     section.panel {
       background: var(--surface);
       border-radius: var(--radius);
@@ -611,6 +634,19 @@
         Many people think a 50% increase in appraised value means a 50% increase in taxes. That is not necessarily true. If the whole county’s assessed value rises, the tax rate should generally adjust downward under a revenue-neutral certified tax rate. Your bill goes up mainly when the county’s required property tax revenue goes up, or when your property value rises faster than the county average.
         <p class="metaphor">“Reappraisal changes the size of the pie slices. The county budget decides how big the pie is.”</p>
       </div>
+      <figure class="explainer-figure">
+        <img
+          src="images/property-tax-calculator-graphic-1.png"
+          width="2048"
+          height="638"
+          alt="Illustrated five-year comparison showing assessed property values rising while the tax rate needed to meet a county budget target can decrease."
+          loading="lazy"
+          decoding="async"
+        >
+        <figcaption>
+          Visual example: when countywide assessed values rise, the tax rate needed to fund the budget can still move down.
+        </figcaption>
+      </figure>
     </header>
 
     <section class="panel" aria-labelledby="inputs-property">
