@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Tax Calculator: Reappraisal vs. County Budget — Tennessee</title>
+  <style>
+    /* Palette: civic dashboard — cool slate + muted teal accent (HSL) */
+    :root {
+      --hue-brand: 196;
+      --hue-muted: 215;
+      --gray-50: hsl(var(--hue-muted), 18%, 97%);
+      --gray-100: hsl(var(--hue-muted), 14%, 93%);
+      --gray-200: hsl(var(--hue-muted), 12%, 86%);
+      --gray-400: hsl(var(--hue-muted), 10%, 58%);
+      --gray-600: hsl(var(--hue-muted), 14%, 38%);
+      --gray-800: hsl(var(--hue-muted), 18%, 18%);
+      --accent: hsl(var(--hue-brand), 45%, 42%);
+      --accent-soft: hsl(var(--hue-brand), 35%, 94%);
+      --surface: hsl(0, 0%, 100%);
+      --shadow: 0 1px 3px hsl(var(--hue-muted), 20%, 80%);
+      --radius: 10px;
+      --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --step--1: 0.875rem;
+      --step-0: 1rem;
+      --step-1: 1.125rem;
+      --step-2: 1.25rem;
+      --step-3: 1.5rem;
+      --step-4: 2rem;
+      --space-2: 8px;
+      --space-3: 12px;
+      --space-4: 16px;
+      --space-6: 24px;
+      --space-8: 32px;
+      --max-width: 920px;
+      --bar-1: hsl(210, 35%, 52%);
+      --bar-2: hsl(196, 38%, 48%);
+      --bar-3: hsl(230, 28%, 56%);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      font-size: var(--step-0);
+      line-height: 1.55;
+      color: var(--gray-800);
+      background: linear-gradient(165deg, var(--gray-50) 0%, hsl(var(--hue-brand), 12%, 96%) 45%, var(--gray-100) 100%);
+      min-height: 100vh;
+    }
+
+    .wrap {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: var(--space-8) var(--space-4);
+    }
+
+    header.hero {
+      margin-bottom: var(--space-8);
+    }
+
+    .hero-banner-wrap {
+      margin: 0 0 var(--space-6);
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--gray-200);
+      box-shadow: var(--shadow);
+      line-height: 0;
+      background: var(--gray-100);
+    }
+
+    .hero-banner {
+      width: 100%;
+      height: auto;
+      display: block;
+      vertical-align: middle;
+    }
+
+    h1 {
+      font-size: var(--step-4);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 var(--space-3);
+      color: var(--gray-800);
+      line-height: 1.2;
+    }
+
+    .subtitle {
+      font-size: var(--step-1);
+      color: var(--gray-600);
+      margin: 0 0 var(--space-6);
+      max-width: 62ch;
+    }
+
+    .callout {
+      background: var(--accent-soft);
+      border: 1px solid hsl(var(--hue-brand), 30%, 82%);
+      border-radius: var(--radius);
+      padding: var(--space-4) var(--space-6);
+      margin-bottom: var(--space-6);
+    }
+
+    .callout strong {
+      display: block;
+      font-size: var(--step--1);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      margin-bottom: var(--space-2);
+    }
+
+    .metaphor {
+      font-style: italic;
+      color: var(--gray-600);
+      margin-top: var(--space-4);
+      padding-top: var(--space-4);
+      border-top: 1px solid var(--gray-200);
+    }
+
+    section.panel {
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: var(--space-6);
+      margin-bottom: var(--space-6);
+      border: 1px solid var(--gray-200);
+    }
+
+    section.panel h2 {
+      font-size: var(--step-2);
+      margin: 0 0 var(--space-4);
+      color: var(--gray-800);
+    }
+
+    .grid-2 {
+      display: grid;
+      gap: var(--space-4);
+    }
+
+    @media (min-width: 640px) {
+      .grid-2 {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    label {
+      display: block;
+      font-size: var(--step--1);
+      font-weight: 600;
+      color: var(--gray-600);
+      margin-bottom: var(--space-2);
+    }
+
+    input[type="number"],
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: var(--space-3) var(--space-4);
+      font-size: var(--step-0);
+      border: 1px solid var(--gray-200);
+      border-radius: 8px;
+      background: var(--gray-50);
+      color: var(--gray-800);
+    }
+
+    input:focus,
+    select:focus {
+      outline: 2px solid hsl(var(--hue-brand), 50%, 70%);
+      outline-offset: 2px;
+    }
+
+    .hint {
+      font-size: var(--step--1);
+      color: var(--gray-400);
+      margin-top: var(--space-2);
+      font-weight: 400;
+    }
+
+    .field {
+      margin-bottom: var(--space-4);
+    }
+
+    .field:last-child {
+      margin-bottom: 0;
+    }
+
+    .slider-row {
+      margin-bottom: var(--space-6);
+    }
+
+    .slider-row label {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: var(--space-2);
+    }
+
+    .slider-val {
+      font-variant-numeric: tabular-nums;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    input[type="range"] {
+      width: 100%;
+      margin-top: var(--space-2);
+      accent-color: var(--accent);
+    }
+
+    .toggle-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-4);
+      margin-bottom: var(--space-4);
+    }
+
+    .toggle-group label.inline {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-2);
+      font-weight: 500;
+      cursor: pointer;
+      margin-bottom: 0;
+    }
+
+    .toggle-group input[type="radio"],
+    .toggle-group input[type="checkbox"] {
+      margin-top: 4px;
+      accent-color: var(--accent);
+    }
+
+    .budget-mode {
+      margin-bottom: var(--space-4);
+    }
+
+    .cards {
+      display: grid;
+      gap: var(--space-4);
+      margin-bottom: var(--space-6);
+    }
+
+    @media (min-width: 900px) {
+      .cards {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .card {
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: var(--space-4);
+      background: linear-gradient(180deg, var(--surface) 0%, var(--gray-50) 100%);
+    }
+
+    .card h3 {
+      font-size: var(--step-1);
+      margin: 0 0 var(--space-4);
+      padding-bottom: var(--space-3);
+      border-bottom: 2px solid var(--gray-200);
+      color: var(--gray-800);
+    }
+
+    .stat {
+      margin-bottom: var(--space-3);
+    }
+
+    .stat .lbl {
+      font-size: var(--step--1);
+      color: var(--gray-600);
+    }
+
+    .stat .num {
+      font-size: var(--step-3);
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      color: var(--gray-800);
+      line-height: 1.2;
+    }
+
+    .stat .delta {
+      font-size: var(--step--1);
+      font-variant-numeric: tabular-nums;
+      color: var(--gray-600);
+      margin-top: var(--space-2);
+    }
+
+    .card-note {
+      font-size: var(--step--1);
+      color: var(--gray-600);
+      margin-top: var(--space-4);
+      padding-top: var(--space-4);
+      border-top: 1px dashed var(--gray-200);
+    }
+
+    .explain-section {
+      margin-bottom: var(--space-6);
+    }
+
+    .explain-section h2 {
+      font-size: var(--step-2);
+      margin-bottom: var(--space-4);
+    }
+
+    .explain-list {
+      margin: 0;
+      padding-left: 1.25rem;
+    }
+
+    .explain-list li {
+      margin-bottom: var(--space-3);
+    }
+
+    .chart-block {
+      margin-bottom: var(--space-6);
+    }
+
+    .chart-block h3 {
+      font-size: var(--step-1);
+      margin: 0 0 var(--space-4);
+    }
+
+    .bar-chart {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-3);
+    }
+
+    .bar-row {
+      display: grid;
+      grid-template-columns: minmax(140px, 1fr) 3fr auto;
+      gap: var(--space-3);
+      align-items: center;
+    }
+
+    @media (max-width: 520px) {
+      .bar-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .bar-track {
+      height: 36px;
+      background: var(--gray-100);
+      border-radius: 6px;
+      overflow: hidden;
+      border: 1px solid var(--gray-200);
+    }
+
+    .bar-fill {
+      height: 100%;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: var(--space-2);
+      min-width: 2px;
+      transition: width 0.2s ease;
+    }
+
+    .bar-fill span {
+      font-size: var(--step--1);
+      font-weight: 600;
+      color: var(--surface);
+      text-shadow: 0 1px 2px hsl(0, 0%, 0%, 0.25);
+      white-space: nowrap;
+    }
+
+    .bar-label {
+      font-size: var(--step--1);
+      font-weight: 600;
+      color: var(--gray-600);
+    }
+
+    .bar-end {
+      font-variant-numeric: tabular-nums;
+      font-weight: 700;
+      font-size: var(--step--1);
+      color: var(--gray-800);
+      min-width: 5rem;
+      text-align: right;
+    }
+
+    .stack-wrap {
+      margin-top: var(--space-4);
+    }
+
+    .stack-bar {
+      display: flex;
+      height: 40px;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--gray-200);
+    }
+
+    .stack-seg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--step--1);
+      font-weight: 600;
+      color: var(--surface);
+      text-shadow: 0 1px 2px hsl(0, 0%, 0%, 0.3);
+      min-width: 2px;
+      transition: flex-basis 0.2s ease;
+    }
+
+    .fund-colors {
+      --f0: hsl(210, 42%, 48%);
+      --f1: hsl(175, 38%, 42%);
+      --f2: hsl(265, 32%, 52%);
+      --f3: hsl(40, 45%, 48%);
+      --f4: hsl(300, 28%, 52%);
+      --f5: hsl(15, 38%, 52%);
+    }
+
+    table.fund-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: var(--step--1);
+      margin-top: var(--space-4);
+    }
+
+    table.fund-table th,
+    table.fund-table td {
+      text-align: left;
+      padding: var(--space-3);
+      border-bottom: 1px solid var(--gray-200);
+    }
+
+    table.fund-table th {
+      font-size: var(--step--1);
+      color: var(--gray-600);
+      font-weight: 600;
+    }
+
+    table.fund-table td {
+      vertical-align: top;
+    }
+
+    .fund-actions {
+      margin-top: var(--space-4);
+      display: flex;
+      gap: var(--space-2);
+      flex-wrap: wrap;
+    }
+
+    button {
+      font-family: inherit;
+      font-size: var(--step--1);
+      padding: var(--space-3) var(--space-4);
+      border-radius: 8px;
+      border: 1px solid var(--gray-200);
+      background: var(--surface);
+      cursor: pointer;
+      color: var(--gray-800);
+    }
+
+    button.primary {
+      background: var(--accent);
+      color: var(--surface);
+      border-color: var(--accent);
+    }
+
+    button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    button.danger {
+      color: hsl(230, 35%, 38%);
+      border-color: var(--gray-200);
+    }
+
+    details.math-details {
+      margin-top: var(--space-4);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: var(--space-4);
+      background: var(--gray-50);
+    }
+
+    details.math-details summary {
+      font-weight: 700;
+      cursor: pointer;
+      color: var(--accent);
+    }
+
+    details.math-details .math-inner {
+      margin-top: var(--space-4);
+      font-size: var(--step--1);
+    }
+
+    details.math-details code {
+      font-size: 0.95em;
+      background: var(--surface);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    .math-line {
+      margin-bottom: var(--space-4);
+      padding-bottom: var(--space-4);
+      border-bottom: 1px solid var(--gray-200);
+    }
+
+    .math-line:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    footer.disclaimer {
+      font-size: var(--step--1);
+      color: var(--gray-600);
+      padding: var(--space-6);
+      background: var(--gray-100);
+      border-radius: var(--radius);
+      border: 1px solid var(--gray-200);
+      margin-top: var(--space-8);
+    }
+
+    footer.disclaimer p {
+      margin: 0 0 var(--space-4);
+    }
+
+    footer.disclaimer p:last-child {
+      margin-bottom: 0;
+    }
+
+    .source-note {
+      font-size: var(--step--1);
+      color: var(--gray-600);
+      margin-top: var(--space-4);
+      padding: var(--space-4);
+      background: hsl(var(--hue-muted), 15%, 96%);
+      border-radius: 8px;
+      border-left: 4px solid var(--accent);
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-4);
+      margin-top: var(--space-4);
+      font-size: var(--step--1);
+    }
+
+    .legend span {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+    }
+
+    .swatch {
+      width: 14px;
+      height: 14px;
+      border-radius: 3px;
+      flex-shrink: 0;
+      border: 1px solid hsl(0, 0%, 0%, 0.15);
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    #fund-editor.custom-on table.fund-edit {
+      width: 100%;
+      margin-top: var(--space-4);
+      font-size: var(--step--1);
+    }
+
+    #fund-editor.custom-on .fund-edit input {
+      width: 100%;
+      margin-bottom: 0;
+    }
+
+    #fund-editor.custom-on .fund-edit td {
+      vertical-align: middle;
+      padding: var(--space-2);
+    }
+
+    .readonly-note {
+      font-size: var(--step--1);
+      color: var(--gray-400);
+      margin-top: var(--space-2);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="hero-banner-wrap">
+        <img
+          src="images/property-tax-calculator-banner.png"
+          width="1200"
+          height="400"
+          class="hero-banner"
+          alt="Cartoon-style illustration of a rural Tennessee farm scene with a property tax assessment theme."
+          decoding="async"
+          fetchpriority="high"
+        >
+      </div>
+      <h1>Property Tax Calculator: Reappraisal vs. County Budget</h1>
+      <p class="subtitle">See why your tax bill is not just about your property value. Reappraisal changes how the tax burden is distributed. The county budget determines how much total revenue must be collected.</p>
+      <div class="callout">
+        <strong>Plain-language takeaway</strong>
+        Many people think a 50% increase in appraised value means a 50% increase in taxes. That is not necessarily true. If the whole county’s assessed value rises, the tax rate should generally adjust downward under a revenue-neutral certified tax rate. Your bill goes up mainly when the county’s required property tax revenue goes up, or when your property value rises faster than the county average.
+        <p class="metaphor">“Reappraisal changes the size of the pie slices. The county budget decides how big the pie is.”</p>
+      </div>
+    </header>
+
+    <section class="panel" aria-labelledby="inputs-property">
+      <h2 id="inputs-property">Your property</h2>
+      <div class="grid-2">
+        <div class="field">
+          <label for="priorMarket">Prior appraised market value <span class="hint" title="Estimated market value before reappraisal.">(?)</span></label>
+          <input type="number" id="priorMarket" min="0" step="1000" value="200000">
+          <span class="hint">Appraised value is an estimate of market value; taxable amount uses the assessment ratio below.</span>
+        </div>
+        <div class="field">
+          <label for="newMarket">New appraised market value</label>
+          <input type="number" id="newMarket" min="0" step="1000" value="300000">
+        </div>
+        <div class="field">
+          <label for="propertyClass">Property classification</label>
+          <select id="propertyClass">
+            <option value="residential_farm" selected>Residential / Farm</option>
+            <option value="commercial_industrial">Commercial / Industrial</option>
+            <option value="personal_property">Personal Property</option>
+            <option value="public_utility">Public Utility</option>
+          </select>
+          <span class="hint">Assessment ratio: Residential/Farm 25%; Commercial/Industrial 40%; Personal property 30%; Public utility 55%.</span>
+        </div>
+        <div class="field">
+          <label for="priorTaxRate">Prior tax rate (per $100 assessed value)</label>
+          <input type="number" id="priorTaxRate" min="0" step="0.0001" value="2.66">
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="inputs-county">
+      <h2 id="inputs-county">Countywide tax base &amp; budget</h2>
+      <p class="hint" style="margin-top:-8px;margin-bottom:var(--space-4);">County totals are large numbers. Enter them <strong>in millions of dollars</strong> of assessed value (for example, <strong>573.476</strong> means about $573.476 million assessed). Defaults use Hickman County prior-year total where noted.</p>
+      <div class="grid-2">
+        <div class="field">
+          <label for="priorCountyAssessed">Prior total county assessed value (millions $)</label>
+          <input type="number" id="priorCountyAssessed" min="0" step="0.001" value="573.476">
+          <span class="hint">Full amount: <span id="priorCountyAssessedFull">—</span></span>
+        </div>
+        <div class="field">
+          <label for="newCountyAssessed">New total county assessed value after reappraisal (millions $)</label>
+          <input type="number" id="newCountyAssessed" min="0" step="0.001" value="860.214">
+          <span class="hint">Full amount: <span id="newCountyAssessedFull">—</span></span>
+        </div>
+        <div class="field">
+          <label for="newGrowthAssessed">New growth assessed value <span class="hint">(optional, millions $)</span></label>
+          <input type="number" id="newGrowthAssessed" min="0" step="1" value="0">
+          <span class="hint">If entered, the adjusted revenue-neutral rate uses reappraisal base minus new growth.</span>
+        </div>
+        <div class="field">
+          <label for="priorRevenueDisplay">Prior year property tax revenue (auto)</label>
+          <input type="text" id="priorRevenueDisplay" readonly aria-live="polite" value="">
+          <span class="hint">Computed from prior county assessed value and prior tax rate unless overridden below.</span>
+        </div>
+      </div>
+
+      <div class="field budget-mode">
+        <span class="lbl" style="margin-bottom:var(--space-2);display:block;font-weight:600;font-size:var(--step--1);color:var(--gray-600);">New budget-required property tax revenue</span>
+        <div class="toggle-group" role="radiogroup" aria-label="Budget revenue entry mode">
+          <label class="inline"><input type="radio" name="budgetMode" id="budgetModePct" value="percent" checked> Percent increase over prior year revenue</label>
+          <label class="inline"><input type="radio" name="budgetMode" id="budgetModeDollar" value="dollar"> Dollar amount</label>
+        </div>
+        <div id="budgetPctWrap" class="field">
+          <label for="budgetIncreasePct">County budget increase (% over prior property tax revenue)</label>
+          <input type="number" id="budgetIncreasePct" step="0.1" value="10">
+        </div>
+        <div id="budgetDollarWrap" class="field hidden">
+          <label for="budgetRevenueDollar">Budget-required revenue ($)</label>
+          <input type="number" id="budgetRevenueDollar" min="0" step="1000" value="">
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="scenario-controls">
+      <h2 id="scenario-controls">Scenario sliders</h2>
+      <p class="hint" style="margin-top:0;margin-bottom:var(--space-4);">Moving a slider updates the related numbers above so you can explore “what if?” without doing the arithmetic yourself.</p>
+
+      <div class="slider-row">
+        <label for="sliderIndividual">
+          Individual property value change
+          <span class="slider-val" id="sliderIndividualLabel">+50%</span>
+        </label>
+        <input type="range" id="sliderIndividual" min="-20" max="100" value="50" step="1">
+      </div>
+
+      <div class="slider-row">
+        <label for="sliderCountywide">
+          Countywide assessed value change
+          <span class="slider-val" id="sliderCountywideLabel">+50%</span>
+        </label>
+        <input type="range" id="sliderCountywide" min="-20" max="100" value="50" step="1">
+      </div>
+
+      <div class="slider-row">
+        <label for="sliderBudget">
+          County budget / revenue increase (over prior revenue)
+          <span class="slider-val" id="sliderBudgetLabel">+10%</span>
+        </label>
+        <input type="range" id="sliderBudget" min="-10" max="30" value="10" step="0.5">
+      </div>
+
+      <div class="toggle-group">
+        <label class="inline"><input type="checkbox" id="useHickmanFunds" checked> Use Hickman County default rate breakdown</label>
+        <label class="inline"><input type="checkbox" id="useCustomFunds"> Enter custom fund rates</label>
+      </div>
+      <div class="toggle-group">
+        <label class="inline"><input type="checkbox" id="showDetailedMath"> Show detailed math (expand formulas below)</label>
+        <label class="inline"><input type="checkbox" id="simplifiedModel"> Use simplified instructional model <span class="hint">(shorter explanations)</span></label>
+      </div>
+    </section>
+
+    <div class="cards" role="region" aria-label="Results">
+      <article class="card" aria-labelledby="card-before">
+        <h3 id="card-before">Before Reappraisal</h3>
+        <div class="stat"><span class="lbl">Prior appraised market value</span><div class="num" id="outPriorMarket">—</div></div>
+        <div class="stat"><span class="lbl">Assessment ratio</span><div class="num" id="outRatio">—</div></div>
+        <div class="stat"><span class="lbl">Prior assessed value</span><div class="num" id="outPriorAssessed">—</div></div>
+        <div class="stat"><span class="lbl">Prior tax rate (per $100)</span><div class="num" id="outPriorRate">—</div></div>
+        <div class="stat"><span class="lbl">Your estimated bill</span><div class="num" id="outPriorBill">—</div></div>
+        <p class="card-note">This is the old bill using the prior value and prior rate.</p>
+      </article>
+
+      <article class="card" aria-labelledby="card-rn">
+        <h3 id="card-rn">After Reappraisal — Revenue Neutral</h3>
+        <div class="stat"><span class="lbl">New appraised market value</span><div class="num" id="outNewMarketRn">—</div></div>
+        <div class="stat"><span class="lbl">New assessed value</span><div class="num" id="outNewAssessedRn">—</div></div>
+        <div class="stat"><span class="lbl">Revenue-neutral tax rate</span><div class="num" id="outRnRate">—</div></div>
+        <div class="stat"><span class="lbl">Your estimated bill at revenue-neutral rate</span><div class="num" id="outBillRn">—</div></div>
+        <div class="stat"><span class="lbl">Difference from prior bill</span><div class="delta" id="outDeltaRn">—</div></div>
+        <p class="card-note">This scenario shows what happens if property values change but the county collects about the same total property tax revenue as last year (revenue-neutral).</p>
+      </article>
+
+      <article class="card" aria-labelledby="card-budget">
+        <h3 id="card-budget">After Budget Increase</h3>
+        <div class="stat"><span class="lbl">New appraised market value</span><div class="num" id="outNewMarketBd">—</div></div>
+        <div class="stat"><span class="lbl">New assessed value</span><div class="num" id="outNewAssessedBd">—</div></div>
+        <div class="stat"><span class="lbl">Budget-required tax rate</span><div class="num" id="outAdoptedRate">—</div></div>
+        <div class="stat"><span class="lbl">Your estimated bill under new revenue requirement</span><div class="num" id="outBillBd">—</div></div>
+        <div class="stat"><span class="lbl">Difference from prior bill</span><div class="delta" id="outDeltaBd">—</div></div>
+        <p class="card-note">This scenario shows the effect of the county budget. If the county needs more revenue, the rate is set to collect that amount from the new tax base.</p>
+      </article>
+    </div>
+
+    <section class="explain-section panel" aria-labelledby="why-change">
+      <h2 id="why-change">Why did my bill change?</h2>
+      <ul class="explain-list" id="explainList"></ul>
+    </section>
+
+    <section class="panel fund-colors" aria-labelledby="fund-section">
+      <h2 id="fund-section">Where does the property tax rate go?</h2>
+      <p class="hint">Your tax bill is not one mysterious number. The total rate is built from separate public funds. This calculator shows how much of your estimated bill goes to general county government, roads/public works, schools, and debt service.</p>
+
+      <div id="fund-editor">
+        <div class="toggle-group" style="margin-top:var(--space-4);">
+          <span id="fundModeNote" class="readonly-note">Using Hickman County, Tennessee FY 2025–2026 default rates below.</span>
+        </div>
+
+        <table class="fund-table" id="fundTable">
+          <thead>
+            <tr>
+              <th>Fund</th>
+              <th>Rate per $100</th>
+              <th>% of total rate</th>
+              <th>Estimated $ from this property</th>
+              <th>Explanation</th>
+            </tr>
+          </thead>
+          <tbody id="fundTableBody"></tbody>
+        </table>
+
+        <div class="chart-block">
+          <h3>Where the Tax Rate Goes</h3>
+          <div class="stack-wrap">
+            <div class="stack-bar" id="stackedFundBar" role="img" aria-label="Stacked bar of fund shares of total rate"></div>
+          </div>
+          <div class="legend" id="fundLegend"></div>
+        </div>
+
+        <div id="customFundEditor" class="hidden">
+          <table class="fund-edit">
+            <thead>
+              <tr>
+                <th>Fund name</th>
+                <th>Rate ($ / $100)</th>
+                <th>Description</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="customFundRows"></tbody>
+          </table>
+          <div class="fund-actions">
+            <button type="button" class="primary" id="btnAddFund">Add fund row</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="source-note">
+        <strong>Data reference (not legal advice):</strong> Hickman County FY 2025–2026 default rate breakdown is based on the county budget rate schedule: General Fund $2.0800, Highway/Public Works $0.0600, General Purpose School $0.5200, General Debt Service $0.0000, total $2.6600 per $100 assessed value. Verify current official rates with Hickman County, the county trustee, the assessor, or the Tennessee Comptroller.<br><br>
+        The Tennessee Trustee site lists Hickman County’s 2024 property tax rate as $2.57 per $100 assessed value and 2023 as $2.3324 per $100 assessed value.
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Visual comparisons</h2>
+
+      <div class="chart-block">
+        <h3>Estimated Tax Bill Comparison</h3>
+        <div class="bar-chart" id="billBarChart"></div>
+      </div>
+
+      <div class="chart-block">
+        <h3>Tax Rate Comparison</h3>
+        <div class="bar-chart" id="rateBarChart"></div>
+      </div>
+
+      <div class="chart-block">
+        <h3>Where the Tax Rate Goes</h3>
+        <p class="hint">Same fund shares as in the breakdown above — shown here as a compact comparison chart.</p>
+        <div class="stack-wrap">
+          <div class="stack-bar" id="stackedFundBarViz" role="img" aria-label="Stacked bar of fund shares of total rate"></div>
+        </div>
+        <div class="legend" id="fundLegendViz"></div>
+      </div>
+    </section>
+
+    <details class="math-details" id="mathDetailsBlock">
+      <summary>Show the math</summary>
+      <div class="math-inner" id="mathInner"></div>
+    </details>
+
+    <footer class="disclaimer">
+      <p>This calculator is an instructional estimate. Actual certified tax rates, assessed values, exemptions, special districts, city taxes, delinquency assumptions, new growth adjustments, and other statutory adjustments may affect your final tax bill. Always verify official tax rates and values with your county trustee, assessor, county commission, or the Tennessee Comptroller/State Board of Equalization.</p>
+      <p>This tool is intended to explain the relationship between reassessment, certified tax rates, and county budget decisions. It should not be used as the final authority for any individual tax bill.</p>
+    </footer>
+  </div>
+
+  <script>
+(function () {
+  'use strict';
+
+  const ASSESSMENT_RATIOS = {
+    residential_farm: 0.25,
+    commercial_industrial: 0.40,
+    personal_property: 0.30,
+    public_utility: 0.55
+  };
+
+  const DEFAULT_FUND_RATES = [
+    {
+      fund: 'General Fund',
+      rate: 2.08,
+      description: 'County general government operations, public safety, offices, courts, jail, EMS, administration, and other general services.'
+    },
+    {
+      fund: 'Highway/Public Works',
+      rate: 0.06,
+      description: 'Roads, highway, bridge maintenance, equipment, and public works functions.'
+    },
+    {
+      fund: 'General Purpose School',
+      rate: 0.52,
+      description: 'Local county property-tax support for the school system.'
+    },
+    {
+      fund: 'General Debt Service',
+      rate: 0.00,
+      description: 'Debt payments, if any tax rate is assigned to this fund.'
+    }
+  ];
+
+  const HICKMAN_TOTAL_RATE = DEFAULT_FUND_RATES.reduce((s, f) => s + f.rate, 0);
+
+  /** Countywide assessed inputs are in millions of dollars; formulas use full dollars. */
+  const COUNTY_ASSESSED_SCALE = 1e6;
+
+  const ASSESSMENT_RATIO_HELP = {
+    residential_farm: 'Residential / Farm is assessed at 25% of appraised value in Tennessee.',
+    commercial_industrial: 'Commercial / Industrial is assessed at 40% of appraised value.',
+    personal_property: 'Personal property is assessed at 30% of appraised value.',
+    public_utility: 'Public utility property is assessed at 55% of appraised value.'
+  };
+
+  const FUND_STACK_COLORS = [
+    'var(--f0)', 'var(--f1)', 'var(--f2)', 'var(--f3)', 'var(--f4)', 'var(--f5)'
+  ];
+
+  const APPROX_EQUAL_THRESHOLD = 0.02;
+
+  let sliderSyncLock = false;
+  let customFunds = JSON.parse(JSON.stringify(DEFAULT_FUND_RATES));
+
+  function getNumber(id) {
+    const el = document.getElementById(id);
+    if (!el) return NaN;
+    const v = parseFloat(el.value, 10);
+    return Number.isFinite(v) ? v : NaN;
+  }
+
+  /** Prior/new/growth county assessed fields store millions; return full assessed dollars. */
+  function getCountyAssessedDollars(id) {
+    const m = getNumber(id);
+    return Number.isFinite(m) ? m * COUNTY_ASSESSED_SCALE : NaN;
+  }
+
+  function setText(id, value) {
+    const el = document.getElementById(id);
+    if (el) el.textContent = value;
+  }
+
+  function formatCurrency(value) {
+    if (!Number.isFinite(value)) return '—';
+    return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 2 }).format(value);
+  }
+
+  function formatRate(value) {
+    if (!Number.isFinite(value)) return '—';
+    return '$' + value.toLocaleString('en-US', { minimumFractionDigits: 4, maximumFractionDigits: 4 }) + ' / $100 assessed';
+  }
+
+  function formatPercent(value) {
+    if (!Number.isFinite(value)) return '—';
+    return (value * 100).toFixed(2) + '%';
+  }
+
+  function formatPercentPts(value) {
+    if (!Number.isFinite(value)) return '—';
+    return (value >= 0 ? '+' : '') + (value * 100).toFixed(2) + ' pts';
+  }
+
+  function formatDeltaVsPrior(delta, priorBill) {
+    if (!Number.isFinite(delta)) return '—';
+    const cur = formatCurrency(delta);
+    if (!Number.isFinite(priorBill) || priorBill <= 0) {
+      return cur + ' (percent vs prior not shown when prior bill is $0)';
+    }
+    return cur + ' (' + formatPercent(delta / priorBill) + ' vs prior bill)';
+  }
+
+  function calculateAssessmentRatio(propertyClass) {
+    return ASSESSMENT_RATIOS[propertyClass] ?? ASSESSMENT_RATIOS.residential_farm;
+  }
+
+  function calculateAssessedValue(appraisedValue, assessmentRatio) {
+    return appraisedValue * assessmentRatio;
+  }
+
+  function calculateTaxBill(assessedValue, taxRate) {
+    return (assessedValue / 100) * taxRate;
+  }
+
+  function calculatePriorRevenue(priorTotalAssessedValue, priorTaxRate) {
+    return (priorTotalAssessedValue / 100) * priorTaxRate;
+  }
+
+  function calculateRevenueNeutralRate(priorRevenue, newTotalAssessedValue) {
+    if (newTotalAssessedValue <= 0) return NaN;
+    return priorRevenue / (newTotalAssessedValue / 100);
+  }
+
+  function calculateAdjustedRevenueNeutralRate(priorRevenue, newTotalAssessedValue, newGrowthAssessedValue) {
+    const growth = Math.max(0, newGrowthAssessedValue || 0);
+    const adjustedBase = newTotalAssessedValue - growth;
+    if (adjustedBase <= 0) return calculateRevenueNeutralRate(priorRevenue, newTotalAssessedValue);
+    return priorRevenue / (adjustedBase / 100);
+  }
+
+  function calculateBudgetRequiredRate(newBudgetRequiredRevenue, newTotalAssessedValue) {
+    if (newTotalAssessedValue <= 0) return NaN;
+    return newBudgetRequiredRevenue / (newTotalAssessedValue / 100);
+  }
+
+  function calculatePercentChange(oldValue, newValue) {
+    if (!Number.isFinite(oldValue) || oldValue === 0 || !Number.isFinite(newValue)) return NaN;
+    return (newValue - oldValue) / oldValue;
+  }
+
+  function calculateFundShare(fundRate, totalRate) {
+    if (!Number.isFinite(totalRate) || totalRate === 0) return NaN;
+    return fundRate / totalRate;
+  }
+
+  function calculateFundTaxAmount(propertyAssessedValue, fundRate) {
+    return (propertyAssessedValue / 100) * fundRate;
+  }
+
+  function clamp(n, min, max) {
+    return Math.min(max, Math.max(min, n));
+  }
+
+  function syncSlidersFromInputs() {
+    const priorM = getNumber('priorMarket');
+    const newM = getNumber('newMarket');
+    const priorC = getCountyAssessedDollars('priorCountyAssessed');
+    const newC = getCountyAssessedDollars('newCountyAssessed');
+    let indPct = 0;
+    if (Number.isFinite(priorM) && priorM > 0 && Number.isFinite(newM)) {
+      indPct = ((newM - priorM) / priorM) * 100;
+    }
+    let cntPct = 0;
+    if (Number.isFinite(priorC) && priorC > 0 && Number.isFinite(newC)) {
+      cntPct = ((newC - priorC) / priorC) * 100;
+    }
+    sliderSyncLock = true;
+    document.getElementById('sliderIndividual').value = String(clamp(Math.round(indPct), -20, 100));
+    document.getElementById('sliderCountywide').value = String(clamp(Math.round(cntPct), -20, 100));
+    const mode = document.querySelector('input[name="budgetMode"]:checked')?.value;
+    if (mode === 'percent') {
+      const p = getNumber('budgetIncreasePct');
+      if (Number.isFinite(p)) {
+        document.getElementById('sliderBudget').value = String(clamp(p, -10, 30));
+      }
+    }
+    sliderSyncLock = false;
+    updateSliderLabels();
+  }
+
+  function updateSliderLabels() {
+    const si = parseFloat(document.getElementById('sliderIndividual').value, 10);
+    const sc = parseFloat(document.getElementById('sliderCountywide').value, 10);
+    const sb = parseFloat(document.getElementById('sliderBudget').value, 10);
+    document.getElementById('sliderIndividualLabel').textContent = (si >= 0 ? '+' : '') + si + '%';
+    document.getElementById('sliderCountywideLabel').textContent = (sc >= 0 ? '+' : '') + sc + '%';
+    document.getElementById('sliderBudgetLabel').textContent = (sb >= 0 ? '+' : '') + sb.toFixed(1).replace(/\.0$/, '') + '%';
+  }
+
+  function applyIndividualSlider() {
+    if (sliderSyncLock) return;
+    const pct = parseFloat(document.getElementById('sliderIndividual').value, 10) / 100;
+    const prior = getNumber('priorMarket');
+    if (!Number.isFinite(prior) || prior <= 0) return;
+    document.getElementById('newMarket').value = String(Math.round(prior * (1 + pct)));
+    updateCalculator();
+  }
+
+  function applyCountywideSlider() {
+    if (sliderSyncLock) return;
+    const pct = parseFloat(document.getElementById('sliderCountywide').value, 10) / 100;
+    const prior = getCountyAssessedDollars('priorCountyAssessed');
+    if (!Number.isFinite(prior) || prior <= 0) return;
+    const newFull = prior * (1 + pct);
+    const newMillions = newFull / COUNTY_ASSESSED_SCALE;
+    document.getElementById('newCountyAssessed').value = String(Math.round(newMillions * 10000) / 10000);
+    updateCalculator();
+  }
+
+  function applyBudgetSlider() {
+    if (sliderSyncLock) return;
+    const pct = parseFloat(document.getElementById('sliderBudget').value, 10);
+    document.getElementById('budgetModePct').checked = true;
+    document.getElementById('budgetIncreasePct').value = String(pct);
+    toggleBudgetModeUI();
+    updateCalculator();
+  }
+
+  function toggleBudgetModeUI() {
+    const dollar = document.querySelector('input[name="budgetMode"]:checked')?.value === 'dollar';
+    document.getElementById('budgetPctWrap').classList.toggle('hidden', dollar);
+    document.getElementById('budgetDollarWrap').classList.toggle('hidden', !dollar);
+    const slider = document.getElementById('sliderBudget');
+    slider.disabled = dollar;
+    document.getElementById('sliderBudgetLabel').style.opacity = dollar ? '0.5' : '1';
+  }
+
+  function getFundList() {
+    const useCustom = document.getElementById('useCustomFunds').checked;
+    if (!useCustom) return DEFAULT_FUND_RATES.map(function (f) { return { fund: f.fund, rate: f.rate, description: f.description }; });
+    return customFunds.map(function (f) {
+      return {
+        fund: f.fund || 'Fund',
+        rate: Number.isFinite(parseFloat(f.rate, 10)) ? parseFloat(f.rate, 10) : 0,
+        description: f.description || ''
+      };
+    });
+  }
+
+  function getTotalFundRate(funds) {
+    return funds.reduce(function (s, f) { return s + f.rate; }, 0);
+  }
+
+  function renderFundTable(assessedValueForFunds, totalRateForDisplay) {
+    const tbody = document.getElementById('fundTableBody');
+    tbody.innerHTML = '';
+    const funds = getFundList();
+    const total = totalRateForDisplay > 0 ? totalRateForDisplay : getTotalFundRate(funds);
+    funds.forEach(function (row, i) {
+      const share = calculateFundShare(row.rate, total);
+      const amt = calculateFundTaxAmount(assessedValueForFunds, row.rate);
+      const tr = document.createElement('tr');
+      tr.innerHTML =
+        '<td>' + escapeHtml(row.fund) + '</td>' +
+        '<td>' + (Number.isFinite(row.rate) ? row.rate.toFixed(4) : '—') + '</td>' +
+        '<td>' + (Number.isFinite(share) ? (share * 100).toFixed(2) + '%' : '—') + '</td>' +
+        '<td>' + formatCurrency(amt) + '</td>' +
+        '<td>' + escapeHtml(row.description) + '</td>';
+      tbody.appendChild(tr);
+    });
+  }
+
+  function escapeHtml(s) {
+    const d = document.createElement('div');
+    d.textContent = s;
+    return d.innerHTML;
+  }
+
+  function renderStackedFundBarInto(barEl, legendEl, totalRate) {
+    const funds = getFundList();
+    const total = totalRate > 0 ? totalRate : getTotalFundRate(funds);
+    barEl.innerHTML = '';
+    legendEl.innerHTML = '';
+    if (total <= 0 || !Number.isFinite(total)) {
+      barEl.textContent = 'Enter positive fund rates to see the chart.';
+      return;
+    }
+    funds.forEach(function (f, i) {
+      if (f.rate <= 0) return;
+      const pct = (f.rate / total) * 100;
+      const seg = document.createElement('div');
+      seg.className = 'stack-seg';
+      seg.style.flex = '0 0 ' + pct + '%';
+      seg.style.background = FUND_STACK_COLORS[i % FUND_STACK_COLORS.length];
+      if (pct > 8) seg.textContent = pct.toFixed(0) + '%';
+      barEl.appendChild(seg);
+    });
+    funds.forEach(function (f, i) {
+      const leg = document.createElement('span');
+      leg.innerHTML = '<span class="swatch" style="background:' + FUND_STACK_COLORS[i % FUND_STACK_COLORS.length] + '"></span> ' + escapeHtml(f.fund) +
+        ' <span style="color:var(--gray-400);font-weight:400;">(' + (total > 0 ? ((f.rate / total) * 100).toFixed(2) : '0') + '% of rate)</span>';
+      legendEl.appendChild(leg);
+    });
+  }
+
+  function renderStackedFundBar(totalRate) {
+    renderStackedFundBarInto(document.getElementById('stackedFundBar'), document.getElementById('fundLegend'), totalRate);
+    var vizBar = document.getElementById('stackedFundBarViz');
+    var vizLeg = document.getElementById('fundLegendViz');
+    if (vizBar && vizLeg) {
+      renderStackedFundBarInto(vizBar, vizLeg, totalRate);
+    }
+  }
+
+  function renderBillBarChart(priorBill, billRn, billBd) {
+    const container = document.getElementById('billBarChart');
+    container.innerHTML = '';
+    const rows = [
+      { label: 'Prior tax bill', value: priorBill, color: 'var(--bar-1)' },
+      { label: 'New bill at revenue-neutral rate', value: billRn, color: 'var(--bar-2)' },
+      { label: 'New bill at budget-required rate', value: billBd, color: 'var(--bar-3)' }
+    ];
+    const maxV = Math.max(1, ...rows.map(function (r) { return Math.abs(r.value) || 0; }));
+    rows.forEach(function (r) {
+      const pct = (Math.abs(r.value) / maxV) * 100;
+      const row = document.createElement('div');
+      row.className = 'bar-row';
+      row.innerHTML =
+        '<span class="bar-label">' + escapeHtml(r.label) + '</span>' +
+        '<div class="bar-track"><div class="bar-fill" style="width:' + pct + '%;background:' + r.color + '"><span>' + formatCurrency(r.value) + '</span></div></div>' +
+        '<span class="bar-end">' + formatCurrency(r.value) + '</span>';
+      container.appendChild(row);
+    });
+  }
+
+  function renderRateBarChart(priorRate, rnRate, adoptedRate) {
+    const container = document.getElementById('rateBarChart');
+    container.innerHTML = '';
+    const rows = [
+      { label: 'Prior tax rate', value: priorRate, color: 'var(--bar-1)' },
+      { label: 'Revenue-neutral tax rate', value: rnRate, color: 'var(--bar-2)' },
+      { label: 'Budget-required tax rate', value: adoptedRate, color: 'var(--bar-3)' }
+    ];
+    const maxV = Math.max(0.01, ...rows.map(function (r) { return Math.abs(r.value) || 0; }));
+    rows.forEach(function (r) {
+      const pct = (Math.abs(r.value) / maxV) * 100;
+      const row = document.createElement('div');
+      row.className = 'bar-row';
+      const disp = Number.isFinite(r.value) ? r.value.toFixed(4) + ' / $100' : '—';
+      row.innerHTML =
+        '<span class="bar-label">' + escapeHtml(r.label) + '</span>' +
+        '<div class="bar-track"><div class="bar-fill" style="width:' + pct + '%;background:' + r.color + '"><span>' + disp + '</span></div></div>' +
+        '<span class="bar-end">' + disp + '</span>';
+      container.appendChild(row);
+    });
+  }
+
+  function renderExplanation(state) {
+    const ul = document.getElementById('explainList');
+    ul.innerHTML = '';
+    const simp = document.getElementById('simplifiedModel').checked;
+    const lines = [];
+
+    const indPct = state.individualValueChangePct;
+    const cntPct = state.countywideValueChangePct;
+    const budgetPct = state.budgetRevenueChangePct;
+
+    const approxEqual =
+      Number.isFinite(indPct) &&
+      Number.isFinite(cntPct) &&
+      Math.abs(indPct - cntPct) <= APPROX_EQUAL_THRESHOLD;
+
+    if (approxEqual) {
+      lines.push(simp
+        ? 'Your property rose about as much as the county average. Under a revenue-neutral rate, your bill may stay similar; a higher bill in the budget scenario usually reflects a higher county revenue need.'
+        : 'Your property rose roughly in line with the county average. Under a revenue-neutral rate, your tax bill may stay close to the same because the tax rate adjusts downward as the tax base grows. If your bill rises in the budget scenario, the main reason is the county’s higher revenue requirement.');
+    } else if (Number.isFinite(indPct) && Number.isFinite(cntPct) && indPct > cntPct + APPROX_EQUAL_THRESHOLD) {
+      lines.push(simp
+        ? 'Your property rose faster than the county average. Even at a revenue-neutral rate, your bill can rise because your share of the county tax base grew.'
+        : 'Your property rose faster than the county average. Even under a revenue-neutral rate, your tax bill may increase because your property now represents a larger share of the county’s total tax base.');
+    } else if (Number.isFinite(indPct) && Number.isFinite(cntPct) && indPct < cntPct - APPROX_EQUAL_THRESHOLD) {
+      lines.push(simp
+        ? 'Your property rose slower than the county average. Under a revenue-neutral rate, your bill may rise less than average, stay flat, or fall.'
+        : 'Your property rose slower than the county average. Under a revenue-neutral rate, your bill may increase less than average, stay flat, or even decrease, because your property represents a smaller share of the county’s total tax base than before.');
+    }
+
+    if (Number.isFinite(budgetPct) && budgetPct > 0.001) {
+      lines.push(simp
+        ? 'The county’s budget called for more property tax revenue than before, which lifts bills compared with the revenue-neutral case.'
+        : 'The countywide budget/revenue requirement increased. That means the county is collecting more total property tax revenue than before. This budget increase pushes tax bills higher even if the tax rate is lower than the old rate.');
+    }
+
+    if (Number.isFinite(state.priorTaxRate) && Number.isFinite(state.adoptedRate) &&
+        state.adoptedRate < state.priorTaxRate &&
+        Number.isFinite(state.billBd) && Number.isFinite(state.priorBill) &&
+        state.billBd > state.priorBill) {
+      lines.push(simp
+        ? 'A lower rate can still pair with a higher bill when assessed value rises enough—or when the county raises its revenue target.'
+        : 'A lower tax rate does not always mean a lower tax bill. Your bill depends on both your assessed value and the tax rate. The countywide revenue target determines how much the rate must collect overall.');
+    }
+
+    if (Number.isFinite(state.adoptedRate) && Number.isFinite(state.revenueNeutralRate) && state.adoptedRate > state.revenueNeutralRate + 1e-9) {
+      lines.push(simp
+        ? 'The budget-required rate is above the revenue-neutral rate: the county is collecting more property tax revenue than in the revenue-neutral scenario.'
+        : 'The budget-required rate is higher than the revenue-neutral rate. This means the county is collecting more property tax revenue than the revenue-neutral scenario.');
+    }
+
+    if (Number.isFinite(state.adoptedRate) && Number.isFinite(state.priorTaxRate) && Number.isFinite(state.revenueNeutralRate) &&
+        state.adoptedRate < state.priorTaxRate &&
+        state.adoptedRate > state.revenueNeutralRate + 1e-9) {
+      lines.push(simp
+        ? 'The new rate can be below the old rate but above the revenue-neutral rate when values rise and the county also raises revenue.'
+        : 'The new rate is lower than the old rate, but still higher than the revenue-neutral rate. This can happen when property values rise substantially but the county also increases the amount of revenue it plans to collect.');
+    }
+
+    if (lines.length === 0) {
+      lines.push('Adjust the inputs to compare how reappraisal (sharing the burden) differs from the county’s revenue choices (the size of the total pie).');
+    }
+
+    lines.forEach(function (text) {
+      const li = document.createElement('li');
+      li.textContent = text;
+      ul.appendChild(li);
+    });
+  }
+
+  function renderMathDetails(state) {
+    const inner = document.getElementById('mathInner');
+    const d = state;
+    var pctStr = (Number.isFinite(d.ratio) ? (d.ratio * 100).toFixed(0) : '—') + (Number.isFinite(d.ratio) ? '%' : '');
+    inner.innerHTML =
+      '<div class="math-line"><strong>1. Assessment</strong><br>Assessed value = Appraised value × Assessment ratio<br>' +
+      '<code>' + formatCurrency(d.priorMarket) + ' × ' + pctStr + ' = ' + formatCurrency(d.priorAssessed) + '</code> (prior assessed)<br>' +
+      '<code>' + formatCurrency(d.newMarket) + ' × ' + pctStr + ' = ' + formatCurrency(d.newAssessed) + '</code> (new assessed)</div>' +
+      '<div class="math-line"><strong>2. Tax bill</strong><br>Tax bill = Assessed value ÷ 100 × Tax rate<br>' +
+      '<code>' + formatCurrency(d.priorAssessed) + ' ÷ 100 × ' + d.priorTaxRate.toFixed(4) + ' = ' + formatCurrency(d.priorBill) + '</code></div>' +
+      '<div class="math-line"><strong>3. Prior county revenue</strong><br>Prior property tax revenue = Prior total assessed value ÷ 100 × Prior tax rate<br>' +
+      '<code>' + formatCurrency(d.priorCountyAssessed) + ' ÷ 100 × ' + d.priorTaxRate.toFixed(4) + ' = ' + formatCurrency(d.priorRevenue) + '</code></div>' +
+      '<div class="math-line"><strong>4. Revenue-neutral rate</strong><br>Revenue-neutral rate = Prior property tax revenue ÷ (New total assessed value ÷ 100)<br>' +
+      '<code>' + formatCurrency(d.priorRevenue) + ' ÷ (' + formatCurrency(d.newCountyAssessed) + ' ÷ 100) = ' + (Number.isFinite(d.rnSimple) ? d.rnSimple.toFixed(6) : '—') + '</code> per $100<br>' +
+      (d.newGrowth > 0 ? '<em>Adjusted for new growth:</em> base for RN = new total − new growth; RN = prior revenue ÷ (that base ÷ 100) = <code>' + (Number.isFinite(d.revenueNeutralRate) ? d.revenueNeutralRate.toFixed(6) : '—') + '</code>' : '') +
+      '</div>' +
+      '<div class="math-line"><strong>5. Budget-required rate</strong><br>Budget-required rate = New required property tax revenue ÷ (New total assessed value ÷ 100)<br>' +
+      '<code>' + formatCurrency(d.newBudgetRevenue) + ' ÷ (' + formatCurrency(d.newCountyAssessed) + ' ÷ 100) = ' + (Number.isFinite(d.adoptedRate) ? d.adoptedRate.toFixed(6) : '—') + '</code> per $100</div>' +
+      '<div class="math-line"><strong>6. Fund breakdown</strong><br>Fund tax amount = Property assessed value ÷ 100 × Fund rate<br>' +
+      'Example (new assessed value): <code>' + formatCurrency(d.newAssessed) + ' ÷ 100 × [each fund rate]</code></div>';
+  }
+
+  function renderCustomFundRows() {
+    const tbody = document.getElementById('customFundRows');
+    tbody.innerHTML = '';
+    customFunds.forEach(function (row, index) {
+      const tr = document.createElement('tr');
+      tr.innerHTML =
+        '<td><input type="text" data-i="' + index + '" data-f="fund" value="' + escapeAttr(row.fund) + '"></td>' +
+        '<td><input type="number" data-i="' + index + '" data-f="rate" step="0.0001" min="0" value="' + row.rate + '"></td>' +
+        '<td><input type="text" data-i="' + index + '" data-f="description" value="' + escapeAttr(row.description) + '"></td>' +
+        '<td><button type="button" class="danger btn-del-fund" data-i="' + index + '">Delete</button></td>';
+      tbody.appendChild(tr);
+    });
+    tbody.querySelectorAll('input').forEach(function (inp) {
+      inp.addEventListener('input', onCustomFundEdit);
+      inp.addEventListener('change', onCustomFundEdit);
+    });
+    tbody.querySelectorAll('.btn-del-fund').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const i = parseInt(btn.getAttribute('data-i'), 10);
+        customFunds.splice(i, 1);
+        if (customFunds.length === 0) customFunds.push({ fund: 'Fund', rate: 0, description: '' });
+        renderCustomFundRows();
+        updateCalculator();
+      });
+    });
+  }
+
+  function escapeAttr(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+  }
+
+  function onCustomFundEdit(e) {
+    const inp = e.target;
+    const i = parseInt(inp.getAttribute('data-i'), 10);
+    const field = inp.getAttribute('data-f');
+    if (!customFunds[i]) return;
+    if (field === 'rate') customFunds[i].rate = parseFloat(inp.value, 10) || 0;
+    else customFunds[i][field] = inp.value;
+    updateCalculator();
+  }
+
+  function updateFundUI() {
+    if (document.getElementById('useHickmanFunds').checked) {
+      document.getElementById('useCustomFunds').checked = false;
+    }
+    if (document.getElementById('useCustomFunds').checked) {
+      document.getElementById('useHickmanFunds').checked = false;
+    }
+    const customOn = document.getElementById('useCustomFunds').checked;
+    document.getElementById('fund-editor').classList.toggle('custom-on', customOn);
+    document.getElementById('customFundEditor').classList.toggle('hidden', !customOn);
+    document.getElementById('fundModeNote').textContent = customOn
+      ? 'Editing custom fund rates. Totals and percentages update automatically.'
+      : 'Using Hickman County, Tennessee FY 2025–2026 default rates below.';
+    if (customOn && document.getElementById('customFundRows').children.length === 0) {
+      renderCustomFundRows();
+    }
+  }
+
+  function updateCalculator() {
+    const propertyClass = document.getElementById('propertyClass').value;
+    const ratio = calculateAssessmentRatio(propertyClass);
+
+    const priorMarket = getNumber('priorMarket');
+    const newMarket = getNumber('newMarket');
+    const priorTaxRate = getNumber('priorTaxRate');
+    const priorCountyAssessed = getCountyAssessedDollars('priorCountyAssessed');
+    const newCountyAssessed = getCountyAssessedDollars('newCountyAssessed');
+    const newGrowth = Math.max(0, getCountyAssessedDollars('newGrowthAssessed') || 0);
+
+    const priorAssessed = calculateAssessedValue(priorMarket, ratio);
+    const newAssessed = calculateAssessedValue(newMarket, ratio);
+    const priorBill = calculateTaxBill(priorAssessed, priorTaxRate);
+
+    const priorRevenue = calculatePriorRevenue(priorCountyAssessed, priorTaxRate);
+
+    document.getElementById('priorRevenueDisplay').value = formatCurrency(priorRevenue) + ' (computed)';
+
+    setText('priorCountyAssessedFull', Number.isFinite(priorCountyAssessed) ? formatCurrency(priorCountyAssessed) : '—');
+    setText('newCountyAssessedFull', Number.isFinite(newCountyAssessed) ? formatCurrency(newCountyAssessed) : '—');
+
+    const rnSimple = calculateRevenueNeutralRate(priorRevenue, newCountyAssessed);
+    const revenueNeutralRate = calculateAdjustedRevenueNeutralRate(priorRevenue, newCountyAssessed, newGrowth);
+
+    const budgetMode = document.querySelector('input[name="budgetMode"]:checked')?.value || 'percent';
+    let newBudgetRevenue;
+    if (budgetMode === 'dollar') {
+      let dr = getNumber('budgetRevenueDollar');
+      if (!Number.isFinite(dr)) dr = priorRevenue * 1.1;
+      newBudgetRevenue = dr;
+    } else {
+      const pct = getNumber('budgetIncreasePct');
+      const p = Number.isFinite(pct) ? pct / 100 : 0.1;
+      newBudgetRevenue = priorRevenue * (1 + p);
+    }
+
+    const adoptedRate = calculateBudgetRequiredRate(newBudgetRevenue, newCountyAssessed);
+
+    const billRn = calculateTaxBill(newAssessed, revenueNeutralRate);
+    const billBd = calculateTaxBill(newAssessed, adoptedRate);
+
+    const individualValueChangePct = calculatePercentChange(priorMarket, newMarket);
+    const countywideValueChangePct = calculatePercentChange(priorCountyAssessed, newCountyAssessed);
+    const budgetRevenueChangePct = calculatePercentChange(priorRevenue, newBudgetRevenue);
+
+    setText('outPriorMarket', formatCurrency(priorMarket));
+    setText('outRatio', formatPercent(ratio) + ' — ' + (ASSESSMENT_RATIO_HELP[propertyClass] || ASSESSMENT_RATIO_HELP.residential_farm));
+    setText('outPriorAssessed', formatCurrency(priorAssessed));
+    setText('outPriorRate', formatRate(priorTaxRate));
+    setText('outPriorBill', formatCurrency(priorBill));
+
+    setText('outNewMarketRn', formatCurrency(newMarket));
+    setText('outNewAssessedRn', formatCurrency(newAssessed));
+    setText('outRnRate', formatRate(revenueNeutralRate));
+    setText('outBillRn', formatCurrency(billRn));
+    const deltaRn = billRn - priorBill;
+    setText('outDeltaRn', formatDeltaVsPrior(deltaRn, priorBill));
+
+    setText('outNewMarketBd', formatCurrency(newMarket));
+    setText('outNewAssessedBd', formatCurrency(newAssessed));
+    setText('outAdoptedRate', formatRate(adoptedRate));
+    setText('outBillBd', formatCurrency(billBd));
+    const deltaBd = billBd - priorBill;
+    setText('outDeltaBd', formatDeltaVsPrior(deltaBd, priorBill));
+
+    const fundsDisplayTotal = document.getElementById('useHickmanFunds').checked ? HICKMAN_TOTAL_RATE : getTotalFundRate(getFundList());
+    const assessedForFunds = newAssessed;
+
+    renderFundTable(assessedForFunds, fundsDisplayTotal);
+    renderStackedFundBar(fundsDisplayTotal);
+
+    renderBillBarChart(priorBill, billRn, billBd);
+    renderRateBarChart(priorTaxRate, revenueNeutralRate, adoptedRate);
+
+    const state = {
+      priorMarket,
+      newMarket,
+      ratio,
+      priorAssessed,
+      newAssessed,
+      priorBill,
+      priorTaxRate,
+      priorCountyAssessed,
+      newCountyAssessed,
+      newGrowth,
+      priorRevenue,
+      revenueNeutralRate,
+      rnSimple,
+      adoptedRate,
+      newBudgetRevenue,
+      billRn,
+      billBd,
+      individualValueChangePct,
+      countywideValueChangePct,
+      budgetRevenueChangePct
+    };
+
+    renderExplanation(state);
+
+    renderMathDetails(Object.assign({}, state, {
+      priorMarket,
+      newMarket,
+      priorAssessed,
+      newAssessed,
+      priorBill,
+      priorTaxRate,
+      priorCountyAssessed,
+      newCountyAssessed,
+      priorRevenue,
+      revenueNeutralRate,
+      rnSimple,
+      adoptedRate,
+      newBudgetRevenue,
+      newGrowth
+    }));
+
+    const showMath = document.getElementById('showDetailedMath').checked;
+    document.getElementById('mathDetailsBlock').open = !!showMath;
+
+    syncSlidersFromInputs();
+  }
+
+  function init() {
+    document.getElementById('budgetRevenueDollar').value = '';
+
+    document.querySelectorAll('#priorMarket, #newMarket, #priorTaxRate, #priorCountyAssessed, #newCountyAssessed, #newGrowthAssessed, #budgetIncreasePct, #budgetRevenueDollar, #propertyClass').forEach(function (el) {
+      el.addEventListener('input', function () {
+        updateCalculator();
+      });
+      el.addEventListener('change', function () {
+        updateCalculator();
+      });
+    });
+
+    document.querySelectorAll('input[name="budgetMode"]').forEach(function (r) {
+      r.addEventListener('change', function () {
+        toggleBudgetModeUI();
+        if (r.value === 'dollar') {
+          const pr = calculatePriorRevenue(getCountyAssessedDollars('priorCountyAssessed'), getNumber('priorTaxRate'));
+          const pct = getNumber('budgetIncreasePct') || 10;
+          document.getElementById('budgetRevenueDollar').value = String(Math.round(pr * (1 + pct / 100)));
+        }
+        updateCalculator();
+      });
+    });
+
+    document.getElementById('sliderIndividual').addEventListener('input', applyIndividualSlider);
+    document.getElementById('sliderCountywide').addEventListener('input', applyCountywideSlider);
+    document.getElementById('sliderBudget').addEventListener('input', function () {
+      const v = parseFloat(document.getElementById('sliderBudget').value, 10);
+      document.getElementById('budgetModePct').checked = true;
+      document.getElementById('budgetIncreasePct').value = String(v);
+      toggleBudgetModeUI();
+      updateCalculator();
+    });
+
+    document.getElementById('useHickmanFunds').addEventListener('change', function () {
+      if (this.checked) document.getElementById('useCustomFunds').checked = false;
+      updateFundUI();
+      updateCalculator();
+    });
+    document.getElementById('useCustomFunds').addEventListener('change', function () {
+      if (this.checked) document.getElementById('useHickmanFunds').checked = false;
+      if (this.checked) renderCustomFundRows();
+      updateFundUI();
+      updateCalculator();
+    });
+
+    document.getElementById('showDetailedMath').addEventListener('change', updateCalculator);
+    document.getElementById('simplifiedModel').addEventListener('change', updateCalculator);
+
+    document.getElementById('btnAddFund').addEventListener('click', function () {
+      customFunds.push({ fund: 'New fund', rate: 0, description: '' });
+      renderCustomFundRows();
+      updateCalculator();
+    });
+
+    document.getElementById('mathDetailsBlock').addEventListener('toggle', function () {
+      if (!document.getElementById('showDetailedMath').checked) return;
+    });
+
+    toggleBudgetModeUI();
+    updateFundUI();
+    updateCalculator();
+  }
+
+  init();
+})();
+  </script>
+</body>
+</html>
