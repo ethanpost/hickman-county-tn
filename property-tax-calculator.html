@@ -91,8 +91,38 @@
     .subtitle {
       font-size: var(--step-1);
       color: var(--gray-600);
+      margin: 0 0 var(--space-4);
+      max-width: 62ch;
+    }
+
+    .hero-tutorial-link {
+      font-size: var(--step-1);
       margin: 0 0 var(--space-6);
       max-width: 62ch;
+    }
+
+    .hero-tutorial-link a {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 1px solid hsl(var(--hue-brand), 38%, 72%);
+    }
+
+    .hero-tutorial-link a:hover {
+      text-decoration: underline;
+      border-bottom-color: transparent;
+    }
+
+    .hero-tutorial-link a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 2px;
+    }
+
+    .hero-tutorial-note {
+      font-weight: 400;
+      color: var(--gray-600);
+      font-size: var(--step--1);
     }
 
     .callout {
@@ -704,6 +734,10 @@
       </div>
       <h1>Property Tax Calculator: Reappraisal vs. County Budget</h1>
       <p class="subtitle">See why your tax bill is not just about your property value. Reappraisal changes how the tax burden is distributed. The county budget determines how much total revenue must be collected.</p>
+      <p class="hero-tutorial-link">
+        <a href="https://www.youtube.com/watch?v=Csbbd-DljPk" target="_blank" rel="noopener noreferrer">Video tutorial: how to use this calculator</a>
+        <span class="hero-tutorial-note"> (opens YouTube in a new tab)</span>
+      </p>
       <div class="callout">
         <strong>Plain-language takeaway</strong>
         Many people think a 50% increase in appraised value means a 50% increase in taxes. That is not necessarily true. If the whole county’s assessed value rises, the tax rate should generally adjust downward under a revenue-neutral certified tax rate. Your bill goes up mainly when the county’s required property tax revenue goes up, or when your property value rises faster than the county average.
