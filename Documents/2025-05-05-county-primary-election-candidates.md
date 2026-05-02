@@ -23,6 +23,9 @@
   - [Markdqualls@gmail.com](mailto:Markdqualls@gmail.com)
   - [https://www.hcunified.com/](https://www.hcunified.com/)
 
+**Comma-separated (all mayor candidates):**  
+robertatkinson742@gmail.com, Chrischilton72@gmail.com, Markdqualls@gmail.com
+
 ## Commissioner District 1
 
 ### Current Commissioners

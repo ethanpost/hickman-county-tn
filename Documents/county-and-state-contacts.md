@@ -13,6 +13,8 @@
 |------|------|-------|-------|
 | Jason Craft | Sheriff | sheriffcraft@hickmancountytn.gov | (931) 729-6143 |
 
+**Comma-separated (all sheriff):**  
+sheriffcraft@hickmancountytn.gov
 ---
 
 ## Emergency & Public Safety
@@ -22,6 +24,8 @@
 | Allen Livengood | EMS | allen.livengood@hickmancountytn.gov |
 | Pete Tibbs | EMA | pete.tibbs@hickmancountytn.gov |
 
+**Comma-separated (all EMS and EMA):**  
+allen.livengood@hickmancountytn.gov, pete.tibbs@hickmancountytn.gov
 ---
 
 ## Newspaper / Media
@@ -31,11 +35,10 @@
 | — | Hickman County Times (general) | News@hickmancountytimes.com |
 | Dave Gould | — | dgould@mainstreetmediatn.com |
 | Nancy Stephens | — | nstephens@mainstreetmediatn.com |
-| Bradley A. Martin | Editor | editor_hctimes@yahoo.com |
 | Dave Campbell | — | dcampbell@mainstreetmediatn.com |
 
 **Comma-separated (all media):**  
-`News@hickmancountytimes.com, dgould@mainstreetmediatn.com, nstephens@mainstreetmediatn.com, editor_hctimes@yahoo.com, dcampbell@mainstreetmediatn.com`
+News@hickmancountytimes.com, dgould@mainstreetmediatn.com, nstephens@mainstreetmediatn.com, dcampbell@mainstreetmediatn.com
 
 ---
 
@@ -48,6 +51,9 @@
 | Jim Bates | County Mayor | mayor@hickmancountytn.gov | (931) 729-2492 |
 | Crystal Fitzgerald | Finance Director | crystal.fitzgerald@hickmancountytn.gov | (931) 729-6124 |
 
+**Comma-separated (all mayor and finance director):**  
+mayor@hickmancountytn.gov, crystal.fitzgerald@hickmancountytn.gov
+
 ### Commissioners by District
 
 | District | Name | Email |
@@ -55,20 +61,20 @@
 | 1 | Claude Callicott | claudecallicott@gmail.com |
 | 1 | Jim Herron | jherron412@gmail.com |
 | 2 | Danny Clark | wdannyclark@gmail.com |
-| 2 | Todd Collins | atoddcollins@yahoo.com |
+| 2 | Todd Collins | todd.collins@hickmancountytn.gov; atoddcollins@yahoo.com |
 | 3 | Matthew Barnhill | mbarnhill@bellsouth.net |
-| 3 | Wayne Thomasson | wthomasson@bellsouth.net |
+| 3 | Michael Wayne Thomasson | wthomasson@bellsouth.net |
 | 4 | Steve Gianakos | sg4hickman@gmail.com |
-| 4 | Keith Nash II | kkeithnash@bellsouth.net |
+| 4 | Keith Nash | kkeithnash@bellsouth.net |
 | 5 | Dusty Jordan | dustyjordan@tennwireless.com |
-| 5 | Ron Mayberry | ronaldmayberry@yahoo.com |
+| 5 | Ron Mayberry | ron.mayberry@hickmancountytn.gov; ronaldmayberry@yahoo.com |
 | 6 | Devin Pickard | devinangie@bellsouth.net |
 | 6 | Ron Puckett | ronaldmarkpuckett@gmail.com |
-| 7 | Clay Chessor | clay.chessor@hickmank12.org |
+| 7 | Clay Chessor | coach.chessor@gmail.com; clay.chessor@hickmank12.org |
 | 7 | Ricky Murray | ricky.ritamurray@gmail.com |
 
 **Comma-separated (all commissioners):**  
-`claudecallicott@gmail.com, jherron412@gmail.com, wdannyclark@gmail.com, atoddcollins@yahoo.com, mbarnhill@bellsouth.net, wthomasson@bellsouth.net, sg4hickman@gmail.com, kkeithnash@bellsouth.net, dustyjordan@tennwireless.com, ronaldmayberry@yahoo.com, devinangie@bellsouth.net, ronaldmarkpuckett@gmail.com, clay.chessor@hickmank12.org, ricky.ritamurray@gmail.com`
+claudecallicott@gmail.com, jherron412@gmail.com, wdannyclark@gmail.com, todd.collins@hickmancountytn.gov, atoddcollins@yahoo.com, mbarnhill@bellsouth.net, wthomasson@bellsouth.net, sg4hickman@gmail.com, kkeithnash@bellsouth.net, dustyjordan@tennwireless.com, ron.mayberry@hickmancountytn.gov, ronaldmayberry@yahoo.com, devinangie@bellsouth.net, ronaldmarkpuckett@gmail.com, coach.chessor@gmail.com, clay.chessor@hickmank12.org, ricky.ritamurray@gmail.com
 
 ---
 
@@ -76,7 +82,7 @@
 
 ### Health, Safety & Properties Committee
 
-Emails: `claudecallicott@gmail.com, wdannyclark@gmail.com, atoddcollins@yahoo.com, mbarnhill@bellsouth.net, wthomasson@bellsouth.net, sg4hickman@gmail.com, kkeithnash@bellsouth.net, dustyjordan@tennwireless.com, ronaldmayberry@yahoo.com, devinangie@bellsouth.net, ricky.ritamurray@gmail.com, clay.chessor@hickmank12.org`
+Emails: `claudecallicott@gmail.com, wdannyclark@gmail.com, todd.collins@hickmancountytn.gov, atoddcollins@yahoo.com, mbarnhill@bellsouth.net, wthomasson@bellsouth.net, sg4hickman@gmail.com, kkeithnash@bellsouth.net, dustyjordan@tennwireless.com, ron.mayberry@hickmancountytn.gov, ronaldmayberry@yahoo.com, devinangie@bellsouth.net, ricky.ritamurray@gmail.com, coach.chessor@gmail.com, clay.chessor@hickmank12.org`
 
 ### Solid Waste Committee
 
@@ -114,6 +120,9 @@ Emails: `wdannyclark@gmail.com, mbarnhill@bellsouth.net, sg4hickman@gmail.com, d
 | Lisa Hellmann | Trustee | lisa.hellmann@hickmancountytn.gov | (931) 729-3486 |
 | Ronald Coates | Hwy Chief Admin Off | rjcoates@hickmanhwy.com | (931) 729-2482 |
 
+**Comma-separated (all county officials and department heads):**  
+mayor@hickmancountytn.gov, crystal.fitzgerald@hickmancountytn.gov, sheriffcraft@hickmancountytn.gov, casey.dorton@hickmancountytn.gov, brittany.duke@hickmancountytn.gov, election@hickmancountytn.gov, randy.jenkins@hickmancountytn.gov, dana.nicholson@tncourts.gov, loren.roberts@hickmancountytn.gov, dan.mecklenborg@hickmancountytn.gov, michelle.gilbert@hickmancountytn.gov, amy.puckett@hickmancountytn.gov, hickman@titlesearcher.com, jordan.sachs@hickmancountytn.gov, lisa.hellmann@hickmancountytn.gov, rjcoates@hickmanhwy.com  
+
 ---
 
 ## Highway Commission
@@ -136,6 +145,9 @@ Emails: `wdannyclark@gmail.com, mbarnhill@bellsouth.net, sg4hickman@gmail.com, d
 |------|--------|-------|-------|
 | Carla Moore | Director, Hickman County ECD | carla.moore@hickmancountytn.gov | 931-994-9053 |
 | Sydney Brewer | Executive Assistant / Digital Development Coordinator (SCTDD) | sbrewer@sctdd.org | 931-379-2919 |
+
+**Comma-separated (all ECD):** 
+carla.moore@hickmancountytn.gov, sbrewer@sctdd.org
 
 References: [SCTDD Staff](https://www.sctdd.org/meet-our-staff/), [TN Three-Star](https://www.tn.gov/ecd/rural-development/three-star-tnecd/threestar-program-materials.html), [Broadband Ready Communities](https://www.tn.gov/ecd/rural-development/broadband-office/redirect-community-and-providers-resources2/--broadband-ready-communities.html)
 
@@ -162,7 +174,7 @@ References: [SCTDD Staff](https://www.sctdd.org/meet-our-staff/), [TN Three-Star
 | Eddie Boone | Zoning, District 7 | dreddieboone@gmail.com | — |
 | Claude Callicott | County Commissioner, District 1 | — | (931) 994-9189 |
 | Danny Clark | County Commissioner, District 2 | — | (615) 812-5768 |
-| Keith Nash | County Commissioner, District 5 | kkeithnash@bellsouth.net | — |
+| Keith Nash | County Commissioner, District 4 | kkeithnash@bellsouth.net | — |
 | Andy Maddox | Mayor's Representative | — | (615) 405-4412 |
 
 
