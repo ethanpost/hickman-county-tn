@@ -99,6 +99,11 @@ Emails: `wdannyclark@gmail.com, mbarnhill@bellsouth.net, sg4hickman@gmail.com, d
 
 ---
 
+## Banana Pudding Festival Guy
+robert.warden@4hickmantn.com
+
+---
+
 ## County Officials & Department Heads
 
 | Name | Title | Email | Phone |

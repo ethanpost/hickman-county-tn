@@ -37,6 +37,8 @@ robertatkinson742@gmail.com, Chrischilton72@gmail.com, Markdqualls@gmail.com
 - Billy Blackwell (D)
 - [Shelley Farinato (R)](https://www.facebook.com/people/Shelley-for-District-1/61588517767463)
 - Jonathan Lacasse (I)
+  - jlacasse3560@gmail.com
+
 - Rodney Rochelle (I)
   - Was an Associate Minister at Fairfield Church of Christ?
 
