@@ -38,9 +38,18 @@ https://youtube.com/VIDEO_LINK
 
 3. Treat **all remaining text as the transcript**.
 
-4. Ignore speaker labels and names because they are often incorrect in automatic transcripts.
+4. Do not rely on **speaker labels** for attribution—they are often wrong in automatic transcripts. When people are named in the **substance** of the discussion (motions, seconds, roll-call votes, officials cited, department heads), include those names in the outline using the correction step below.
 
-5. Identify **major meeting segments**, such as:
+5. **Review official names** before finalizing the outline:
+
+   * Read **`Documents/county-and-state-contacts.md`** in this repository.
+   * Match names from the transcript to entries in that file (commissioners, county officials, department heads, and other listed contacts).
+   * Use the **official spelling and form** from the contacts file when a transcript name is clearly the same person but mistranscribed (e.g., “Calott” → Callicott, “Picker” → Pickard).
+   * Prefer **“Commissioner [Last Name]”** or **“[Full Name] ([Title])”** consistent with how names appear elsewhere in the outline.
+   * If a transcript name could match **more than one** contact, use the role or context from the meeting to decide; if still ambiguous, keep the transcript form and note briefly that the name was unclear.
+   * Do **not** add names that are not supported by the transcript—only correct spelling and form for people already referenced.
+
+6. Identify **major meeting segments**, such as:
 
 * Call to order
 * Roll call
@@ -54,11 +63,11 @@ https://youtube.com/VIDEO_LINK
 * Announcements
 * Adjournment
 
-6. If timestamps exist in the transcript, they may help identify topic changes.
+7. If timestamps exist in the transcript, they may help identify topic changes.
 
-7. Focus on **topics discussed, issues raised, and decisions made**.
+8. Focus on **topics discussed, issues raised, and decisions made**.
 
-8. **Capture quantitative details** as they appear in the transcript, including:
+9. **Capture quantitative details** as they appear in the transcript, including:
 
    * **Dollar amounts** (budgets, line items, costs, revenue, fund balances, salaries, etc.)
    * **Percentages** (tax rates, increases or decreases, shares of totals, test scores, etc.)
@@ -198,10 +207,23 @@ Automatic transcripts often contain:
 
 Therefore:
 
-* **Ignore speaker names**
-* **Focus only on the content of discussion**
+* **Do not use speaker labels** to attribute who said what
+* **Correct person names** that appear in motions, votes, and official references using **`Documents/county-and-state-contacts.md`**
+* **Focus on the content of discussion**
 * **Group related discussion together**
 * **Remove obvious filler or transcription noise**
+
+---
+
+# Name Correction
+
+Automatic transcripts frequently garble proper names. Before saving `outline.md`:
+
+1. Open **`Documents/county-and-state-contacts.md`**.
+2. Scan the outline for every **person name** (commissioners, mayor, finance director, department heads, etc.).
+3. Replace mistranscribed forms with the **official name** from the contacts file when the match is clear.
+4. Include **title or role** when it helps disambiguate (e.g., “Crystal Fitzgerald (Finance Director)” instead of “Miss Crystal” or “finance staff”).
+5. Leave a name unchanged only when no reasonable match exists in the contacts file.
 
 ---
 
@@ -211,6 +233,7 @@ To make outlines consistent across multiple meetings:
 
 * Use the same general section types whenever possible
 * Prefer **topic-based sections instead of speaker-based sections**
+* Use **official names** from **`Documents/county-and-state-contacts.md`** for commissioners and county officials
 * Keep bullet points concise (1–2 sentences maximum)
 * Always end with **## Key figures and statistics** (summary table, or the agreed fallback line when there are no quantifiable items)
 
@@ -218,4 +241,4 @@ To make outlines consistent across multiple meetings:
 
 # Final Output
 
-Your final output should be the complete contents of **outline.md**, formatted in Markdown and ready to save as a file, including the **Key figures and statistics** section at the end.
+Your final output should be the complete contents of **outline.md**, formatted in Markdown and ready to save as a file, including the **Key figures and statistics** section at the end. Names in the outline must be checked against **`Documents/county-and-state-contacts.md`** and corrected where the transcript clearly misheard or misspelled a listed contact.
